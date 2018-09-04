@@ -65,9 +65,12 @@
 // title serif: Andale, Baskerville, Batang*, Bell MT, Bookman Old Style, CAllisto MT, Cochin*, Consolas, Didot
 // body serif: Cambria, Cochin*, Century, Garamond
 
-var mainURL = "http://bensnell.io";
-var domainKey = "bensnell";	// used to check if we're in my domain
+var mainURL = "http://lleusueq.com";
+var domainKey = "lleusueq";	// used to check if we're in my domain
 var mailKey = "mailto";
+
+// password protection
+var ps = new Encrypt();
 
 // window parameters
 var w = new Params();
@@ -1164,8 +1167,14 @@ $( window ).on("load", function() {
 	windowLoaded.resolve(); 
 });
 
+function loadPageEncrypted() {
+
+	var loginSuccessful = ps.protect();
+	$.when( loginSuccessful ).done( loadPage );
+}
+
 // When the window is ready, initialize fonts and load the page
-$.when( windowReady, windowLoaded ).done( loadFonts, loadPage ).promise();
+$.when( windowReady, windowLoaded ).done( loadFonts, loadPageEncrypted ).promise();
 
 // load new page if the forward or back button is pressed
 $( window ).on('popstate', function() {
