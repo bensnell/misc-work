@@ -1,0 +1,21 @@
+{
+	"title" : "Dio (Consummation)",
+	"dimensions" : "10 x 15 x 40 cm",
+	"material" : "computer, resin",
+	"date" : "2018",
+	"description" : "I trained a machine to study classical sculpture, then asked it to close its eyes and dream of a new form—one which has never before been seen. Then, I ground this computer to dust and re-formed it into its dream. This is both the computer and its dream, and in such, the computer becomes its own maker.\n\nWithin this form exists every little bit of its memory, thoughts, and potential for thought-making. In this form, the computer has been endowed a meaningful physical agency—a worthy afterlife.",
+	
+
+	"globalExt" : "jpg",
+	"numDigits" : 3,
+	"images" : [
+		"188222790_421_140",
+		3,
+		4,
+		1
+	],
+	"captions" : {
+		"2" : "This is a caption",
+		"3" : "This is a caption"
+	}
+}

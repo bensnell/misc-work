@@ -1,0 +1,20 @@
+{
+	"title" : "LIDAR Photography",
+	"dimensions" : "91 x 122 cm",
+	"material" : "paper, ink",
+	"description" : "LIDAR is a range-sensing technology typically employed by the government and military to survey land from above. By measuring the time of flight of modulated pulses of light, depth can be extracted from a scene, often to very high precision.\n\nFrom surreptitiously slit-scanning streets packed with bar-goers at 2 in the morning to arresting the beauty of bamboo forests in northern Virginia with handmade rigs, I’ve continued to have a conversation with this piece of technology in hopes of exploring how it sees the world.\n\nThe artifacts produced through the process of capture, including the bounce of my gait, the elongation or compression of figures, the casting of shadows and the existence of black holes, reveal a deep interconnectedness between observer and observed.",
+	"date" : "2016",
+
+	"globalExt" : "jpg",
+	"numDigits" : 3,
+	"images" : [
+		1,
+		2,
+		3
+	],
+	"captions" : {
+		"1" : "Forest, Within",
+		"2" : "Forest, Far",
+		"3" : "Forest, Below"
+	}
+}
