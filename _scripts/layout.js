@@ -265,7 +265,7 @@ function ColumnLayout() {
 	this.usableWidth = w.windowW - 2*w.marginSidePx;
 	this.marginBetween = w.f2p(this.nCols==1 ? 0 : (0.04 * Math.pow(0.7, Math.max(this.nCols-2, 0))));
 	this.colWidth = (this.usableWidth - this.marginBetween*(this.nCols-1)) / this.nCols;
-	this.marginVertical = this.marginBetween*1.3;
+	this.marginVertical = this.marginBetween*1.2;
 
 	this.cols = [];
 	for (var i = 0; i < this.nCols; i++) {

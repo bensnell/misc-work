@@ -571,7 +571,7 @@ function showHome(bLayoutOnly=false) {
 
     	var thisDoneLayout = $.Deferred();
     	var moveAmtPx = previouslyVisited() ? 0 : w.moveAmtPx;
-    	var delayFrac = previouslyVisited() ? 0.7 : 1.0;
+    	var delayFrac = previouslyVisited() ? 0.2 : 0.4; // 0.7 : 1.0;
 		var layoutImage = function() {
 
 			var origRect = layout.getImagePosition($( element["img"] ).width(), $( element["img"] ).height());
@@ -587,8 +587,17 @@ function showHome(bLayoutOnly=false) {
 			$( element["img"] ).css("z-index", 0);
 
 			// Set the text attributes
-			$( element["txt"] ).css("font-size", w.fontSizePx);
-			$( element["txt"] ).css("letter-spacing", (w.bodyLetterSpacing*w.fontSizePx) + "px"); // .1993
+			if (w.onMobile) {
+				$( element["txt"] ).css("font-size", w.fontSizePx);
+				$( element["txt"] ).css("letter-spacing", (w.bodyLetterSpacing*w.fontSizePx) + "px"); // .1993
+			} else {
+				// accomodates 1, 2 and 3 cols (not sure about 4)
+				// This adjustment is necessary for the ColumnLayout because font size should not be 
+				// independent of column width
+				var fontSizeCol = layout.nCols > 2 ? (0.048 * layout.colWidth) : (0.038 * layout.colWidth);
+				$( element["txt"] ).css("font-size", fontSizeCol);
+				$( element["txt"] ).css("letter-spacing", (w.bodyLetterSpacing*fontSizeCol) + "px"); // .1993
+			}
 			$( element["txt"] ).css("z-index", 0);
 			// set position
 			var captionVertSpacing = w.fontSizePx*0.55;
