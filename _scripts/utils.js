@@ -108,12 +108,15 @@ function rect(x, y, w, h) {
 	this.w = w;
 	this.h = h;
 
+	this.col = null;
+
 	this.getCopy = function() {
 		var tmp = new rect();
 		tmp.x = this.x;
 		tmp.y = this.y;
 		tmp.w = this.w;
 		tmp.h = this.h;
+		tmp.col = this.col;
 		return tmp;
 	}
 

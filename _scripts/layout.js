@@ -115,7 +115,6 @@ function DesktopLayout(nCols, colWidth, colMargin, indexOffset) {
 	  	// Intersecting images are not likely
 	  	for (var i = 0; i < this.rects.length; i++) {
 	  		if (this.rects[i].intersects(thisRect)) {
-	  			// console.log(this.rects[i], thisRect);
 	  			like *= (1 - this.intersectionInhibitor);
 	  			break;
 	  		}
@@ -238,7 +237,6 @@ function DesktopLayout(nCols, colWidth, colMargin, indexOffset) {
 
 	  		// Sort to find the highest likelihood
 			likes.sort( function(a,b) { return a[1] < b[1]; } );
-			// console.log(likes);
 
 			// Save the y value of the highest rated location
 			center = likes[0][0].y
@@ -254,3 +252,65 @@ function DesktopLayout(nCols, colWidth, colMargin, indexOffset) {
 	  	return outRect;
 	};	
 };
+
+function ColumnLayout() {
+
+	// breakpoints
+	this.tabletWidth = 768;
+	this.phoneWidth = 480;
+
+	// Using the width of the screen, determine the number of columns we'll have
+	// and the size / margins of these columns
+	this.nCols = w.windowW<this.phoneWidth ? 1 : (w.windowW<this.tabletWidth ? 2 : 3);
+	this.usableWidth = w.windowW - 2*w.marginSidePx;
+	this.marginBetween = w.f2p(this.nCols==1 ? 0 : (0.04 * Math.pow(0.7, Math.max(this.nCols-2, 0))));
+	this.colWidth = (this.usableWidth - this.marginBetween*(this.nCols-1)) / this.nCols;
+	this.marginVertical = this.marginBetween*1.3;
+
+	this.cols = [];
+	for (var i = 0; i < this.nCols; i++) {
+		var thisCol = [];
+		var thisRect = new rect(i*(this.colWidth+this.marginBetween), -this.marginVertical, this.colWidth, 0);
+		thisRect.col = i;
+		thisCol.push(thisRect);
+		this.cols.push(thisCol);
+	}
+
+	this.addOffset = function(col, dy) {
+		this.cols[col][this.cols[col].length-1].h += dy;
+	}
+
+	this.getImagePosition = function(imgW, imgH) {
+
+	  	var x, y, w, h;
+
+	  	// dimensions
+	  	w = imgW; h = imgH;
+	  	var mult = this.colWidth / imgW;
+	  	w *= mult; h *= mult;
+
+	  	// position
+	  	var lowestCol = 0;
+	  	var lowestY = 1000000;
+	  	for (var i = 0; i < this.cols.length; i++) {
+	  		var col = this.cols[i];
+	  		var bottom = col[col.length-1].b() + this.marginVertical;
+	  		if (bottom < lowestY) {
+	  			lowestY = bottom;
+	  			lowestCol = i;
+	  		}
+	  	}
+	  	x = lowestCol * (this.colWidth + this.marginBetween);
+	  	y = this.cols[lowestCol][this.cols[lowestCol].length-1].b() + this.marginVertical;
+
+	  	var outRect = new rect(x, y, w, h);
+	  	outRect.col = lowestCol;
+	  	this.cols[lowestCol].push(outRect);
+	  	return outRect;
+	}
+}
+
+
+
+
+

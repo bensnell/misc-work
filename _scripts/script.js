@@ -550,13 +550,14 @@ function showHome(bLayoutOnly=false) {
 	anticipatePageHeightAndScroll();
 
 	// Create the foundation for an image layout
-	if (w.onMobile) {
-		var colWidth = (1 - (w.marginSideFrac*2)) * w.windowW;
-		var layout = new MobileLayout(colWidth);
-	} else {
-		var colWidth = (1 - (w.marginSideFrac*2+w.marginBetweenFrac)) * w.windowW / 2.0;
-		var layout = new DesktopLayout(2, colWidth, w.marginBetweenPx, 1);
-	}
+	// if (w.onMobile) {
+	// 	var colWidth = (1 - (w.marginSideFrac*2)) * w.windowW;
+	// 	var layout = new MobileLayout(colWidth);
+	// } else {
+	// 	var colWidth = (1 - (w.marginSideFrac*2+w.marginBetweenFrac)) * w.windowW / 2.0;
+	// 	var layout = new DesktopLayout(2, colWidth, w.marginBetweenPx, 1);
+	// }
+	var layout = new ColumnLayout();
 
 	// For each project ...
 	var prevDoneAnimating = null;
@@ -590,16 +591,17 @@ function showHome(bLayoutOnly=false) {
 			$( element["txt"] ).css("letter-spacing", (w.bodyLetterSpacing*w.fontSizePx) + "px"); // .1993
 			$( element["txt"] ).css("z-index", 0);
 			// set position
+			var captionVertSpacing = w.fontSizePx*0.55;
 			setTxtPosDim( 
 				$( element["txt"] ), 
 				thisRect.x, 
-				thisRect.b() + w.fontSizePx*0.55 + moveAmtPx, 
-				colWidth);
+				thisRect.b() + captionVertSpacing + moveAmtPx, 
+				layout.colWidth);
 
 			// if mobile, add the text offset
-			if (w.onMobile) {
-				layout.addOffset(0, $( element["txt"] ).height());
-			}
+			// if (w.onMobile) {
+			layout.addOffset(thisRect.col, $( element["txt"] ).height()+captionVertSpacing);
+			// }
 
 			// On hovering over the image, show the text below it
 			// (this has been extensively tested -- this works really well!)
