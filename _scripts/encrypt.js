@@ -1,5 +1,5 @@
 // toggle this on and off to encrypt the site
-var _ENCRYPT_ = false;
+var _ENCRYPT_ = true;
 
 function getHash(str) {
 	var hash = 0, i, chr;
