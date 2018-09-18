@@ -1,0 +1,22 @@
+{
+	"title" : "Incomplete Objects",
+	"client" : "self",
+	"role" : "all",
+	"description" : "Time gradually breaks down objects into more immediate, discrete and representable bits. Rarely is the pre- and post- state visible at once.\n\nHere, two objects—a rock and a clock—each hold in balance their beingness and coming-to-beingness with impossible material gradients: divergent materialities between real and nonreal, product and process.\n\nAs a series, these pieces visualize the 'presence of absence'—the voids left behind by natural entropic processes of decay and destruction.",
+	"date" : "2018",
+
+	"globalExt" : "jpg",
+	"numDigits" : 3,
+	"images" : [
+		4,
+		1,
+		2,
+		3
+	],
+	"captions" : {
+		"4" : "Rock, real and nonreal",
+		"1" : "Clock, real and nonreal",
+		"2" : "Clock, detail",
+		"3" : "Clock, detail"
+	}
+}

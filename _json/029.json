@@ -1,0 +1,18 @@
+{
+	"title" : "At The End of Knowledge",
+	"client" : "self",
+	"role" : "all",
+	"description" : "Grain flows seamlessly across a block of wood, half real, half nonreal.\n\nThe real block of wood had once been larger, but the process of understanding its grain structure reduces it to sawdust. This is because the only way build a model of the grain is to slice and scan it at fractions of a millimeter, over and over again.\n\nThe lower portion, printed in ABS plastic, is an exact replica of the wood which is shaved away. Within it, threads of grain visibly shift against each another like techtonic plates. Thus the invisible becomes real in the entropic pursuit of knowledge.",
+	"date" : "2018",
+
+	"globalExt" : "jpg",
+	"numDigits" : 3,
+	"images" : [
+		1,
+		2,
+		3
+	],
+	"captions" : {
+		"3" : "Scanning Process"
+	}
+}

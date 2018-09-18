@@ -1,4 +1,7 @@
 // TODO
+
+// - prevent magnification from changing layout
+
 // DONE - remove extra footer space on home when loaded from loadURL
 
 // DONE - add functionality to flip through image sets
@@ -43,7 +46,7 @@
 // - don't open new tab for email on mobile
 
 // - combine about & inquire into one ?
-// - OR: "Please send inquiries to: ben@bensnell.io <a>Send me an email here.</a>"
+// - OR: "Please send inquiries to: email <a>Send me an email here.</a>"
 
 // - improve SEO (page-specific titles, tags, descriptions in HTML) (?)
 
@@ -181,8 +184,12 @@ function parseHomeData(data) {
 
 	if (!emptyDict(dict)) return;
 
-	// Save projects
-	projects = data["projects"];
+	// Save projects (and remove any hidden from the main menu)
+	projects = [];
+	for (var i = 0; i < data["projects"].length; i++) {
+		var element = data["projects"][i];
+		if (!(element["hide"] && element["hide"] == "true")) projects.push(element);
+	}
 
 	// Parse projects into an accessible dictionary
 	$.each(projects, function(index, element) {
@@ -318,11 +325,16 @@ function initProject(pageID) {
     		});
 
     		// store all image paths
+    		// [REV to accept gifs and other static image file types]
     		var attrDict = function(element) {
+    			var bVideo = element.length > data["numDigits"] && isNumeric(element);
+    			var bOtherType = !isNumeric(element);
+    			var filename = bOtherType ? element : (element+"."+data["globalExt"]);
     			return {
     				"id" : element,
-    				"bVideo" : (element.length > data["numDigits"]) ? true : false,
-    				"path" : (element.length > data["numDigits"]) ? getVimeoPath(element) : (pathPrefix()+"_assets/"+projectID+"/"+element+"."+data["globalExt"])
+    				"bVideo" : bVideo,
+    				"bOtherType" : bOtherType,
+    				"path" : bVideo ? getVimeoPath(element) : (pathPrefix()+"_assets/"+projectID+"/"+filename)
     			};
     		}
     		project["images"] = project["images"].map(function(e) { 
@@ -332,8 +344,8 @@ function initProject(pageID) {
 
     		// store text
     		project["text"] = [ {"id" : "title", "content" : data["title"]}, 
-					    		{"id" : "dimensions", "content" : data["dimensions"]},
-					    		{"id" : "material", "content" : data["material"]},
+					    		{"id" : "client", "content" : data["client"]},
+					    		{"id" : "role", "content" : data["role"]},
 					    		{"id" : "date", "content" : data["date"]},
     							{"id" : "description", "content" : data["description"]}
     							];
@@ -353,7 +365,8 @@ function initProject(pageID) {
 
 		// create project description
 		$.each(project["text"], function(index, element) {
-			element["txt"] = getTextElement(element["id"], element["content"], "", fonts["body"], w.dark, ["async"]);
+			// element["txt"] = getTextElement(element["id"], element["content"], "", fonts["body"], w.dark, ["async"]);
+			element["txt"] = getTextElement(element["id"], (element["id"] == "client" || element["id"] == "role" ? (element["id"]+": ") : "") + element["content"], "", fonts["body"], w.dark, ["async"]);
 		});
 
 		// create images
@@ -550,14 +563,12 @@ function showHome(bLayoutOnly=false) {
 	anticipatePageHeightAndScroll();
 
 	// Create the foundation for an image layout
-	// if (w.onMobile) {
-	// 	var colWidth = (1 - (w.marginSideFrac*2)) * w.windowW;
-	// 	var layout = new MobileLayout(colWidth);
-	// } else {
-	// 	var colWidth = (1 - (w.marginSideFrac*2+w.marginBetweenFrac)) * w.windowW / 2.0;
-	// 	var layout = new DesktopLayout(2, colWidth, w.marginBetweenPx, 1);
-	// }
-	var layout = new ColumnLayout();
+	if (w.onMobile) {
+		var colWidth = (1 - (w.marginSideFrac*2)) * w.windowW;
+		var layout = new MobileLayout(colWidth);
+	} else {
+		var layout = new ColumnLayout();
+	}
 
 	// For each project ...
 	var prevDoneAnimating = null;
@@ -590,6 +601,7 @@ function showHome(bLayoutOnly=false) {
 			if (w.onMobile) {
 				$( element["txt"] ).css("font-size", w.fontSizePx);
 				$( element["txt"] ).css("letter-spacing", (w.bodyLetterSpacing*w.fontSizePx) + "px"); // .1993
+				$( element["txt"] ).css("line-height", w.bodyLineHeight + "px"); // .1993
 			} else {
 				// accomodates 1, 2 and 3 cols (not sure about 4)
 				// This adjustment is necessary for the ColumnLayout because font size should not be 
@@ -597,6 +609,7 @@ function showHome(bLayoutOnly=false) {
 				var fontSizeCol = layout.nCols > 2 ? (0.048 * layout.colWidth) : (0.038 * layout.colWidth);
 				$( element["txt"] ).css("font-size", fontSizeCol);
 				$( element["txt"] ).css("letter-spacing", (w.bodyLetterSpacing*fontSizeCol) + "px"); // .1993
+				$( element["txt"] ).css("line-height", w.bodyLineHeightFrac*fontSizeCol*1.1 + "px"); // .1993
 			}
 			$( element["txt"] ).css("z-index", 0);
 			// set position
@@ -1002,10 +1015,13 @@ function showProject(bLayoutOnly=false) {
 
 							$(caption).css("font-size", w.fontSizePx*0.9);
 							$(caption).css("letter-spacing", (w.bodyLetterSpacing*w.fontSizePx*0.8) + "px"); // .1993
-							$(caption).css("line-height", w.bodyLineHeight + "px"); // .1993
+							$(caption).css("line-height", w.bodyLineHeight*0.9 + "px"); // .1993 // Added 0.8 multiplier [ [DIFF] w/ other site]
+
+							$(caption).css("width", iw); // [DIFF]
+							$(caption).css("text-align", "center"); // [DIFF]
 
 							var addlCaptionOffset = $(caption).height() * 0.2;
-							setTxtPosDim( $(caption), ix+iw/2-$(caption).width()/2, iy+ih+addlCaptionOffset);
+							setTxtPosDim( $(caption), ix+iw/2-$(caption).width()/2, iy+ih+addlCaptionOffset); // added iw [DIFF]
 							captionOffset += $(caption).height() + addlCaptionOffset;
 							yOffset += captionOffset;
 						}
@@ -1181,7 +1197,7 @@ $( window ).on("load", function() {
 function loadPageEncrypted() {
 
 	var loginSuccessful = ps.protect();
-	$.when( loginSuccessful ).done( loadPage );
+	$.when( loginSuccessful ).done( function() { return loadPage(); } );
 }
 
 // When the window is ready, initialize fonts and load the page

@@ -1,0 +1,18 @@
+{
+	"title" : "Wooden Vertebre",
+	"client" : "self",
+	"role" : "all",
+	"description" : "Carved out of a block of cherry wood using a CNC 5 axis router and Fusion360, this object was 3D scanned from a boar's vertebre.\n\nThis self-directed project pushes the capabilities of the CNC machine to the max. Careful planning of toolpaths keeps too much material from being removed at a time, allowing even the thinnest of features to remain intact.",
+	"date" : "2018",
+
+	"globalExt" : "jpg",
+	"numDigits" : 3,
+	"images" : [
+		2,
+		1,
+		4,
+		3
+	],
+	"captions" : {
+	}
+}

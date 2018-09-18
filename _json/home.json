@@ -3,29 +3,167 @@
 	"imgExt" : "jpg",
 	"projects" : [
 		{
+			"projectID" : "031",
+			"title" : "Wooden Vertebre\n\\ On material explorations",
+			"url" : "http://lleusueq.com/wooden-vertebre",
+			"tags" : ["fabrication"]
+		},
+		{
+			"projectID" : "030",
+			"title" : "Web Design\n\\ On this, actually.",
+			"url" : "http://lleusueq.com/web-design",
+			"tags" : ["code, hci"]
+		},
+		{
+			"projectID" : "029",
+			"title" : "At The End of Knowledge\n\\ On visualizing the impossible.",
+			"url" : "http://lleusueq.com/end-of-knowledge",
+			"tags" : ["fabrication, code"]
+		},
+		{
+			"projectID" : "028",
+			"title" : "Incomplete Objects\n\\ On entropic voids.",
+			"url" : "http://lleusueq.com/incomplete-objects",
+			"tags" : ["fabrication"]
+		},
+		{
+			"projectID" : "027",
+			"title" : "ML Sculpture\n\\ On the dreams of machines.",
+			"url" : "http://lleusueq.com/ml-sculptures",
+			"tags" : ["code, generative, machine learning"],
+			"hide" : "false"
+		},
+		{
+			"projectID" : "026",
+			"title" : "Sketches of Self\n\\ On introspective algorithms.",
+			"url" : "http://lleusueq.com/sketches-of-self",
+			"tags" : ["code, generative"]
+		},
+		{
+			"projectID" : "025",
+			"title" : "Haptic Switches\n\\ On connecting distant partners.",
+			"url" : "http://lleusueq.com/haptic-switches",
+			"tags" : ["HCI, design, electronics, fabrication"]
+		},
+		{
+			"projectID" : "024",
+			"title" : "Stratified Sculptures\n\\ On fabricating life-size forms.",
+			"url" : "http://lleusueq.com/stratified-sculptures"
+		},
+		{
+			"projectID" : "023",
+			"title" : "Untethered VR\n\\ On cheap + simple cordless tracking.",
+			"url" : "http://lleusueq.com/untethered-vr"
+		},
+		{
+			"projectID" : "022",
+			"title" : "Torsos\n\\ On nipples and navels.",
+			"url" : "http://lleusueq.com/torsos"
+		},
+		{
+			"projectID" : "021",
+			"title" : "Mimus\n\\ On taming our companion species.",
+			"url" : "http://lleusueq.com/mimus"
+		},
+		{
+			"projectID" : "020",
+			"title" : "Mocap Rig\n\\ On translating human motions to a robot.",
+			"url" : "http://lleusueq.com/mocap-rig"
+		},
+		{
+			"projectID" : "019",
+			"title" : "IDEO\n\\ On reimagining an industry.",
+			"url" : "http://lleusueq.com/ideo"
+		},
+		{
+			"projectID" : "018",
+			"title" : "Bread Bondage\n\\ On sensual morphologies.",
+			"url" : "http://lleusueq.com/bread-bondage"
+		},
+		{
+			"projectID" : "017",
+			"title" : "Robot Prosthetics\n\\ On democratizing emotional touch.",
+			"url" : "http://lleusueq.com/robot-prosthetics"
+		},
+		{
+			"projectID" : "016",
+			"title" : "Shortwave Radio\n\\ On ever-present radio ethers.",
+			"url" : "http://lleusueq.com/shortwave-radio"
+		},
+		{
+			"projectID" : "015",
+			"title" : "Polar Etch-A-Sketch\n\\ On non-cartesian childhoods.",
+			"url" : "http://lleusueq.com/polar-etch-a-sketch"
+		},
+		{
+			"projectID" : "014",
+			"title" : "LIDAR Videography\n\\ On temporalized spaces.",
+			"url" : "http://lleusueq.com/lidar-videography"
+		},
+		{
+			"projectID" : "013",
+			"title" : "Samson\n\\ On insertion-rebroadcast media.",
+			"url" : "http://lleusueq.com/samson"
+		},
+		{
+			"projectID" : "012",
+			"title" : "Soundscaping\n\\ On weightless sounds.",
+			"url" : "http://lleusueq.com/soundscaping"
+		},
+		{
+			"projectID" : "011",
+			"title" : "Audio Interface Workshop\n\\ On programming with modularity.",
+			"url" : "http://lleusueq.com/audio-interface-workshop"
+		},
+		{
+			"projectID" : "010",
+			"title" : "Musical Poster\n\\ On playable art & artifice.",
+			"url" : "http://lleusueq.com/musical-poster"
+		},
+		{
+			"projectID" : "009",
+			"title" : "Generative Sketching\n\\ On the beauty of a few simple rules.",
+			"url" : "http://lleusueq.com/generative-sketching"
+		},
+		{
+			"projectID" : "008",
+			"title" : "Selective Self-Portraiture\n\\ On inadvertent introspection.",
+			"url" : "http://lleusueq.com/selective-self-portraiture"
+		},
+		{
+			"projectID" : "007",
+			"title" : "Camp Google\n\\ On summer days and summer magic.",
+			"url" : "http://lleusueq.com/camp-google"
+		},
+		{
+			"projectID" : "006",
+			"title" : "The Force Awakens\n\\ On awakening the force within.",
+			"url" : "http://lleusueq.com/force-awakens"
+		},
+		{
 			"projectID" : "005",
-			"title" : "Dio (Consummation)\n\\ On the becoming of one's creation.\n2018",
-			"url" : "http://lleusueq.com/dio"
+			"title" : "Made with Code\n\\ On recoding the meaning of code.",
+			"url" : "http://lleusueq.com/made-with-code"
 		},
 		{
 			"projectID" : "004",
-			"title" : "G53, DMS\n\\ On mechanical signatures, fingerprints.\n2018",
-			"url" : "http://lleusueq.com/g53-dms"
+			"title" : "Chroma + Proximity\n\\ On rediscovering sight.",
+			"url" : "http://lleusueq.com/chroma-proximity"
 		},
 		{
 			"projectID" : "003",
-			"title" : "Jenny's Dreams\n\\ On originality and authorship.\n2018",
-			"url" : "http://lleusueq.com/jenny"
+			"title" : "Organic Code\n\\ On responsive, emergent systems.",
+			"url" : "http://lleusueq.com/organic-code"
 		},
 		{
 			"projectID" : "002",
-			"title" : "LIDAR Photography\n\\ On intertwinedness of observer and observed.\n2016",
-			"url" : "http://lleusueq.com/lidar-photography"
+			"title" : "Bench 14\n\\ On minimal waste & assembly.",
+			"url" : "http://lleusueq.com/bench-14"
 		},
 		{
 			"projectID" : "001",
-			"title" : "G53, UR5\n\\ On mechanical signatures, fingerprints.\n2015",
-			"url" : "http://lleusueq.com/g53-ur5"
+			"title" : "Depth Illusion\n\\ On design of the percept.",
+			"url" : "http://lleusueq.com/depth-illusion"
 		}
 	]
 }

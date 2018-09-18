@@ -1,3 +1,6 @@
+// toggle this on and off to encrypt the site
+var _ENCRYPT_ = false;
+
 function getHash(str) {
 	var hash = 0, i, chr;
 	if (str.length === 0) return hash;
@@ -76,6 +79,7 @@ function Encrypt() {
 			elems = [];
 		};
 
-		return consecCall( [ create, destroy ] );
+		var out = (_ENCRYPT_ ? consecCall( [ create, destroy ] ) : null)
+		return out;
 	}
 }

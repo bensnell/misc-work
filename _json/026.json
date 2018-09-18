@@ -1,0 +1,49 @@
+{
+	"title" : "Sketches of Self",
+	"client" : "self",
+	"role" : "all",
+	"description" : "I set out to distill an essense of self into an algorithm. The essence I chose is how I draw: all high and low level behaviors and interactions that give me the ability to express and represent visual imagery through marks on paper.\n\nOver four months, I developed a comprehensive theory of self, investigating through intensive drawing experiments how my hand and eye influence each other through complex cybernetic feedback loops. Then, I coded this algorithm into a formal logic in C++ to produce a program capable of drawing in real time similar to how I believe I draw.\n\nThe resulting program bears resemblance to my own mark-making beahviors, but highlights above all the difficulty and near-impossibility with which one can truly understand one's self. Throughout this process, I was driven not by the desire for self-replication, but rather, self-reflection. \n\nThe following images are a selection of my experiments, analysis, theory and output.",
+	"date" : "2017",
+
+	"globalExt" : "jpg",
+	"numDigits" : 3,
+	"images" : [
+		[3, 2, 1, 4],
+		[6, 5, 7],
+		[12],
+		[13, 14],
+		[16, 15, 17],
+		[19, 20],
+		[21, 22],
+		[23],
+		[10, 11],
+		[18],
+		[24],
+		[25],
+		[26],
+		[27]
+	],
+	"captions" : {
+		"8" : "Brainstorming visualizations of the drawings.",
+		"3" : "Correlating drawing parameters like pen speed, pressure, mark size and eccentricity, and etc. for the 8 most interesting drawings.",
+		"6" : "Analyzing various drawing parameters over time.",
+		"10" : "Modeling the motor system: Defining the ways in which gestural goals are set and met.",
+		"12" : "Modeling the rules of directional cross-hatching (i.e. defining the most comfortable angles of linear hand movement).",
+		"13" : "Investigating how curvature and angle of the 'leaf' is influenced by the curvature and angle of the 'branch' within a patch of hatching.",
+		"16" : "Modeling the visual and mental computations used to determine visual interest in a subject, where interest is defined as synonymous to organic complexity (high order curvature of lines or gradients).",
+		"18" : "Model of the pen used to draw.",
+		"19" : "Theory of attentional progressions: understanding how features are attended to in location and scope.",
+		"21" : "Theory of object hierarchies: understanding visual segmentation protocols and progressions of focus.",
+		"23" : "Distinguishing methods of form-making between boundary-definition (lines) and shape-formation (hatches).",
+		"24" : "Complete theory of the algorithm. Three independent systems take part: imagery, algorthm, and substrate. Processing modules are shown as circles where black arrows indicates progression of processes. Resources are listed at the top and bottom, where blue indicates read and green indicates write.",
+		"25" : "Program structure of the algorithm is broken into interfaces, cognitive modules, faculties, resources, representations and the motor system. Ecology describes the environment in which the algorithm resides.",
+		"26" : "Screenshot of the program at the start of its attempt to draw an ear.",
+		"27" : "Algorthm's drawing on the left, and my drawing on the right."
+
+
+
+
+
+
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"title" : "Haptic Switches",
+	"client" : "course (Human Robot Interaction, CMU)",
+	"role" : "designer, fabricator, cloud developer",
+	"description" : "Long-distance relationships impose significant strain on the individuals involved. This project aims to provide a tactile connection point for a couple, supplementing extant modes of communication like smartphones.\n\nThree peers and I designed this device—a haptic switch—to replicate the pressure and immediacy of skin to skin touch. Each partner has a switch that replicates the state of their partner's switch. The switches wirelessly connect to the cloud, so partners could be many miles apart, but still be able to feel each other's 'touch'.\n\nWhile it's true this doesn't fully replicate human touch, it effectively communicates intent through a modality underemphasized by most portable social devices. We specifically chose to focus on immediacy (real-time feedback) to afford partners the ability to develop their own vernacular of toggle patterns.\n\nTesting with real partners confirmed the potential of this device and provided insights into additional considerations for haptic communication design in the personal sphere.\n\n. . .\n\nCollaborators: Paul Calhoun, Amanda Holt & Adena Lin\n<a href='https://intimatehri.wordpress.com/'>Project Site</a>",
+	"date" : "2017",
+
+	"globalExt" : "jpg",
+	"numDigits" : 3,
+	"images" : [
+		1,
+		2,
+		3,
+		4,
+		5,
+		6,
+		"007.gif"
+	],
+	"captions" : {
+		"1" : "Concept renderings of the device.",
+		"2" : "Schematics, basic operation.",
+		"3" : "Detailed schematics.",
+		"4" : "First prototype of the switch. Embedded microelectronics sense for presses and actuate accordingly.",
+		"5" : "Final protoype.",
+		"6" : "Partner switches: one for each partner in a long-distance relationship.",
+		"7" : "Switches communicating in real-time, wirelessly and over Particle's servers."
+	}
+}
