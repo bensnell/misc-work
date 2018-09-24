@@ -1,9 +1,9 @@
 {
-	"title" : "",
-	"dimensions" : "",
-	"material" : "",
+	"title" : "Robot Prosthetics",
+	"client" : "self",
+	"role" : "all",
 	"description" : "",
-	"date" : "",
+	"date" : "2016",
 
 	"globalExt" : "jpg",
 	"numDigits" : 3,

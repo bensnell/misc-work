@@ -1,16 +1,18 @@
 {
-	"title" : "",
-	"dimensions" : "",
-	"material" : "",
-	"description" : "",
-	"date" : "",
+	"title" : "Bread Bondage",
+	"client" : "none",
+	"role" : "concept, design, fabrication",
+	"description" : "I collaborated with architect <a href='http://www.epiphyte-lab.com/' target='blank'>Dana Cupkova</a> to investigate how we interact with, consume, and derive pleasure from alien, yet familiar, edible forms.\n\nBy constricting the expansive growth of dough as it rises and bakes, voluptuous morphologies unfold like flesh drooping over the waistlines, expanding into sacks of delicious, palpable warmth. We are drawn to these forms like lions to a freshly slaughtered wildebeest. The aroma of the carcass wafts nearer—our mouths watering—as we begin ripping it apart, piece by piece.\n\nThe language of the bread is unfamiliar and uncanny. Its voracious sensuality bears resemblance to the act of devouring food and the act of copulation. A new paradigm for consumption emerges, revealing our more primal, instinctual and animalistic self.",
+	"date" : "2016",
 
 	"globalExt" : "jpg",
 	"numDigits" : 3,
 	"images" : [
-		1,
-		2,
-		3
+		[1, 2],
+		[3, 4],
+		[6, 7],
+		[9, 10],
+		[12, 14]
 	],
 	"captions" : {
 	}

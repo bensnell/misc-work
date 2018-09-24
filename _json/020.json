@@ -1,17 +1,28 @@
 {
-	"title" : "",
-	"dimensions" : "",
-	"material" : "",
-	"description" : "",
-	"date" : "",
+	"title" : "Mocap Rig",
+	"client" : "<a href='http://troika.uk.com/'>Troika</a>",
+	"role" : "developer, fabricator, animator",
+	"description" : "I designed a Kinect-based mocap rig and capture software for artist studio Troika to record the motions of a lumberjack and map them to a robot arm.\n\nI tried multiple methods of marker and markerless capture to log the position and orientation of an axe as it chopped down a piece of wood. These recorded 3D paths were used with RoboDK's inverse kinematics software to determine the robot's joint angles. Then, I rigged a robot in Cinema4D and animated it according to these paths.\n\nThe sequence below is a plausible rendering of this 'performance'. This act represents to them the over-reach of technology and impending exploitations of human labor.",
+	"date" : "2017",
 
 	"globalExt" : "jpg",
 	"numDigits" : 3,
 	"images" : [
-		1,
 		2,
-		3
+		[1, 3],
+		6,
+		7, 
+		9,
+		[11, 12, 10],
+		"013.gif"
 	],
 	"captions" : {
+		"2" : "This markerless mocap rig extrapolates the reference frame of the axe from skeletal information.",
+		"1" : "This mocap rig uses computer vision to calculate axe information from three colored markers attached to the axe head.",
+		"6" : "A single path of the axe.",
+		"7" : "Kuka robotic arm executing the chopping motions over and over again.",
+		"9" : "Camera angle tests for the final rendering in Cinema4D.",
+		"10" : "Material tests on the robot in Cinema4D.",
+		"13" : "Clip from the final rendering of the act."
 	}
 }

@@ -3,8 +3,19 @@
 	"imgExt" : "jpg",
 	"projects" : [
 		{
+			"projectID" : "033",
+			"title" : "Generative Posters\n\\ On reactive typography.",
+			"url" : "http://lleusueq.com/generative-posters",
+			"hide" : "true"
+		},{
+			"projectID" : "032",
+			"title" : "Augmented Hand Series\n\\ On kid-proof design.",
+			"url" : "http://lleusueq.com/augmented-hand-series",
+			"hide" : "true"
+		},
+		{
 			"projectID" : "031",
-			"title" : "Wooden Vertebre\n\\ On material explorations",
+			"title" : "Wooden Vertebre\n\\ On material explorations.",
 			"url" : "http://lleusueq.com/wooden-vertebre",
 			"tags" : ["fabrication"]
 		},
@@ -12,13 +23,13 @@
 			"projectID" : "030",
 			"title" : "Web Design\n\\ On this, actually.",
 			"url" : "http://lleusueq.com/web-design",
-			"tags" : ["code, hci"]
+			"tags" : ["code", "HCI"]
 		},
 		{
 			"projectID" : "029",
 			"title" : "At The End of Knowledge\n\\ On visualizing the impossible.",
 			"url" : "http://lleusueq.com/end-of-knowledge",
-			"tags" : ["fabrication, code"]
+			"tags" : ["fabrication", "code"]
 		},
 		{
 			"projectID" : "028",
@@ -30,60 +41,68 @@
 			"projectID" : "027",
 			"title" : "ML Sculpture\n\\ On the dreams of machines.",
 			"url" : "http://lleusueq.com/ml-sculptures",
-			"tags" : ["code, generative, machine learning"],
+			"tags" : ["code", "generative", "machine learning"],
 			"hide" : "false"
 		},
 		{
 			"projectID" : "026",
 			"title" : "Sketches of Self\n\\ On introspective algorithms.",
 			"url" : "http://lleusueq.com/sketches-of-self",
-			"tags" : ["code, generative"]
+			"tags" : ["code", "generative"]
 		},
 		{
 			"projectID" : "025",
 			"title" : "Haptic Switches\n\\ On connecting distant partners.",
 			"url" : "http://lleusueq.com/haptic-switches",
-			"tags" : ["HCI, design, electronics, fabrication"]
+			"tags" : ["HCI", "design", "electronics", "fabrication"]
 		},
 		{
 			"projectID" : "024",
 			"title" : "Stratified Sculptures\n\\ On fabricating life-size forms.",
-			"url" : "http://lleusueq.com/stratified-sculptures"
+			"url" : "http://lleusueq.com/stratified-sculptures",
+			"tags" : ["fabrication", "code"]
 		},
 		{
 			"projectID" : "023",
-			"title" : "Untethered VR\n\\ On cheap + simple cordless tracking.",
-			"url" : "http://lleusueq.com/untethered-vr"
+			"title" : "Bounbdless & Tetherless VR\n\\ On cheap + simple cordless tracking.",
+			"url" : "http://lleusueq.com/boundless-tetherless-vr",
+			"tags" : ["code", "mixed reality"]
 		},
 		{
 			"projectID" : "022",
 			"title" : "Torsos\n\\ On nipples and navels.",
-			"url" : "http://lleusueq.com/torsos"
+			"url" : "http://lleusueq.com/torsos",
+			"tags" : ["code", "machine learning"]
 		},
 		{
 			"projectID" : "021",
 			"title" : "Mimus\n\\ On taming our companion species.",
-			"url" : "http://lleusueq.com/mimus"
+			"url" : "http://lleusueq.com/mimus",
+			"tags" : ["code", "generative", "robots"]
 		},
 		{
 			"projectID" : "020",
 			"title" : "Mocap Rig\n\\ On translating human motions to a robot.",
-			"url" : "http://lleusueq.com/mocap-rig"
+			"url" : "http://lleusueq.com/mocap-rig",
+			"tags" : ["code", "fabrication"]
 		},
 		{
 			"projectID" : "019",
-			"title" : "IDEO\n\\ On reimagining an industry.",
-			"url" : "http://lleusueq.com/ideo"
+			"title" : "IDEO: Surface\n\\ On reimagining an industry.",
+			"url" : "http://lleusueq.com/ideo",
+			"tags" : ["design", "HCI"]
 		},
 		{
 			"projectID" : "018",
 			"title" : "Bread Bondage\n\\ On sensual morphologies.",
-			"url" : "http://lleusueq.com/bread-bondage"
+			"url" : "http://lleusueq.com/bread-bondage",
+			"tags" : ["fabrication"]
 		},
 		{
 			"projectID" : "017",
 			"title" : "Robot Prosthetics\n\\ On democratizing emotional touch.",
-			"url" : "http://lleusueq.com/robot-prosthetics"
+			"url" : "http://lleusueq.com/robot-prosthetics",
+			"tags" : ["robots", "electronics"]
 		},
 		{
 			"projectID" : "016",

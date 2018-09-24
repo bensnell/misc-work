@@ -327,7 +327,7 @@ function initProject(pageID) {
     		// store all image paths
     		// [REV to accept gifs and other static image file types]
     		var attrDict = function(element) {
-    			var bVideo = element.length > data["numDigits"] && isNumeric(element);
+    			var bVideo = element.length > data["numDigits"] && !element.includes(".");
     			var bOtherType = !isNumeric(element);
     			var filename = bOtherType ? element : (element+"."+data["globalExt"]);
     			return {
