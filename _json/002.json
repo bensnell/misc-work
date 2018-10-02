@@ -1,17 +1,25 @@
 {
-	"title" : "",
-	"client" : "",
-	"role" : "",
-	"description" : "",
+	"title" : "Bench 14",
+	"client" : "none",
+	"role" : "concept, design, fabrication",
+	"description" : "Inspired by the Nelson Platform Bench, this bench is made from and uses every part of a single sheet of plywood. It's assembled without screws, nails or glue and can easily flat-pack into a 1.5' x 8' sheet three inches thick.\n\nThis project is the culmination of extended explorations into efficient furniture production and assembly methods.\n\n<i>Collaboration with <a href='http://www.evanfinkle.com/' target='blank'>Evan Finkle</a></i>",
 	"date" : "",
 
 	"globalExt" : "jpg",
 	"numDigits" : 3,
 	"images" : [
+		3,
 		1,
 		2,
-		3
+		4,
+		10,
+		11,
+		[7, 15],
+		14
 	],
 	"captions" : {
+		"10" : "Initial renderings of the design.",
+		"11" : "Sketch of a bench / shelving unit with a similar visual vocabulary",
+		"7" : "Disassembled, the bench takes up only as much space as a sheet of plywood."
 	}
 }

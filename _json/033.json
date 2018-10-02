@@ -1,0 +1,19 @@
+{
+	"title" : "Generative Typography",
+	"client" : "self",
+	"role" : "all",
+	"description" : "I designed a reactive three-dimensional typeface based on the flow patterns of BZ-reactions. These simulated chemical reactions flow across the surface of the type, offseting the surface of each letter with successive waves.",
+	"date" : "2018",
+
+	"globalExt" : "jpg",
+	"numDigits" : 3,
+	"images" : [
+		1, 
+		2, 
+		3,
+		7,
+		"008.gif"
+	],
+	"captions" : {
+	}
+}

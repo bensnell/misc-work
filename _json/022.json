@@ -1,7 +1,7 @@
 {
 	"title" : "Torsos",
 	"client" : "none",
-	"role" : "developer, designer",
+	"role" : "software development, design",
 	"description" : "I collaborated with artist <a href='https://adammilner.com/'>Adam Milner</a> to process and visualize his personal database of 7000+ Grindr photos of torsos.\n\nUsing computer vision and machine learning algorithms, we analyzed the images, extracting a feature vector for each. Then, we visualized the database in grids.\n\nFurther processing revealed a series of hidden gems: pairings of strikingly similar torsos. These diptychs reveal the commonalities to expression within this app and its community at large.",
 	"date" : "2016",
 

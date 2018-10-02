@@ -1,7 +1,7 @@
 {
 	"title" : "Mocap Rig",
 	"client" : "<a href='http://troika.uk.com/'>Troika</a>",
-	"role" : "developer, fabricator, animator",
+	"role" : "software development, fabrication, animation",
 	"description" : "I designed a Kinect-based mocap rig and capture software for artist studio Troika to record the motions of a lumberjack and map them to a robot arm.\n\nI tried multiple methods of marker and markerless capture to log the position and orientation of an axe as it chopped down a piece of wood. These recorded 3D paths were used with RoboDK's inverse kinematics software to determine the robot's joint angles. Then, I rigged a robot in Cinema4D and animated it according to these paths.\n\nThe sequence below is a plausible rendering of this 'performance'. This act represents to them the over-reach of technology and impending exploitations of human labor.",
 	"date" : "2017",
 

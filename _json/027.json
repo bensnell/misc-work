@@ -2,7 +2,7 @@
 	"title" : "ML Sculpture",
 	"client" : "self",
 	"role" : "all",
-	"description" : "I compiled one thousand 3D models of standing classical figures by the likes of artists such as Michelangelo and Donatello, then trained a computer to learn the morphological essence of this set of forms. Once the computer learned to 'see' in sculpture, I asked it to imagine new ones—to improvise its own sculptures, inspired by the classics.\n\nThese are the network's products: Each bears qualities resembling aspects of classical sculpture, but none are representational. They are not interpolations between existing forms: they are collages of archetypes and extrapolations beyond the traditional.",
+	"description" : "I compiled one thousand 3D models of standing classical figures by the likes of artists such as Michelangelo and Donatello, then trained a computer to learn the morphological essence of this set of forms. Once the computer learned to 'see' in sculpture, I asked it to imagine new ones—to improvise its own sculptures, inspired by the classics.\n\nThese are the network's products: Each bears qualities resembling aspects of classical sculpture, but none are representational. They are not interpolations between existing forms: they are collages of archetypes and extrapolations beyond the traditional.\n\n<i>Made in Autodesk's <a href='https://www.autodesktechnologycenters.com/' target='blank'>Artist Residency</a> at Pier 9.</i>",
 	"date" : "2018",
 
 	"globalExt" : "jpg",

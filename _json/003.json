@@ -1,17 +1,21 @@
 {
-	"title" : "",
-	"dimensions" : "",
-	"material" : "",
-	"description" : "",
-	"date" : "",
+	"title" : "Organic Code",
+	"client" : "self",
+	"role" : "all",
+	"description" : "Upon entering a dimly lit room, there lies a simple wooden box at its center. From this box emanates a light moving with a mind of its own, illuminating the walls and ceiling with a pulsing glow. As you approach this orb of light, it dances erratically, frightened by your presence. And just as you peer within the box, it disappears. However, if you stay incredibly still, it may cautiously emerge, letting you explore the otherworldly space it lives within.\n\nThe box is designed to explore how we approach and interact with unfamiliar animate forms. How do we assign lifelike qualities to inanimate objects? At what point do we begin to ascribe physicality to the digital? And how does one create complex behavior with just a few lines of code?",
+	"date" : "2014",
 
 	"globalExt" : "jpg",
 	"numDigits" : 3,
-	"images" : [
+	"images" : [		
 		1,
 		2,
-		3
+		4,
+		"99312644_1920_1080",
+		5
 	],
 	"captions" : {
+		"99312644" : "Demo video of the piece.",
+		"5" : "Process documentation: soldering the wires to the LEDs"
 	}
 }

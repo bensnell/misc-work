@@ -1,17 +1,26 @@
 {
-	"title" : "",
-	"dimensions" : "",
-	"material" : "",
-	"description" : "",
-	"date" : "",
+	"title" : "Made with Code",
+	"client" : "<a href='https://www.72andsunny.com/' target='blank'>72andSunny</a>",
+	"role" : "concept, design, creative technology",
+	"description" : "An initiative by Google, <a href='https://www.madewithcode.com/' target='blank'>Made with Code</a> aims to engender in young girls an interest in creative programming, breaking down the misconception that coding is only for boys.\n\nHere, I worked as a designer on multiple projects, developing brand campaigns including a <a href='https://www.madewithcode.com/projects/insideout' target='blank'>partnership</a> with Pixar around their new movie, <i>Inside Out</i>, to create a themed online game teaching basic programming concepts like for-loops and conditionals.",
+	"date" : "2015",
 
 	"globalExt" : "jpg",
-	"numDigits" : 3,
+	"numDigits" : 3, 
 	"images" : [
 		1,
 		2,
-		3
+		3,
+		4,
+		5,
+		6
 	],
 	"captions" : {
+		"1" : "Level 1: The movie's main character slides wants to slide down the rail on her way to school. Your goal is to program her movements so she gets there safely.",
+		"2" : "Level 1: Sequences are introduced as a coding principle. The user can arrange logic, action and variable blocks on the canvas to complete the goal.",
+		"3" : "Level 2: Riley is running around the living room. Your goal is to help her navigate the obstacles strewn about.",
+		"4" : "Level 2: Variables and for-loops are introduced as coding principles.",
+		"5" : "Level 3: At a hockey game, Riley needs your help navigating defenders and making the shot.",
+		"6" : "Level 3: Conditionals are introduced as a coding principle. A limited number of blocks forces the user to consider novel combinations of if statements and for-loops to succeed."
 	}
 }

@@ -1,0 +1,16 @@
+{
+	"title" : "3D Printed Bracelets",
+	"client" : "self",
+	"role" : "all",
+	"description" : "I designed intricate lattice-like wraparound bracelets in Rhino, considering printability and the material qualities of photosensitive resin.\n\nOne piece bracelets must have enough flexibility to bend onto the wrist. After many tests of micro- and macro- geometries, these two designs resulted. With each, the overall structure wraps comfortably while the lattice diamonds bend just enough to afford global deformations without breaking.",
+	"date" : "2015",
+
+	"globalExt" : "jpg",
+	"numDigits" : 3,
+	"images" : [
+		1, 
+		2
+	],
+	"captions" : {
+	}
+}

@@ -2,16 +2,28 @@
 	"title" : "Depth Illusion",
 	"client" : "self",
 	"role" : "all",
-	"description" : "",
+	"description" : "I discovered a new optical illusion that creates the impression of objects hovering in space, similar to a hologram. My research into the phenomena has been comprehensive, with the goal of creating an immersive installation that explores the complexities of the visual system and human perception.\n\nThe left and right eyes are positioned in different locations, so they see slightly different images. This binocular disparity allows us to perceive depth, a process known as stereopsis. By mounting a light source between the eyes, shadows are projected onto a backdrop through precisely cut slits in a screen. The pattern of light and dark areas formed by occluding surfaces is projected differently to each eye which, when fused in the brain, produce the appearance of white “blinds” or black “strings” hovering in space. The specific percept experienced depends on an individual’s figure/ground associations; however, the depth of these perceptual constructions can be manipulated by changing multiple variables, including strip/slit width and backdrop distance.\n\nPictured here is an iteration of the installation, designed to consider the illusion's optimal distances of formation and dissolution and to explore the construction of a shared experience between participants.",
 	"date" : "2014",
 
 	"globalExt" : "jpg",
 	"numDigits" : 3,
 	"images" : [
-		1,
-		2,
-		3
+		[1, 3],
+		[2, 6],
+		7,
+		[8,9],
+		10,
+		11,
+		12,
+		13
 	],
 	"captions" : {
+		"2" : "Participants in the installation reaching out their hands to touch nonexistent objects: strings and strips hovering in the air.",
+		"7" : "The installation was comprised of three wraparound screens made from paper and plastic.",
+		"8" : "Headset designed for the installation places the light source immediately between both eyes. Throwaway paper glasses with similar light placement were also made for participants.",
+		"10" : "Schematic detailing percept creation: Displaced shadows appearing in the left and right eyes fuse into one, creating the impression of holograms.",
+		"11" : "A top view of the interaction between light and eye describes geometrically how the percept forms. A screen made of narrow white vertical strips casts shadows on a white backdrop. These shadows are partially occluded by the strips themselves, so each eye sees shadows in different locations. In attempting to make sense of this information, the brain concludes objects lie in front of the screen with some perceived distance, <i>P</i>.",
+		"12" : "Manipulating variables like backdrop depth, distance of viewer, and slit/strip width changes the perceived depth accordingly.",
+		"13" : "Series of graphs describing how variables mathematically affect perceived distance."
 	}
 }

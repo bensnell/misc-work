@@ -3,186 +3,227 @@
 	"imgExt" : "jpg",
 	"projects" : [
 		{
-			"projectID" : "033",
-			"title" : "Generative Posters\n\\ On reactive typography.",
-			"url" : "http://lleusueq.com/generative-posters",
+			"projectID" : "037",
+			"title" : "3D Printed Speakers\n\\ On customizable accessories.",
+			"url" : "http://snell.codes/generative-posters",
 			"hide" : "true"
-		},{
+		},
+		{
+			"projectID" : "036",
+			"title" : "3D Printed Bracelets\n\\ On customizable accessories.",
+			"url" : "http://snell.codes/3d-printed-bracelets",
+			"tags" : ["design", "fabrication"]
+		},
+		{
+			"projectID" : "035",
+			"title" : "In Memory\n\\ On death & grieving in the digital age.",
+			"url" : "http://snell.codes/in-memory",
+			"tags" : ["videography"]
+		},
+		{
+			"projectID" : "034",
+			"title" : "Industrial Design Renderings\n\\ On visual storytelling.",
+			"url" : "http://snell.codes/industrial-design-renderings",
+			"tags" : ["design"]
+		},
+		{
+			"projectID" : "033",
+			"title" : "Generative Typography\n\\ On living type.",
+			"url" : "http://snell.codes/generative-typography",
+			"tags" : ["code", "generative", "design"]
+		},
+		{
 			"projectID" : "032",
 			"title" : "Augmented Hand Series\n\\ On kid-proof design.",
-			"url" : "http://lleusueq.com/augmented-hand-series",
-			"hide" : "true"
+			"url" : "http://snell.codes/augmented-hand-series",
+			"tags" : ["fabrication", "design"]
 		},
 		{
 			"projectID" : "031",
 			"title" : "Wooden Vertebre\n\\ On material explorations.",
-			"url" : "http://lleusueq.com/wooden-vertebre",
+			"url" : "http://snell.codes/wooden-vertebre",
 			"tags" : ["fabrication"]
 		},
 		{
 			"projectID" : "030",
-			"title" : "Web Design\n\\ On this, actually.",
-			"url" : "http://lleusueq.com/web-design",
-			"tags" : ["code", "HCI"]
+			"title" : "Portfolio Website\n\\ On this, actually.",
+			"url" : "http://snell.codes/portfolio-website",
+			"tags" : ["code", "UX"]
 		},
 		{
 			"projectID" : "029",
 			"title" : "At The End of Knowledge\n\\ On visualizing the impossible.",
-			"url" : "http://lleusueq.com/end-of-knowledge",
+			"url" : "http://snell.codes/end-of-knowledge",
 			"tags" : ["fabrication", "code"]
 		},
 		{
 			"projectID" : "028",
 			"title" : "Incomplete Objects\n\\ On entropic voids.",
-			"url" : "http://lleusueq.com/incomplete-objects",
+			"url" : "http://snell.codes/incomplete-objects",
 			"tags" : ["fabrication"]
 		},
 		{
 			"projectID" : "027",
 			"title" : "ML Sculpture\n\\ On the dreams of machines.",
-			"url" : "http://lleusueq.com/ml-sculptures",
-			"tags" : ["code", "generative", "machine learning"],
+			"url" : "http://snell.codes/ml-sculptures",
+			"tags" : ["code", "generative", "machine learning", "computer vision"],
 			"hide" : "false"
 		},
 		{
 			"projectID" : "026",
 			"title" : "Sketches of Self\n\\ On introspective algorithms.",
-			"url" : "http://lleusueq.com/sketches-of-self",
-			"tags" : ["code", "generative"]
+			"url" : "http://snell.codes/sketches-of-self",
+			"tags" : ["code", "generative", "computer vision", "psychology"]
 		},
 		{
 			"projectID" : "025",
 			"title" : "Haptic Switches\n\\ On connecting distant partners.",
-			"url" : "http://lleusueq.com/haptic-switches",
-			"tags" : ["HCI", "design", "electronics", "fabrication"]
+			"url" : "http://snell.codes/haptic-switches",
+			"tags" : ["UX", "design", "electronics", "fabrication"]
 		},
 		{
 			"projectID" : "024",
 			"title" : "Stratified Sculptures\n\\ On fabricating life-size forms.",
-			"url" : "http://lleusueq.com/stratified-sculptures",
+			"url" : "http://snell.codes/stratified-sculptures",
 			"tags" : ["fabrication", "code"]
 		},
 		{
 			"projectID" : "023",
 			"title" : "Bounbdless & Tetherless VR\n\\ On cheap + simple cordless tracking.",
-			"url" : "http://lleusueq.com/boundless-tetherless-vr",
-			"tags" : ["code", "mixed reality"]
+			"url" : "http://snell.codes/boundless-tetherless-vr",
+			"tags" : ["code", "mixed reality", "computer vision"]
 		},
 		{
 			"projectID" : "022",
 			"title" : "Torsos\n\\ On nipples and navels.",
-			"url" : "http://lleusueq.com/torsos",
-			"tags" : ["code", "machine learning"]
+			"url" : "http://snell.codes/torsos",
+			"tags" : ["code", "machine learning", "computer vision"]
 		},
 		{
 			"projectID" : "021",
 			"title" : "Mimus\n\\ On taming our companion species.",
-			"url" : "http://lleusueq.com/mimus",
-			"tags" : ["code", "generative", "robots"]
+			"url" : "http://snell.codes/mimus",
+			"tags" : ["code", "generative", "robots", "computer vision"]
 		},
 		{
 			"projectID" : "020",
 			"title" : "Mocap Rig\n\\ On translating human motions to a robot.",
-			"url" : "http://lleusueq.com/mocap-rig",
-			"tags" : ["code", "fabrication"]
+			"url" : "http://snell.codes/mocap-rig",
+			"tags" : ["code", "fabrication", "computer vision"]
 		},
 		{
 			"projectID" : "019",
-			"title" : "IDEO: Surface\n\\ On reimagining an industry.",
-			"url" : "http://lleusueq.com/ideo",
-			"tags" : ["design", "HCI"]
+			"title" : "IDEO\n\\ On reimagining an industry.",
+			"url" : "http://snell.codes/ideo",
+			"tags" : ["design"]
 		},
 		{
 			"projectID" : "018",
 			"title" : "Bread Bondage\n\\ On sensual morphologies.",
-			"url" : "http://lleusueq.com/bread-bondage",
+			"url" : "http://snell.codes/bread-bondage",
 			"tags" : ["fabrication"]
 		},
 		{
 			"projectID" : "017",
 			"title" : "Robot Prosthetics\n\\ On democratizing emotional touch.",
-			"url" : "http://lleusueq.com/robot-prosthetics",
+			"url" : "http://snell.codes/robot-prosthetics",
 			"tags" : ["robots", "electronics"]
 		},
 		{
 			"projectID" : "016",
 			"title" : "Shortwave Radio\n\\ On ever-present radio ethers.",
-			"url" : "http://lleusueq.com/shortwave-radio"
+			"url" : "http://snell.codes/shortwave-radio",
+			"tags" : ["audio", "code", "fabrication", "design"]
 		},
 		{
 			"projectID" : "015",
 			"title" : "Polar Etch-A-Sketch\n\\ On non-cartesian childhoods.",
-			"url" : "http://lleusueq.com/polar-etch-a-sketch"
+			"url" : "http://snell.codes/polar-etch-a-sketch",
+			"tags" : ["design", "fabrication"]
 		},
 		{
 			"projectID" : "014",
 			"title" : "LIDAR Videography\n\\ On temporalized spaces.",
-			"url" : "http://lleusueq.com/lidar-videography"
+			"url" : "http://snell.codes/lidar-videography",
+			"tags" : ["code", "computer vision", "videography"]
 		},
 		{
 			"projectID" : "013",
 			"title" : "Samson\n\\ On insertion-rebroadcast media.",
-			"url" : "http://lleusueq.com/samson"
+			"url" : "http://snell.codes/samson",
+			"tags" : ["code", "computer vision", "videography"]
 		},
 		{
 			"projectID" : "012",
 			"title" : "Soundscaping\n\\ On weightless sounds.",
-			"url" : "http://lleusueq.com/soundscaping"
+			"url" : "http://snell.codes/soundscaping",
+			"tags" : ["computer vision", "code"]
 		},
 		{
 			"projectID" : "011",
 			"title" : "Audio Interface Workshop\n\\ On programming with modularity.",
-			"url" : "http://lleusueq.com/audio-interface-workshop"
+			"url" : "http://snell.codes/audio-interface-workshop",
+			"tags" : ["audio", "code", "fabrication", "design"]
 		},
 		{
 			"projectID" : "010",
 			"title" : "Musical Poster\n\\ On playable art & artifice.",
-			"url" : "http://lleusueq.com/musical-poster"
+			"url" : "http://snell.codes/musical-poster",
+			"tags" : ["audio", "code", "electronics"]
 		},
 		{
 			"projectID" : "009",
 			"title" : "Generative Sketching\n\\ On the beauty of a few simple rules.",
-			"url" : "http://lleusueq.com/generative-sketching"
+			"url" : "http://snell.codes/generative-sketching",
+			"tags" : ["code", "generative"]
 		},
 		{
 			"projectID" : "008",
 			"title" : "Selective Self-Portraiture\n\\ On inadvertent introspection.",
-			"url" : "http://lleusueq.com/selective-self-portraiture"
+			"url" : "http://snell.codes/selective-self-portraiture",
+			"tags" : ["code", "generative", "psychology"]
 		},
 		{
 			"projectID" : "007",
 			"title" : "Camp Google\n\\ On summer days and summer magic.",
-			"url" : "http://lleusueq.com/camp-google"
+			"url" : "http://snell.codes/camp-google",
+			"tags" : ["advertising", "design"]
 		},
 		{
 			"projectID" : "006",
-			"title" : "The Force Awakens\n\\ On awakening the force within.",
-			"url" : "http://lleusueq.com/force-awakens"
+			"title" : "The Force Awakens\n\\ On a galaxy far, far away.",
+			"url" : "http://snell.codes/force-awakens",
+			"tags" : ["advertising", "design", "UX"]
 		},
 		{
 			"projectID" : "005",
 			"title" : "Made with Code\n\\ On recoding the meaning of code.",
-			"url" : "http://lleusueq.com/made-with-code"
+			"url" : "http://snell.codes/made-with-code",
+			"tags" : ["advertising", "design"]
 		},
 		{
 			"projectID" : "004",
 			"title" : "Chroma + Proximity\n\\ On rediscovering sight.",
-			"url" : "http://lleusueq.com/chroma-proximity"
+			"url" : "http://snell.codes/chroma-proximity",
+			"tags" : ["design", "electronics", "code", "psychology"]
 		},
 		{
 			"projectID" : "003",
 			"title" : "Organic Code\n\\ On responsive, emergent systems.",
-			"url" : "http://lleusueq.com/organic-code"
+			"url" : "http://snell.codes/organic-code",
+			"tags" : ["design", "electronics", "code"]
 		},
 		{
 			"projectID" : "002",
 			"title" : "Bench 14\n\\ On minimal waste & assembly.",
-			"url" : "http://lleusueq.com/bench-14"
+			"url" : "http://snell.codes/bench-14",
+			"tags" : ["design", "fabrication"]
 		},
 		{
 			"projectID" : "001",
 			"title" : "Depth Illusion\n\\ On design of the percept.",
-			"url" : "http://lleusueq.com/depth-illusion"
+			"url" : "http://snell.codes/depth-illusion",
+			"tags" : ["design", "psychology", "fabrication"]
 		}
 	]
 }

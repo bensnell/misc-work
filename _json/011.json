@@ -1,17 +1,21 @@
 {
-	"title" : "",
-	"dimensions" : "",
-	"material" : "",
-	"description" : "",
-	"date" : "",
+	"title" : "Audio Interface Workshop",
+	"client" : "none",
+	"role" : "concept, software development, fabrication",
+	"description" : "A workshop for <a href='http://www.72u.org/' target='blank'>72U</a> residents, introducing non-coders to signal processing, with emphasis on understanding how to quantify the physical world and, in turn, act on that information to create meaningful output.\n\nTogether, we built handmade audio instruments using the same three sensors: a button, a knob, and a gyroscope. Each input gives us a different kind of information that may lend itself better to a certain task, like turning a note on and off. But what if a pushbutton could select a voice? And what if I triggered notes by spinning in circles? By mixing and matching pieces of code, we experimented with new ways of making music. Every controller became a unique expression of creativity, turning signals into sounds in novel, impractical, and often surprising ways.\n\n. . .\n\n<i>Collaboration with <a href='http://www.andrewlindley.com/' target='blank'>Andrew Lindley</a></i>",
+	"date" : "2015",
 
 	"globalExt" : "jpg",
 	"numDigits" : 3,
 	"images" : [
-		1,
+		5,
 		2,
-		3
+		1,
+		3,
+		4,
+		[7, 9, 6]
 	],
 	"captions" : {
+		"7" : "Snapshots of the workshop in progress."
 	}
 }

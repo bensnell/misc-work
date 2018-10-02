@@ -1,17 +1,22 @@
 {
-	"title" : "",
-	"dimensions" : "",
-	"material" : "",
-	"description" : "",
-	"date" : "",
+	"title" : "Samson",
+	"client" : "self",
+	"role" : "all",
+	"description" : "On October 19, 2016, I BaldStreamed the final presidential debate between Donald Trump and Hillary Clinton. Using custom software in OpenFrameworks, I removed Trump's hair in real time as a nod to the story of Samson—a biblical figure who, if his hair were ever cut, would lose all his strength.\n\nThis technique of 'insertion-rebroadcast' represents a new kind of media—one which has the potential to reshape our collective realities. One can now extract, alter, and re-present live video in a form convincingly and explicitly aligned with or counter to one's own beliefs. As our political and intellectual obstinance grows and technology becomes more capable of filtering out things we don't want to see or don't want to hear, will we ever share the same reality again?\n\n. . .\n\n<i>Many thanks to Golan Levin, Thomas Hughes, Robert Zacharias, and the Frank Ratchye Studio for Creative Inquiry.</i>",
+	"date" : "2016",
 
 	"globalExt" : "jpg",
 	"numDigits" : 3,
 	"images" : [
+		"188456392_645_363",
+		"188222790_645_215",
 		1,
-		2,
-		3
+		"002.gif"
 	],
 	"captions" : {
+		"188456392" : "Original broadcast.",
+		"188222790" : "How it's made: Face recognition algorithms pick out his face and subtract the silhouette of hair above it. Then, a 3D model with the same skin color is placed with the correct orientation and finally masked to reveal his real face.",
+		"1" : "Screenshot of the program written in C++ (OpenFrameworks). An extensive GUI provides the controls for fine tuning tracking, segmentation and rendering.",
+		"2" : "Workflow running in realtime. The computer on the right provides the live stream, sent over a blackmagic recorder to the computer on the left, which performs all computer vision, realigns the video and audio streams, and streams the final content to Youtube's servers."
 	}
 }

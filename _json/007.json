@@ -1,16 +1,15 @@
 {
-	"title" : "",
-	"dimensions" : "",
-	"material" : "",
-	"description" : "",
-	"date" : "",
+	"title" : "Camp Google",
+	"client" : "<a href='https://www.72andsunny.com/' target='blank'>72andSunny</a>",
+	"role" : "concept, design, creative technology",
+	"description" : "Camp Google is a free online summer camp for kids. Every week features a new theme and associated activities, science projects and virtual field trips.\n\nI worked alongside other writers and designers to conceptualize this brand initiative, determine the camp structure, populate it with activities, and more. My passion for science proved crutial to guide the project in a relevant, relatable and exciting direction.",
+	"date" : "2015",
 
 	"globalExt" : "jpg",
 	"numDigits" : 3,
 	"images" : [
-		1,
-		2,
-		3
+		"292388474_1920_1080",
+		1
 	],
 	"captions" : {
 	}

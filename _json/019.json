@@ -1,7 +1,7 @@
 {
-	"title" : "IDEO: Surface",
+	"title" : "IDEO",
 	"client" : "<a href='https://www.ideo.com/'>IDEO</a>",
-	"role" : "designer, technologist",
+	"role" : "design, creative technology",
 	"description" : "I worked with IDEO to help redefine the future of one of the world's largest manufacturers of flooring. A small team and I spent 10 weeks researching the industry, conducting field interviews, synthesizing insights, creating hypothetical business models, and designing props and prototypes for each idea. At the project's conclusion, we presented two fully fleshed out business plans to our clients.",
 	"date" : "2016",
 
@@ -11,6 +11,7 @@
 		1,
 		3,
 		5,
+		15,
 		6,
 		"012.gif"
 	],
@@ -18,6 +19,7 @@
 		"1" : "Inset on the first page of a book designed to to communicate the project's process to our clients.",
 		"3" : "Sample page from the process book details our lengthy, yet cohesive human-centered design process.",
 		"5" : "Rendering of one of the proposed business' in-store offerings.",
+		"15" : "Rendering of one of the proposed business' print advertisements.",
 		"6" : "Rendering of one of the proposed business' digital offerings.",
 		"12" : "Two futuristic carpet tiles I designed: one that lights up and another that warms up under your feet."
 	}

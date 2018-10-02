@@ -1,17 +1,24 @@
 {
-	"title" : "",
-	"dimensions" : "",
-	"material" : "",
-	"description" : "",
-	"date" : "",
+	"title" : "Generative Sketching",
+	"client" : "self",
+	"role" : "all",
+	"description" : "These are a series of experiments in generative sketching using BZ-Reactions, Braitenberg Vehicles and Boids. The systems are built using simple rules, from which emerge more complex behaviors. They were developed from scratch in C++ (OpenFrameworks). System details are included below each video.",
+	"date" : "2015",
 
 	"globalExt" : "jpg",
 	"numDigits" : 3,
 	"images" : [
-		1,
-		2,
-		3
+		"155929761_694_434",
+		"144834687_694_521",
+		"144834685_694_521",
+		"145599721_693_390",
+		"145702769_693_390"
 	],
 	"captions" : {
+		"155929761" : "BZ (Belousov–Zhabotinsky) Reactions are chemical reactions involving multiple oscillating seeds. Here, I applied the same principles to a spherical mesh, offsetting along the gradient of flow to better understand the directionality of movement.",
+		"144834687" : "Reactive agents, similar to Valentino Braitenberg's vehicles or Seymour Papert's turtles, are drawn toward and away from areas, creating habitable valleys and desolate mountains.",
+		"144834685" : "More reactive agents, with different parameters.",
+		"145599721" : "Simulated flocks of boids interact in an infinite 2D environment.",
+		"145702769" : "More boids, with different parameters."
 	}
 }

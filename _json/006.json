@@ -1,17 +1,33 @@
 {
-	"title" : "",
-	"dimensions" : "",
-	"material" : "",
-	"description" : "",
-	"date" : "",
+	"title" : "The Force Awakens",
+	"client" : "<a href='https://www.72andsunny.com/' target='blank'>72andSunny</a>",
+	"role" : "concept, creative technology, UX design",
+	"description" : "To celebrate the release of the first new Star Wars movie in over a decade, Disney and Google came together as one. From this partnership blossomed a brand campaign reaching across all of Google's properties, including Search, Gmail, Translate, and Maps. To top it off, we made an interactive dual screen experience that turned your phone into a lightsaber, letting you battle the villainous Stormtroopers.\n\nWhile part of my work included conceptualizing product integrations, I largely focused on designing the user experience for the interactive web game, including interfaces, interaction, and models of gameflow, with consideration of the technical limitations imposed by mobile sensors and latency. The final product truly pushed contemporary technologies to their limit and garnered over 700 million media impressions in the first 24 hours.",
+	"date" : "2015",
 
 	"globalExt" : "jpg",
 	"numDigits" : 3,
 	"images" : [
-		1,
-		2,
-		3
+		23,
+		"153049735_1920_1080",
+		"004.gif",
+		"021.gif",
+		[10, 11],
+		[2, 3],
+		"024.gif",
+		22,
+		27,
+		29
 	],
 	"captions" : {
+		"153049735" : "Demo of gameplay in the interactive web experience, <i>Lightsaber Escape</i>.",
+		"4" : "Low latency communications between the phone and desktop make it possible to use the phone as a lightsaber, registering every subtlety of movement.",
+		"21" : "Gameplay commences by battling groups of stormtroopers.",
+		"10" : "With success, the user proceeds to a final duel with Captain Phasma. On completion, the user can share snapshots of gameplay with their friends.",
+		"2" : "Google users are encouraged to 'Choose a Side' on sign-in. Their choice of the light or dark side skins their experiences appropriately, affecting all other Google platforms.",
+		"24" : "A sampling of Google platforms skinned to the side of the Force you chose.",
+		"22" : "Google homepage on the day of the release.",
+		"27" : "Branded Google cardboards developed for the partnership.",
+		"29" : "An easter egg hidden in Google Search turns a list of results into the Star Wars opening crawl."
 	}
 }

@@ -1,17 +1,23 @@
 {
-	"title" : "",
-	"dimensions" : "",
-	"material" : "",
-	"description" : "",
-	"date" : "",
+	"title" : "Chroma + Proximity",
+	"client" : "self",
+	"role" : "all",
+	"description" : "If the distance of objects in front of you is mapped to a color spectrum, where warmer colors signal closer objects and cooler colors indicate objects farther away, and you are placed in a dark room and asked to navigate through your environment, how would you adapt? What mechanisms would you develop to help you succeed? What would it mean to see?\n\nThis headpiece is designed to address these questions. It produces a ganzfeld, filling the visual field with a single uniform color. It is 3D printed flat in multiple pieces which are joined through vulcanization and heat-sculpted into shape. A sonar sensor on the front, placed between the eyes, registers the proximity of the closest object within a narrow field of view and sends this to the Arduino, maintaining enough information relating depth structure for exteroception. Finally, LEDs deliver the color to a white screen placed in front of the eyes.\n\nTo overcome the sensory deprivation, subjects wearing the piece often develop a characteristic head motion in order to scan the environment and construct a low resolution color-depth map for each discrete location occupied.",
+	"date" : "2014",
 
 	"globalExt" : "jpg",
 	"numDigits" : 3,
 	"images" : [
 		1,
 		2,
-		3
+		5,
+		"100561247_1920_1080",
+		7,	
+		11
 	],
 	"captions" : {
+		"100561247" : "Demo of the headset in use. Notice how a panning motion of the head is adopted to scan the surrounding environment.",
+		"7" : "LEDs resting on the cheeks project color bi-directionally onto the front screen.",
+		"11" : "Initial sketches of the headpiece. A honeycomb pattern was chosen for its structural properties."
 	}
 }

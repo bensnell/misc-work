@@ -1,5 +1,7 @@
 // TODO
 
+// - inquire on phone causes two windows to open (this only happens in developer mode on desktop?)
+
 // - prevent magnification from changing layout
 
 // DONE - remove extra footer space on home when loaded from loadURL
@@ -68,8 +70,8 @@
 // title serif: Andale, Baskerville, Batang*, Bell MT, Bookman Old Style, CAllisto MT, Cochin*, Consolas, Didot
 // body serif: Cambria, Cochin*, Century, Garamond
 
-var mainURL = "http://lleusueq.com";
-var domainKey = "lleusueq";	// used to check if we're in my domain
+var mainURL = "http://snell.codes";
+var domainKey = "snell";	// used to check if we're in my domain
 var mailKey = "mailto";
 
 // password protection
@@ -92,7 +94,7 @@ var about = {};
 // Stores the logo at the top of the page
 var menu = {};
 var bKeepMenu = true;
-var emailLink = "mailto:ben@bensnell.io?subject=Hello!";
+var emailLink = "mailto:ben@snell.codes?subject=Hello!";
 //				     ID 		TEXT 			URL_SUFFIX
 var menuElems = [ 	["logo", 	"Ben Snell", 	""],
 					["about", 	"about", 		"about"],
@@ -697,8 +699,8 @@ function showHome(bLayoutOnly=false) {
 }
 function showAbout(bLayoutOnly=false) {
 
-	var columnFrac = 0.5;
-	var img2txtWidthFrac = 0.4;
+	var columnFrac = 0.6;
+	var img2txtWidthFrac = 0.35;
 	var marginFrac = 0.025;
 
 	// var mobileMarginFrac = 0.025;
@@ -751,12 +753,14 @@ function showAbout(bLayoutOnly=false) {
 
 			var imgHeightPx = getNewImageHeight(about["img"], imgWidthPx);
 			var vertCenter = Math.max( $(window).height()/2 - imgHeightPx/2, w.marginTopPx);
-			setImgPosDim( 
-				$(about["img"]), 
-				w.windowL + sideMarginPx, 
-				vertCenter, 
-				imgWidthPx, 
-				imgHeightPx);
+
+			// image vertically centered with text box
+			// setImgPosDim( 
+			// 	$(about["img"]), 
+			// 	w.windowL + sideMarginPx, 
+			// 	Math.max(vertCenter, w.marginTopPx),
+			// 	imgWidthPx, 
+			// 	imgHeightPx);
 
 			$(about["txt"]).css("font-size", w.fontSizePx);
 			$(about["txt"]).css("letter-spacing", (w.bodyLetterSpacing*w.fontSizePx*0.8) + "px"); // .1993
@@ -770,7 +774,16 @@ function showAbout(bLayoutOnly=false) {
 			setTxtPosDim(
 				$(about["txt"]),
 				null,
-				$(window).height()/2 - $(about["txt"]).height()/2);
+				Math.max($(window).height()/2 - $(about["txt"]).height()/2, w.marginTopPx));
+				// $(window).height()/2 - $(about["txt"]).height()/2);
+
+			// image aligns with top of text box
+			setImgPosDim( 
+				$(about["img"]), 
+				w.windowL + sideMarginPx, 
+				Math.max($(window).height()/2 - $(about["txt"]).height()/2, w.marginTopPx), 
+				imgWidthPx, 
+				imgHeightPx);
 
 			def.resolve();
 		}
@@ -1020,7 +1033,8 @@ function showProject(bLayoutOnly=false) {
 							$(caption).css("width", iw); // [DIFF]
 							$(caption).css("text-align", "center"); // [DIFF]
 
-							var addlCaptionOffset = $(caption).height() * 0.2;
+							// var addlCaptionOffset = Math.min($(caption).height() * 0.2, w.fontSizePx * 0.536); // this looks strange to have different offsets
+							var addlCaptionOffset = w.fontSizePx * 0.536;
 							setTxtPosDim( $(caption), ix+iw/2-$(caption).width()/2, iy+ih+addlCaptionOffset); // added iw [DIFF]
 							captionOffset += $(caption).height() + addlCaptionOffset;
 							yOffset += captionOffset;

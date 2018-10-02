@@ -1,7 +1,7 @@
 {
 	"title" : "Mimus",
 	"client" : "<a href='https://atonaton.com/' target='blank'>ATONATON</a>",
-	"role" : "developer",
+	"role" : "software development",
 	"description" : "I developed the vision system and emotional decision making capabilities of an interactive industrial robot. The robot, named <a href='https://atonaton.com/mimus/' target='blank'>Mimus</a>, premiered at the London Design Museum as part of the exhibition <i>Fear and Love</i>.\n\nMimus is curious by nature: She's drawn to the most interesting people in her environment. However, she has a very short attention span, so she'll begin to check out other subjects as soon as one begins to bore her.\n\nThe sensing pipeline begins with ten Kinect sensors that cover every inch of her surroundings. After these depth maps are stitched together, computer vision extracts all individuals within view. Each person is rated in real time based on their attributes and activity and on Mimus' predispositions in that very moment. The highest rated individual or group becomes the 'focal point' of Mimus' attention.",
 	"date" : "2016",
 

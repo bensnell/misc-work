@@ -2,16 +2,21 @@
 	"title" : "Robot Prosthetics",
 	"client" : "self",
 	"role" : "all",
-	"description" : "",
+	"description" : "I designed a prosthetic for the UR5 robotic arm that affords it the ability to sense even the softest of touches. The attachment wraps around five sides of the robot's wrist. In this demo, the robot, in a wary state, appears to draw away from each touch.\n\nThis project is an exploration of what it means to become intimately personal with a robot. When they can feel a feather brush against their arm or a drop of rain land on their hand, how do their agencies change? How would we interact with robots differently when they feel us the same way we feel them?",
 	"date" : "2016",
 
 	"globalExt" : "jpg",
 	"numDigits" : 3,
 	"images" : [
-		1,
+		"001.gif",
+		3, 
 		2,
-		3
+		4
 	],
 	"captions" : {
+		"1" : "Demo of the touch prosthetic.",
+		"3" : "Robot with soft outer cover.",
+		"2" : "Pressure sensors attached to robot underneath the cover.",
+		"4" : "Control program written in C++ with OpenFrameworks."
 	}
 }

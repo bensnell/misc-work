@@ -1,17 +1,26 @@
 {
-	"title" : "",
-	"dimensions" : "",
-	"material" : "",
-	"description" : "",
-	"date" : "",
+	"title" : "Selective Self-Portraiture",
+	"client" : "none",
+	"role" : "concept, design, software development",
+	"description" : "Our thoughts are the artifacts of our individual, selective sensory experiences. Through language, we mold these artifacts into understandable, recognizable, simplified forms. But this simplification process inherently introduces information loss. Is there undiscovered value in the rawest form of our thought data, before it encounters our expectations, societal norms, and rational thought? Does this raw data capture a richer, more complex portrait of ourselves than we can personally express?\n\nHere, a system tracks an individual's gaze and brainwaves while they read a piece of text. This provides information concerning their level of focus and interest for each word read. From these associations, a semantic model of cognitive awareness is built. This model can then be used to generate new bodies of text: textual portraits selected entirely by the volition of the subconscious self. Arguably, these portraits represent a more authentic expression than that which can otherwise be explicitly communicated or recalled.\n\n. . .\n\n<i>Collaboration with <a href='http://www.willmiao.com/' target='blank'>Will Miao</a></i>",
+	"date" : "2015",
 
 	"globalExt" : "jpg",
 	"numDigits" : 3,
 	"images" : [
-		1,
+		3,
 		2,
-		3
+		1,
+		[5, 4],
+		6,
+		7
 	],
 	"captions" : {
+		"3" : "The EyeTribe eye tracker and Muse EEG headset are used to capture gaze and brainwaves, respectively. Here, Will reads a piece of text while the system watches him, collecting data about his word association preferences.",
+		"2" : "Gaze tracking on a piece of random text.",
+		"1" : "Each word is mapped to the nearest gaze point, in order to correlate it with the level of subconscious interest at the time it was read.",
+		"5" : "A sample cognitive model of word associations, used in the Markov chain generator. Each word is correlated with each other word in a large probability tree.",
+		"6" : "A textual portrait, generated from one's learned cognitive model.",
+		"7" : "Another textual portrait."
 	}
 }

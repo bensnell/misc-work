@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /
+Disallow: /_scripts/
+Disallow: /_lib/
+Disallow: /_json/
+Disallow: /_fonts/
+Disallow: /_assets/

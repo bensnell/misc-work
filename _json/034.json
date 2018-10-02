@@ -1,0 +1,28 @@
+{
+	"title" : "Industrial Design Renderings",
+	"client" : "self",
+	"role" : "all",
+	"description" : "Drawn by hand on paper and afterwards colored in Photoshop, these renderings are a sampling of my industrial design sketches. They demonstrate the effectiveness with which I can communicate visual stories relating context and use, using variable line weights, shading, highlighting, color, detail, texture, and etc.",
+	"date" : "2014",
+
+	"globalExt" : "jpg",
+	"numDigits" : 3,
+	"images" : [
+		1, 
+		2, 
+		3,
+		4,
+		5,
+		7,
+		8
+	],
+	"captions" : {
+		"1" : "Rendering of a polaroid camera similar to the SX-70.",
+		"2" : "Rendering of the steps by which one uses a polaroid camera.",
+		"3" : "Design and rendering of a lounge chair inspired by the Barcelona Chair.",
+		"4" : "Rendering of an imaginary clock: exploded view of clock mechanism, exploded view of stand, and contextual view. The clock is designed to make it appear as if the hands have cut into the glass over the course of time.",
+		"5" : "Detail of exploded view of clock mechanism. This was drawn by hand on paper and afterwards colored in Photoshop.",
+		"7" : "Transparent view of assembled clock mechanism. Drawn and colored by hand on paper.",
+		"8" : "Rendering of a pencil sharpener. Drawn and colored by hand on paper."
+	}
+}

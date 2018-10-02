@@ -1,17 +1,28 @@
 {
-	"title" : "",
-	"dimensions" : "",
-	"material" : "",
-	"description" : "",
-	"date" : "",
+	"title" : "Polar Etch-A-Sketch",
+	"client" : "self",
+	"role" : "all",
+	"description" : "I set out to reimagine a common childhood toy in a world where a different, non-cartesian, coordinate system reigned supreme: the polar coordinate system.\n\nThis Etch-A-Sketch works differently than others: one knob moves the pointer around the center and the other knob moves the pointer toward and away from the center.\n\nIronically, drawing a circle is a breeze with this one, but nearly impossible with the original Etch-A-Sketch. And just as corner is easy with the original, two perpendicular lines are nearly impossible to draw here.\n\nThe familiar premise yet atypical affordances place this product in a speculative future, parallel to but divergent from our own.",
+	"date" : "2016",
 
 	"globalExt" : "jpg",
 	"numDigits" : 3,
 	"images" : [
-		1,
 		2,
-		3
+		"160535472_485_273",
+		10,
+		3,
+		4,
+		5,
+		6
 	],
 	"captions" : {
+		"2" : "Polar Etch-A-Sketch with two knobs for radial and axial movement.",
+		"160535472" : "Demo without the aluminum dust, in order to be able to see the internal mechanism.",
+		"10" : "Detail of the internal mechanism: A series of layered gears and tracks guide the tip around and out from the center.",
+		"3" : "Concept renderings of non-cartesian products: a Linear and a Polar Etch-A-Sketch.",
+		"4" : "Concept rendering of a Cylindrical Etch-A-Sketch.",
+		"5" : "Schematics for the outer shell.",
+		"6" : "One possible design for the inner mechanism."
 	}
 }

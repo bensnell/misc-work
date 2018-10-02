@@ -1,16 +1,14 @@
 {
-	"title" : "",
-	"dimensions" : "",
-	"material" : "",
-	"description" : "",
-	"date" : "",
+	"title" : "Portfolio Website",
+	"client" : "self",
+	"role" : "all",
+	"description" : "I designed and programmed this website from scratch. It is built entirely from Javascript and JQuery. Its responsive design allows readability on computers, tablets and smartphones. Smooth animations across all site elements afford an attractive and accessible user experience.",
+	"date" : "2018",
 
 	"globalExt" : "jpg",
 	"numDigits" : 3,
 	"images" : [
-		1,
-		2,
-		3
+		1
 	],
 	"captions" : {
 	}

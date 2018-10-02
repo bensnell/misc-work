@@ -1,17 +1,20 @@
 {
-	"title" : "",
-	"dimensions" : "",
-	"material" : "",
-	"description" : "",
-	"date" : "",
+	"title" : "Soundscaping",
+	"client" : "none",
+	"role" : "concept, design, software development",
+	"description" : "I collaborated with Kaleb Crawford to develop an interactive spatialized audio system using a Kinect, OpenFrameworks and Max.\n\nAudio snippets captured via microphone are placed in space along a 'track': a 3D line traced out by the right hand during recording and along which the audio is played back after completion. Thus, each small chunk of audio plays at the specific location it was recorded and at every multiple of the recording's duration. The interface allows the left hand to signal recording while the right localizes audio.\n\nThis project explores the sculptural affordances of sound and the relationship of body to space.",
+	"date" : "2016",
 
 	"globalExt" : "jpg",
 	"numDigits" : 3,
 	"images" : [
+		"291990768_1920_1080",
 		1,
-		2,
-		3
+		[3, 2, 5]
 	],
 	"captions" : {
+		"291990768" : "Soundscaping Demo.",
+		"1" : "Max MSP Software used for audio recording and playback. In playback, the volume of each track is calculated as the inverse-square of distance to the right hand.",
+		"3" : "Screenshot of the OpenFrameworks application. A thin white skeleton represents the body of the participant. The white circle shows the location of the current sound being recorded. Colored lines indicate tracks and colored circles represent the current location of playback for each track."
 	}
 }

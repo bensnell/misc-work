@@ -1,17 +1,27 @@
 {
-	"title" : "",
-	"dimensions" : "",
-	"material" : "",
-	"description" : "",
-	"date" : "",
+	"title" : "Shortwave Radio",
+	"client" : "self",
+	"role" : "all",
+	"description" : "The air around us is brimming with activity, yet most of it goes completely unnoticed. We tune into a small sliver of the radio spectrum—a swath of real estate in not space but frequency—when we listen to our car radio. However, the vast expanse of territory that airwaves occupy is claimed by governments and commercial entities for private communications.\n\nIn the 'Wild West' of the spectrum, a section called Shortwave Radio boasts a landscape potholed with mysterious broadcasts. Relics of the Cold War Era, these 'Number Stations' transmit unbreakable codes across the globe in the form of tones, beeps, and prerecorded voices. No one has ever been able to crack where they come from or what they communicate.\n\nIntrigued, I set out to make tangible this Hertzian space of Shortwave Radio. The result is an artifact that lets individuals tune into the ever-present “ether” around us, discovering for themselves its strange and wonderful phenomena.\n\n. . .\n\n<i>Many thanks to Mark Baskinger, Golan Levin, Zachary Schwemler, Eli Kessler, Dakotah Konicek and Daniel Campos.\n\nMade in part with funds from the Frank-Ratchye Fund for Art @ the Frontier.</i>",
+	"date" : "2016",
 
 	"globalExt" : "jpg",
 	"numDigits" : 3,
 	"images" : [
-		1,
-		2,
-		3
+		"167797144_624_351",
+		[1, 3],
+		4,
+		[7, 6],
+		8, 
+		9, 
+		10,
+		11
 	],
 	"captions" : {
+		"167797144" : "Demo video of the radio in use.",
+		"8" : "Process Documentation: poplar boards from which the form is carved.",
+		"9" : "Process Documentation: two halves of the radio, after being CNC milled, before finishing on the left and after on the right.",
+		"10" : "Process Documentation: Installing electronics within the radio. A large copper spine runs the length of the wood. This serves as a touch interface to control the radio station. An onboard Teensy receives analog signals from these sensors and sends filtered signals to the Raspberry Pi. Using an antenna, radio and upconverter, the RPi tunes into airwaves of a specific frequency and plays them through the amplifier and contact speakers. This allows the whole form to resonate with the sound of the airwaves. After electronics are installed, both halves are glued together.",
+		"11" : "Process Documentation: The radio, wrapped and ready for transport."
 	}
 }

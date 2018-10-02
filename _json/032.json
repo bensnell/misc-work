@@ -1,0 +1,30 @@
+{
+	"title" : "Augmented Hand Series",
+	"client" : "<a href='http://www.flong.com/' target='blank'>Golan Levin</a>",
+	"role" : "design, fabrication",
+	"description" : "<a href='http://www.flong.com/projects/augmented-hand-series/' target='blank'>Augmented Hand Series</a> is an interactive art piece by New Media Artist, Golan Levin, that augments users' hands in real time to remove a finger, add an extra finger or two, etc. I designed and fabricated wood enclosures for three more editions of the piece.\n\nWith previous enclosures, users pulled out cords and knocked sensors out of alignment. So, with this iteration I carefully considered all possible pain points and designed a kid-proof enclosure and electronics mounts to contain the embedded camera, Leap Motion, Makey Makey, lightpad, LED strips, buttons, and display.\n\nThis design flat-packs to allow for easy transport. A service door on the backside affords technicians convenient access to all components. Most importantly, I wanted the device to be approachable, so I designed the opening into which the hand is placed to have its edges rounded-up, much like a smile.",
+	"date" : "2018",
+
+	"globalExt" : "jpg",
+	"numDigits" : 3,
+	"images" : [
+		16, 
+		3,
+		18, 
+		10, 
+		12, 
+		13, 
+		14,
+		15
+	],
+	"captions" : {
+		"16" : "Buttons on each side let users scroll through available effects.",
+		"3" : "Carefully crafted joints with rounded edges.",
+		"18" : "Backside of the device with service door open.",
+		"10" : "A cloth floor affords the hand a bit of comfort. Lighting from three sides make it easy for the above camera and Leap to capture its image and movement.",
+		"12" : "Process photo: CNCing panels for the enclosure.",
+		"13" : "Process photo: Panels after sanding.",
+		"14" : "Process photo: Panels after staining and applying a protective satin polyurethane coat.",
+		"15" : "Process photo: Assembled enclosure before installing the electronics."
+	}
+}
