@@ -80,8 +80,6 @@ function Params() {
 	this.mobileFontMult = 1.21;
 	
 
-	this.bShowBracketsOnOtherTags = false;
-
 
 	// ========================
 	// ======= COMPUTE ========
@@ -109,7 +107,6 @@ function Params() {
 	this.homeCaptionColor = null;
 	this.subheadingSizeFrac = null;
 	this.bodyLineHeight = null;
-	this.homeMarginTopPx = null;
 
 	// fraction (in terms of windowW) to pixels
 	this.f2p = function(f) { return f*this.windowW; };
@@ -149,8 +146,6 @@ function Params() {
 			t.marginTopPx = t.f2p( t.marginTopFrac * 2 ); // additional mobile multiplier
 			t.vertSpacingPx = t.f2p( t.vertSpacingFrac );
 			t.offsetTopPx = t.marginTopPx;
-
-			t.homeMarginTopPx = t.marginTopPx * 1.3;
 
 			// Get the font sizes
 			t.fontSizePx = Math.max( t.f2p( t.fontSizeFrac ), t.minFontSize) * t.mobileTextMult * t.mobileFontMult;
@@ -195,8 +190,6 @@ function Params() {
 			t.marginTopPx = t.f2p( t.marginTopFrac );
 			t.vertSpacingPx = t.f2p( t.vertSpacingFrac );
 			t.offsetTopPx = t.marginTopPx;
-
-			t.homeMarginTopPx = t.marginTopPx * map(t.windowW, 900, 650, 1.1, 1.24, true);
 
 			// Get the font sizes
 			t.fontSizePx = Math.max( t.f2p( t.fontSizeFrac ), t.minFontSize);

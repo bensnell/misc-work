@@ -31,16 +31,10 @@ function clamp(val, min, max) {
 	return Math.max(Math.min(val, ma), mi);
 }
 
-function safePower(val, power) {
-
-	var mult = (val < 0) ? -1 : 1;
-	return mult * Math.pow(Math.abs(val), power);
-}
-
 function map(val, minIn, maxIn, minOut, maxOut, bClamp, power=1) {
 
 	var tmp = (val-minIn)/(maxIn-minIn);
-	tmp = safePower(tmp, power);
+	tmp = Math.pow(tmp, power);
 	tmp = tmp * (maxOut-minOut) + minOut;
 	if (bClamp) {
 		tmp = clamp(tmp, minOut, maxOut);
@@ -502,18 +496,6 @@ function isNumeric(num){
 }
 
 function sortAlphabetically(thisList) {
+
 	thisList.sort((a,b) => (a.toLowerCase() > b.toLowerCase()) ? 1 : ((b.toLowerCase() > a.toLowerCase()) ? -1 : 0));
-}
-
-function addTO(element, TO) {
-	if (!element["timeout"]) element["timeout"] = [];
-	element["timeout"].push(TO);
-}
-
-function clearTO(element) {
-	if (element["timeout"]) {
-		$.each( element["timeout"], function( index, TO ) {
-			window.clearTimeout(TO);
-		});
-	}
 }

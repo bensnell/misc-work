@@ -1,0 +1,19 @@
+{
+	"title" : "Robot Drawings",
+	"client" : "self",
+	"role" : "all",
+	"description" : "Robotic arms like the UR5 now give us the capability of manipulating matter to the thousandth of an inch and repeating a series of physical actions infinitely many times. This precision and repeatability is common in software, but new to the 'real world.'\n\nI programmed one of these robots to draw spirals. Surprisingly, imperfections abound for such a well-built piece of machinery. The gait of the arm as it moves, the base on which it sits, how it holds and grips the pen—even the humidity of the air and topology of the paper—contribute to chaotic behaviors that reveal subtle patterns of movement in the marks drawn.\n\nThese singularities are, in a way, the fingerprint of the robot—its characteristic essence of being and moving in response to an imperfect world.",
+	"date" : "2016",
+
+	"globalExt" : "jpg",
+	"numDigits" : 3,
+	"images" : [
+		3, 
+		4, 
+		2,
+		1, 
+		5
+	],
+	"captions" : {
+	}
+}

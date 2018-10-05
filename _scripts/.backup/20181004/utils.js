@@ -31,16 +31,10 @@ function clamp(val, min, max) {
 	return Math.max(Math.min(val, ma), mi);
 }
 
-function safePower(val, power) {
-
-	var mult = (val < 0) ? -1 : 1;
-	return mult * Math.pow(Math.abs(val), power);
-}
-
 function map(val, minIn, maxIn, minOut, maxOut, bClamp, power=1) {
 
 	var tmp = (val-minIn)/(maxIn-minIn);
-	tmp = safePower(tmp, power);
+	tmp = Math.pow(tmp, power);
 	tmp = tmp * (maxOut-minOut) + minOut;
 	if (bClamp) {
 		tmp = clamp(tmp, minOut, maxOut);
@@ -285,7 +279,7 @@ function elementExists(id) {
 	return document.getElementById(id) != null;
 }
 
-function getTextElement(id, text, url, font, color, classes = [], cursorOnHover="") {
+function getTextElement(id, text, url, font, color, classes = [], cursorOnHover="pointer") {
 	var para = document.createElement( "P" );
 	para.setAttribute( "id", id );
 	para.setAttribute( "style", "display: none; font-family: " + font );
@@ -299,11 +293,9 @@ function getTextElement(id, text, url, font, color, classes = [], cursorOnHover=
 
 	$.each(classes, function(index, element) { para.classList.add(element); });
 	onTap( para, url );
-	if (cursorOnHover != "") $( para ).css('cursor', cursorOnHover);
-	if (url != "") $( para ).hover( function() { $( para ).css('cursor', ((cursorOnHover=="")?"pointer":cursorOnHover) ); });
+	if (url != "") $( para ).hover( function() { $( para ).css('cursor',cursorOnHover); });
 	if (cursorOnHover == "none") $( para ).hover( function() { $( para ).css('cursor', "none"); });
 	if (cursorOnHover == "default") $( para ).hover( function() { $( para ).css('cursor', "default"); });
-
 
 
 	$( para ).css("position", "absolute");
@@ -502,18 +494,6 @@ function isNumeric(num){
 }
 
 function sortAlphabetically(thisList) {
+
 	thisList.sort((a,b) => (a.toLowerCase() > b.toLowerCase()) ? 1 : ((b.toLowerCase() > a.toLowerCase()) ? -1 : 0));
-}
-
-function addTO(element, TO) {
-	if (!element["timeout"]) element["timeout"] = [];
-	element["timeout"].push(TO);
-}
-
-function clearTO(element) {
-	if (element["timeout"]) {
-		$.each( element["timeout"], function( index, TO ) {
-			window.clearTimeout(TO);
-		});
-	}
 }

@@ -3,22 +3,167 @@
 	"imgExt" : "jpg",
 	"projects" : [
 		{
-			"projectID" : "037",
-			"title" : "3D Printed Speakers\n\\ On customizable accessories.",
-			"url" : "http://snell.codes/generative-posters",
-			"hide" : "true"
+			"projectID" : "021",
+			"title" : "Mimus\n\\ On taming our companion species.",
+			"url" : "http://snell.codes/mimus",
+			"tags" : ["code", "robots", "cv", "ux"]
+		},
+		{
+			"projectID" : "016",
+			"title" : "Shortwave Radio\n\\ On ever-present radio ethers.",
+			"url" : "http://snell.codes/shortwave-radio",
+			"tags" : ["code", "fabrication", "design", "ux"]
+		},
+		{
+			"projectID" : "014",
+			"title" : "LIDAR Videography\n\\ On temporalized spaces.",
+			"url" : "http://snell.codes/lidar-",
+			"tags" : ["code", "cv"]
+		},
+		{
+			"projectID" : "026",
+			"title" : "Sketches of Self\n\\ On introspective algorithms.",
+			"url" : "http://snell.codes/sketches-of-self",
+			"tags" : ["code", "cv"]
+		},
+		{
+			"projectID" : "027",
+			"title" : "ML Sculpture\n\\ On the dreams of machines.",
+			"url" : "http://snell.codes/ml-sculptures",
+			"tags" : ["code", "ml", "cv"],
+			"hide" : "false"
+		},
+		{
+			"projectID" : "011",
+			"title" : "Audio Interface Workshop\n\\ On programming with modularity.",
+			"url" : "http://snell.codes/-interface-workshop",
+			"tags" : ["code", "fabrication", "design", "electronics"]
+		},
+		{
+			"projectID" : "023",
+			"title" : "Bounbdless & Tetherless VR\n\\ On cheap + simple cordless tracking.",
+			"url" : "http://snell.codes/boundless-tetherless-vr",
+			"tags" : ["code", "cv", "ux"]
+		},
+		{
+			"projectID" : "008",
+			"title" : "Selective Self-Portraiture\n\\ On inadvertent introspection.",
+			"url" : "http://snell.codes/selective-self-portraiture",
+			"tags" : ["code", "ml"]
+		},
+		{
+			"projectID" : "038",
+			"title" : "Robot Drawings\n\\ On fingerprints of the machine.",
+			"url" : "http://snell.codes/robot-drawings",
+			"tags" : ["robots", "code"]
+		},
+		{
+			"projectID" : "018",
+			"title" : "Bread Bondage\n\\ On sensual morphologies.",
+			"url" : "http://snell.codes/bread-bondage",
+			"tags" : ["fabrication"]
+		},
+		{
+			"projectID" : "028",
+			"title" : "Incomplete Objects\n\\ On entropic voids.",
+			"url" : "http://snell.codes/incomplete-objects",
+			"tags" : ["fabrication"]
+		},
+		{
+			"projectID" : "010",
+			"title" : "Musical Poster\n\\ On playable art & artifice.",
+			"url" : "http://snell.codes/musical-poster",
+			"tags" : ["code", "electronics"]
+		},
+		{
+			"projectID" : "030",
+			"title" : "Portfolio Website\n\\ On this, actually.",
+			"url" : "http://snell.codes/portfolio-website",
+			"tags" : ["code", "ux"]
+		},
+		{
+			"projectID" : "029",
+			"title" : "At The End of Knowledge\n\\ On visualizing the impossible.",
+			"url" : "http://snell.codes/end-of-knowledge",
+			"tags" : ["fabrication", "code"]
+		},
+		{
+			"projectID" : "013",
+			"title" : "Samson\n\\ On insertion-rebroadcast media.",
+			"url" : "http://snell.codes/samson",
+			"tags" : ["code", "cv"]
+		},
+		{
+			"projectID" : "025",
+			"title" : "Haptic Switches\n\\ On connecting distant partners.",
+			"url" : "http://snell.codes/haptic-switches",
+			"tags" : ["ux", "design", "electronics", "fabrication", "code"]
+		},
+		{
+			"projectID" : "002",
+			"title" : "Bench 14\n\\ On minimal waste & assembly.",
+			"url" : "http://snell.codes/bench-14",
+			"tags" : ["design", "fabrication"]
+		},
+		{
+			"projectID" : "017",
+			"title" : "Robot Prosthetics\n\\ On democratizing emotional touch.",
+			"url" : "http://snell.codes/robot-prosthetics",
+			"tags" : ["robots", "electronics"]
+		},
+		{
+			"projectID" : "009",
+			"title" : "Generative Sketching\n\\ On the beauty of a few simple rules.",
+			"url" : "http://snell.codes/generative-sketching",
+			"tags" : ["code"]
+		},
+		{
+			"projectID" : "004",
+			"title" : "Chroma + Proximity\n\\ On rediscovering sight.",
+			"url" : "http://snell.codes/chroma-proximity",
+			"tags" : ["design", "electronics", "code"]
+		},
+		{
+			"projectID" : "012",
+			"title" : "Soundscaping\n\\ On weightless sounds.",
+			"url" : "http://snell.codes/soundscaping",
+			"tags" : ["cv", "code"]
+		},
+		{
+			"projectID" : "020",
+			"title" : "Mocap Rig\n\\ On translating human motions to a robot.",
+			"url" : "http://snell.codes/mocap-rig",
+			"tags" : ["code", "fabrication", "cv", "robots"]
+		},
+		{
+			"projectID" : "003",
+			"title" : "Organic Code\n\\ On responsive, emergent systems.",
+			"url" : "http://snell.codes/organic-code",
+			"tags" : ["design", "electronics", "code"]
+		},
+		{
+			"projectID" : "005",
+			"title" : "Made with Code\n\\ On recoding the meaning of code.",
+			"url" : "http://snell.codes/made-with-code",
+			"tags" : ["design", "ux"]
+		},
+		{
+			"projectID" : "032",
+			"title" : "Augmented Hand Series\n\\ On kid-proof design.",
+			"url" : "http://snell.codes/augmented-hand-series",
+			"tags" : ["fabrication", "design"]
+		},
+		{
+			"projectID" : "015",
+			"title" : "Polar Etch-A-Sketch\n\\ On non-cartesian childhoods.",
+			"url" : "http://snell.codes/polar-etch-a-sketch",
+			"tags" : ["design", "fabrication"]
 		},
 		{
 			"projectID" : "036",
 			"title" : "3D Printed Bracelets\n\\ On customizable accessories.",
 			"url" : "http://snell.codes/3d-printed-bracelets",
 			"tags" : ["design", "fabrication"]
-		},
-		{
-			"projectID" : "035",
-			"title" : "In Memory\n\\ On death & grieving in the digital age.",
-			"url" : "http://snell.codes/in-memory",
-			"tags" : ["videography"]
 		},
 		{
 			"projectID" : "034",
@@ -30,13 +175,19 @@
 			"projectID" : "033",
 			"title" : "Generative Typography\n\\ On living type.",
 			"url" : "http://snell.codes/generative-typography",
-			"tags" : ["code", "generative", "design"]
+			"tags" : ["code", "design"]
 		},
 		{
-			"projectID" : "032",
-			"title" : "Augmented Hand Series\n\\ On kid-proof design.",
-			"url" : "http://snell.codes/augmented-hand-series",
-			"tags" : ["fabrication", "design"]
+			"projectID" : "007",
+			"title" : "Camp Google\n\\ On summer days and summer magic.",
+			"url" : "http://snell.codes/camp-google",
+			"tags" : ["design"]
+		},
+		{
+			"projectID" : "022",
+			"title" : "Torsos\n\\ On nipples and navels.",
+			"url" : "http://snell.codes/torsos",
+			"tags" : ["code", "ml", "cv"]
 		},
 		{
 			"projectID" : "031",
@@ -45,71 +196,10 @@
 			"tags" : ["fabrication"]
 		},
 		{
-			"projectID" : "030",
-			"title" : "Portfolio Website\n\\ On this, actually.",
-			"url" : "http://snell.codes/portfolio-website",
-			"tags" : ["code", "UX"]
-		},
-		{
-			"projectID" : "029",
-			"title" : "At The End of Knowledge\n\\ On visualizing the impossible.",
-			"url" : "http://snell.codes/end-of-knowledge",
-			"tags" : ["fabrication", "code"]
-		},
-		{
-			"projectID" : "028",
-			"title" : "Incomplete Objects\n\\ On entropic voids.",
-			"url" : "http://snell.codes/incomplete-objects",
-			"tags" : ["fabrication"]
-		},
-		{
-			"projectID" : "027",
-			"title" : "ML Sculpture\n\\ On the dreams of machines.",
-			"url" : "http://snell.codes/ml-sculptures",
-			"tags" : ["code", "generative", "machine learning", "computer vision"],
-			"hide" : "false"
-		},
-		{
-			"projectID" : "026",
-			"title" : "Sketches of Self\n\\ On introspective algorithms.",
-			"url" : "http://snell.codes/sketches-of-self",
-			"tags" : ["code", "generative", "computer vision", "psychology"]
-		},
-		{
-			"projectID" : "025",
-			"title" : "Haptic Switches\n\\ On connecting distant partners.",
-			"url" : "http://snell.codes/haptic-switches",
-			"tags" : ["UX", "design", "electronics", "fabrication"]
-		},
-		{
 			"projectID" : "024",
 			"title" : "Stratified Sculptures\n\\ On fabricating life-size forms.",
 			"url" : "http://snell.codes/stratified-sculptures",
 			"tags" : ["fabrication", "code"]
-		},
-		{
-			"projectID" : "023",
-			"title" : "Bounbdless & Tetherless VR\n\\ On cheap + simple cordless tracking.",
-			"url" : "http://snell.codes/boundless-tetherless-vr",
-			"tags" : ["code", "mixed reality", "computer vision"]
-		},
-		{
-			"projectID" : "022",
-			"title" : "Torsos\n\\ On nipples and navels.",
-			"url" : "http://snell.codes/torsos",
-			"tags" : ["code", "machine learning", "computer vision"]
-		},
-		{
-			"projectID" : "021",
-			"title" : "Mimus\n\\ On taming our companion species.",
-			"url" : "http://snell.codes/mimus",
-			"tags" : ["code", "generative", "robots", "computer vision"]
-		},
-		{
-			"projectID" : "020",
-			"title" : "Mocap Rig\n\\ On translating human motions to a robot.",
-			"url" : "http://snell.codes/mocap-rig",
-			"tags" : ["code", "fabrication", "computer vision"]
 		},
 		{
 			"projectID" : "019",
@@ -118,112 +208,29 @@
 			"tags" : ["design"]
 		},
 		{
-			"projectID" : "018",
-			"title" : "Bread Bondage\n\\ On sensual morphologies.",
-			"url" : "http://snell.codes/bread-bondage",
-			"tags" : ["fabrication"]
-		},
-		{
-			"projectID" : "017",
-			"title" : "Robot Prosthetics\n\\ On democratizing emotional touch.",
-			"url" : "http://snell.codes/robot-prosthetics",
-			"tags" : ["robots", "electronics"]
-		},
-		{
-			"projectID" : "016",
-			"title" : "Shortwave Radio\n\\ On ever-present radio ethers.",
-			"url" : "http://snell.codes/shortwave-radio",
-			"tags" : ["audio", "code", "fabrication", "design"]
-		},
-		{
-			"projectID" : "015",
-			"title" : "Polar Etch-A-Sketch\n\\ On non-cartesian childhoods.",
-			"url" : "http://snell.codes/polar-etch-a-sketch",
+			"projectID" : "001",
+			"title" : "Depth Illusion\n\\ On design of the percept.",
+			"url" : "http://snell.codes/depth-illusion",
 			"tags" : ["design", "fabrication"]
 		},
 		{
-			"projectID" : "014",
-			"title" : "LIDAR Videography\n\\ On temporalized spaces.",
-			"url" : "http://snell.codes/lidar-videography",
-			"tags" : ["code", "computer vision", "videography"]
-		},
-		{
-			"projectID" : "013",
-			"title" : "Samson\n\\ On insertion-rebroadcast media.",
-			"url" : "http://snell.codes/samson",
-			"tags" : ["code", "computer vision", "videography"]
-		},
-		{
-			"projectID" : "012",
-			"title" : "Soundscaping\n\\ On weightless sounds.",
-			"url" : "http://snell.codes/soundscaping",
-			"tags" : ["computer vision", "code"]
-		},
-		{
-			"projectID" : "011",
-			"title" : "Audio Interface Workshop\n\\ On programming with modularity.",
-			"url" : "http://snell.codes/audio-interface-workshop",
-			"tags" : ["audio", "code", "fabrication", "design"]
-		},
-		{
-			"projectID" : "010",
-			"title" : "Musical Poster\n\\ On playable art & artifice.",
-			"url" : "http://snell.codes/musical-poster",
-			"tags" : ["audio", "code", "electronics"]
-		},
-		{
-			"projectID" : "009",
-			"title" : "Generative Sketching\n\\ On the beauty of a few simple rules.",
-			"url" : "http://snell.codes/generative-sketching",
-			"tags" : ["code", "generative"]
-		},
-		{
-			"projectID" : "008",
-			"title" : "Selective Self-Portraiture\n\\ On inadvertent introspection.",
-			"url" : "http://snell.codes/selective-self-portraiture",
-			"tags" : ["code", "generative", "psychology"]
-		},
-		{
-			"projectID" : "007",
-			"title" : "Camp Google\n\\ On summer days and summer magic.",
-			"url" : "http://snell.codes/camp-google",
-			"tags" : ["advertising", "design"]
+			"projectID" : "035",
+			"title" : "In Memory\n\\ On death & grieving in the digital age.",
+			"url" : "http://snell.codes/in-memory",
+			"tags" : []
 		},
 		{
 			"projectID" : "006",
 			"title" : "The Force Awakens\n\\ On a galaxy far, far away.",
 			"url" : "http://snell.codes/force-awakens",
-			"tags" : ["advertising", "design", "UX"]
+			"tags" : ["design", "ux"]
 		},
 		{
-			"projectID" : "005",
-			"title" : "Made with Code\n\\ On recoding the meaning of code.",
-			"url" : "http://snell.codes/made-with-code",
-			"tags" : ["advertising", "design"]
-		},
-		{
-			"projectID" : "004",
-			"title" : "Chroma + Proximity\n\\ On rediscovering sight.",
-			"url" : "http://snell.codes/chroma-proximity",
-			"tags" : ["design", "electronics", "code", "psychology"]
-		},
-		{
-			"projectID" : "003",
-			"title" : "Organic Code\n\\ On responsive, emergent systems.",
-			"url" : "http://snell.codes/organic-code",
-			"tags" : ["design", "electronics", "code"]
-		},
-		{
-			"projectID" : "002",
-			"title" : "Bench 14\n\\ On minimal waste & assembly.",
-			"url" : "http://snell.codes/bench-14",
-			"tags" : ["design", "fabrication"]
-		},
-		{
-			"projectID" : "001",
-			"title" : "Depth Illusion\n\\ On design of the percept.",
-			"url" : "http://snell.codes/depth-illusion",
-			"tags" : ["design", "psychology", "fabrication"]
+			"projectID" : "037",
+			"title" : "3D Printed Speakers\n\\ On customizable accessories.",
+			"url" : "http://snell.codes/generative-posters",
+			"tags" : ["design", "fabrication"],
+			"hide" : "true"
 		}
 	]
 }

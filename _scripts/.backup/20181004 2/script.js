@@ -152,112 +152,22 @@ function pathPrefix() {
 	return getThisPage()=="home" ? "" : "../";
 }
 
-function getSelectedTag() {
-
-	// "" is all projects; other strings are the tags
-
-	var outTag = "";
-	$.each( tags['menu'], function( index, tag ) {
-		if (tag['sel']) {
-			outTag = tag['id'];
-			if (tag['id'] == 'tags' || tag['id'] == 'all') {
-				outTag = "";
-			}
-		}
-	});
-	return outTag;
-}
-function selectTag(tagName) {
-
-	$.each( tags['menu'], function( index, tag ) {
-
-		if (tag['id']==tagName) {
-
-			tag['sel'] = true;
-			if (tag['id']!='tags') $(tag['txt']).css("text-decoration", "underline")
-
-		} else {
-
-			tag['sel'] = false;
-			$(tag['txt']).css("text-decoration", "none")
-		}
-	});
-}
-function fadeTagsToMain(bSkipFadeOut=false) {
-
-	var fadeFrac = 0.4;
-	var fadeTimeMs = w.fadeMs * fadeFrac;
-
-	if (!bSkipFadeOut) {
-		$.each(tags['menu'], function(i, t) {
-			if (t['id'] != "tags") {
-				$(t["txt"]).fadeOut( fadeTimeMs );
-			}
-		});
-		if (w.bShowBracketsOnOtherTags) {
-			$.each(tags['brackets'], function(i, t) {
-				$(t["txt"]).fadeOut( fadeTimeMs );
-			});
-		}
-	}
-
-	setTimeout( function() {
-		$(tags['menu'][0]["txt"]).fadeIn({ queue: false, duration: fadeTimeMs });
-	}, bSkipFadeOut ? 0 : fadeTimeMs);
-}
-function fadeTagsToOthers(bSkipFadeOut=false) {
-
-	var fadeFrac = 0.4;
-	var fadeTimeMs = w.fadeMs * fadeFrac;
-
-	if (!bSkipFadeOut) {
-		$(tags['menu'][0]["txt"]).fadeOut( fadeTimeMs );
-	}
-
-	$.each(tags['menu'], function(i, t) {
-		if (t['id'] != "tags") {
-			setTimeout( function() {
-				$(t["txt"]).fadeIn({ queue: false, duration: fadeTimeMs});
-			}, bSkipFadeOut ? 0 : fadeTimeMs);
-		}
-	});
-	if (w.bShowBracketsOnOtherTags) {
-		$.each(tags['brackets'], function(i, t) {
-			setTimeout( function() {
-				$(t["txt"]).fadeIn({ queue: false, duration: fadeTimeMs});
-			}, bSkipFadeOut ? 0 : fadeTimeMs);
-		});
-	}
-}
-
 // Fadeout all async elements
-function fadeOut(fromPageID=null) {
-
+function fadeOut(bDeleteElements=true) {
 	var fadeOutMs = 200;
 
-	// THESE EDITS SHOULD BE APPLIED TO THE OTHER ONE:
-	// (to smoothly transition the title fades)
-	var fadeOutElems = ".async";
-	if (!bKeepMenu || (fromPageID!=null && fromPageID!=getThisPage() && Math.abs(dict[fromPageID]["scrollTop"]-dict[fromPageID]["scrollTop"])>50)) {
-		fadeOutElems += ", .menu";
-	}
-	if (getThisPage() != "home") {
-		var bFadeOutTags = false;
-		$.each(tags['menu'], function(i, e) {
-			if ($(e['txt']).is(":visible")) bFadeOutTags = bFadeOutTags || true;
-		});
-		if (bFadeOutTags) fadeOutElems += ", .tags";
-	}
-	$( fadeOutElems ).each( function(index, element) {
-		// Fade them out
-		clearTO(element);
-		$( element ).fadeOut( fadeOutMs );
-	});
+	var elems = bKeepMenu ? $( ".async" ) : $( ".async, .menu" );
 
-	var deleteElems = bKeepMenu ? ".async" : ".async, .menu";
-	$( deleteElems ).each( function(index, element) {
-		// Delete them after this much time
-		setTimeout( function() { $( element ).remove(); }, fadeOutMs );
+	elems.each( function(index, element) {
+		// Fade them out
+		// $(element).stop();
+		// $(element).clearQueue();
+		$( element ).fadeOut( fadeOutMs );
+		// if (bDeleteElements) {
+
+			// Delete them after this much time
+			setTimeout( function() { $( element ).remove(); }, fadeOutMs );
+		// }
 	});
 	var fadeOutDone = $.Deferred();
 	setTimeout( function() { fadeOutDone.resolve(); }, fadeOutMs );
@@ -331,6 +241,7 @@ function colorLinks(hex) {
     }  
 };
 
+
 // Prepare images and text to be displayed
 // function initArrows() {
 
@@ -351,21 +262,6 @@ function initMenuItems() {
 										["menu"],
 										element[0]=="and" ? "default" : "pointer");
 			menu[ element[0] ] = { "txt": para };
-
-			// if (element[0] == 'logo') {
-
-			// 	// menu['logo']['txt']
-
-			// 	onTapFn( para, function() {
-
-			// 		console.log("This page is", getThisPage(), " and main tag is selected? ", tags['menu'][0]['sel']);
-			// 		if (getThisPage() == "home" && tags['menu'][0]['sel']!=true) {
-			// 			selectTag( 'tags' );
-			// 			fadeTagsToMain();
-			// 			exitAndLoad( "home" , true );
-			// 		}
-			// 	});
-			// }
 		}
 	});
 	return null;
@@ -386,23 +282,14 @@ function initTags() {
 	var tagClasses = ["tags"];
 	var tagColor = w.menuColor;
 
-	// stores the brackets
-	tags['brackets'] = [];
-
 	// ---------- CREATE OBJECTS -----------
 
-	// create brackets
-	var b1 = getTextElement( "{", "<", "", tagFont, tagColor, tagClasses, "default");
-	tags['brackets'].push( { 'id' : '{', 'txt' : b1 } );
-	var b2 = getTextElement( "}", ">", "", tagFont, tagColor, tagClasses, "default");
-	tags['brackets'].push( { 'id' : '}', 'txt' : b2 } );
-
 	// create main object
-	var mainPara = getTextElement( "tags", "<  tags  >", "", tagFont, tagColor, tagClasses, "pointer");
+	var mainPara = getTextElement( "tags", "{ tags }", "", tagFont, tagColor, tagClasses, "pointer");
 	tags['menu'].push({ 
 		"id" : "tags",
 		"txt" : mainPara,
-		"sel" : false
+		"sel" : true
 	});
 	var allPara = getTextElement( "all", "all", "", tagFont, tagColor, tagClasses, "pointer");
 	tags['menu'].push({ 
@@ -434,10 +321,12 @@ function initTags() {
 		});
 	});
 
-	// Set the selected tag
-	selectTag("tags");
+	// ---------- SETUP LINKS -----------
+
+
 
 	return null;
+
 }
 function initHome() {
 
@@ -671,6 +560,29 @@ function setPageTitle(pageID) {
 	}
 }
 
+function getSelectedTag() {
+
+	// "" is all projects; other strings are the tags
+
+	var outTag = "";
+	$.each( tags['menu'], function( index, tag ) {
+		if (tag['sel']) {
+			outTag = tag['id'];
+			if (tag['id'] == 'tags' || tag['id'] == 'all') {
+				outTag = "";
+			}
+		}
+	});
+	return outTag;
+}
+function selectTag(tagName) {
+
+	$.each( tags['menu'], function( index, tag ) {
+		tag['sel'] = (tag['id']==tagName) ? true : false;
+	});
+
+}
+
 // Display Images and Text
 function showMenuItems(bLayoutOnly=false) {
 
@@ -678,99 +590,83 @@ function showMenuItems(bLayoutOnly=false) {
 	var andFrac = 0.71; 
 	var andOffsetMult = 2.2;
 
-	var _showMenu = function() {
-		var menuItems = [];
-		var menuWidth = 0;
-		$.each(menuElems, function(index, element) {
-
-			var item = $( menu[ element[0] ]["txt"] );
-			if (element[0] == "logo") {
-
-				// call this when the first image is shown
-				item.css("font-size", w.titleSizePx);
-				item.css("letter-spacing", (w.titleLetterSpacing*w.titleSizePx) + "px"); // .1993
-				item.css("line-height", w.titleLineHeight);
-				item.css("z-index", w.bTitleAbove * 2 -1);
-
-				setTxtPosDim(item, 
-					w.windowL + w.windowW/2 - $( logo ).width()/2,
-					w.titleSizePx*w.titleTopOffset );
-				
-				if (!bLayoutOnly) item.fadeIn({queue: false, duration: w.fadeMs});
-
-			} else { // all other menu items
-
-				// only set the sizes for now
-				item.css("font-size", w.titleSizePx * w.menuSizeFrac * (element[0]=="and" ? andFrac : 1));
-				// item.css("letter-spacing", );
-				item.css("line-height", w.titleLineHeight);
-				item.css("z-index", w.bTitleAbove * 2 -1);
-
-				menuItems.push( item );
-				menuWidth += item.width();
-
-				if (item.attr("id") != "and") {
-					// on hovering over these items, they become darker
-					var fadeFrac = 0.4;
-					setupAnimateOnHover(  	// will this be duplicated? [BUG] ?
-						[ menu[element[0]]["txt"] ], 
-						menu[element[0]], 
-						[ menu[element[0]]["txt"] ], 
-						"queue_" + $(menu[element[0]]["txt"]).attr("id"), 
-						{color: w.menuColorClick}, 
-						w.fadeMs * fadeFrac, 
-						0, 
-						{color: w.menuColor}, 
-						w.fadeMs * fadeFrac, 
-						0);
-				}
-			}
-		});
-
-		var xOffset = w.windowL + w.windowW/2 - menuWidth/2;
-		var ty = $(menu["logo"]["txt"]).offset().top + $(menu["logo"]["txt"]).height();
-		$.each(menuItems, function(index, item) {
-
-			// Layout the menu items
-			var thisY = ty + item.height() * (item.attr("id")=="and" ? 0.2/andFrac*andOffsetMult : 0.2);
-			setTxtPosDim(item,
-				xOffset,
-				thisY );
-
-			if (!bLayoutOnly) {
-				item.fadeIn({queue: false, duration: w.fadeMs}); 
-			}
-
-			xOffset += item.width();
-		});
-	}
-
-	var _showTags = function() {
-		// Now, show the tags
-		showTags(bLayoutOnly);
-	}
-
 	// If we're keeping the menu, don't change it
-	if (!(!bLayoutOnly && bKeepMenu && $( "#"+menuElems[0][0] ).is(":visible"))) {
-		_showMenu();
-	}
-	_showTags();
+	if (!bLayoutOnly && bKeepMenu && $( "#"+menuElems[0][0] ).is(":visible")) return;
+
+	var menuItems = [];
+	var menuWidth = 0;
+	$.each(menuElems, function(index, element) {
+
+		var item = $( menu[ element[0] ]["txt"] );
+		if (element[0] == "logo") {
+
+			// call this when the first image is shown
+			item.css("font-size", w.titleSizePx);
+			item.css("letter-spacing", (w.titleLetterSpacing*w.titleSizePx) + "px"); // .1993
+			item.css("line-height", w.titleLineHeight);
+			item.css("z-index", w.bTitleAbove * 2 -1);
+
+			setTxtPosDim(item, 
+				w.windowL + w.windowW/2 - $( logo ).width()/2,
+				w.titleSizePx*w.titleTopOffset );
+			
+			if (!bLayoutOnly) item.fadeIn({queue: false, duration: w.fadeMs});
+
+		} else { // all other menu items
+
+			// only set the sizes for now
+			item.css("font-size", w.titleSizePx * w.menuSizeFrac * (element[0]=="and" ? andFrac : 1));
+			// item.css("letter-spacing", );
+			item.css("line-height", w.titleLineHeight);
+			item.css("z-index", w.bTitleAbove * 2 -1);
+
+			menuItems.push( item );
+			menuWidth += item.width();
+
+			if (item.attr("id") != "and") {
+				// on hovering over these items, they become darker
+				var fadeFrac = 0.4;
+				setupAnimateOnHover(  	// will this be duplicated? [BUG] ?
+					[ menu[element[0]]["txt"] ], 
+					menu[element[0]], 
+					[ menu[element[0]]["txt"] ], 
+					"queue_" + $(menu[element[0]]["txt"]).attr("id"), 
+					{color: w.menuColorClick}, 
+					w.fadeMs * fadeFrac, 
+					0, 
+					{color: w.menuColor}, 
+					w.fadeMs * fadeFrac, 
+					0);
+			}
+		}
+	});
+
+	var xOffset = w.windowL + w.windowW/2 - menuWidth/2;
+	var ty = $(menu["logo"]["txt"]).offset().top + $(menu["logo"]["txt"]).height();
+	$.each(menuItems, function(index, item) {
+
+		// Layout the menu items
+		var thisY = ty + item.height() * (item.attr("id")=="and" ? 0.2/andFrac*andOffsetMult : 0.2);
+		setTxtPosDim(item,
+			xOffset,
+			thisY );
+
+		if (!bLayoutOnly) item.fadeIn({queue: false, duration: w.fadeMs}); 
+
+		xOffset += item.width();
+	});
+
+	// Now, show the tags
+	showTags(bLayoutOnly);
 }
 function showTags(bLayoutOnly=false) {
 
-	if (getThisPage() != "home") return;
-
 	// Parameters
 
-	var tagFontPx;
-	if (w.onMobile) {
-		var tagFontPx = w.fontSizePx;
-	} else {
-		var tagFontFrac = map(w.windowW, 1040, 780, 0.56, 0.75, true, 2);
-		tagFontPx = w.titleSizePx * w.menuSizeFrac * tagFontFrac;
-	}
+	var tagFontFrac = 0.6;
+	var tagFontPx = w.titleSizePx * w.menuSizeFrac * tagFontFrac;
+
 	var columnWidthPx = (w.windowW - 2 * w.marginSidePx) * 0.7;;
-	var fadeFrac = 0.4;
 
 	// ----------------
 
@@ -779,9 +675,7 @@ function showTags(bLayoutOnly=false) {
 		// PARAMETERS
 
 		var menuBottom = $(menu["about"]["txt"]).offset().top + $(menu["about"]["txt"]).height();
-		var imgTop = w.homeMarginTopPx;
-		var fracToTop = 0.5;
-		var tagCenter = map(fracToTop, 0, 1, menuBottom, imgTop, true);
+		var imgTop = w.marginTopPx;
 
 		// ============================== LAYOUT MAIN TAG
 
@@ -793,16 +687,8 @@ function showTags(bLayoutOnly=false) {
 
 		setTxtPosDim( $(mainTag),
 			w.windowL + w.windowW/2 - $(mainTag).width()/2,
-			tagCenter - $(mainTag).height()/2 - $(mainTag).height()*0.3
+			(menuBottom+imgTop)/2 - $(mainTag).height()/2 - $(mainTag).height()*0.3
 		);
-
-		// ============================== LAYOUT BRACKETS
-
-		$.each(tags['brackets'], function(i, e) {
-			$(e['txt']).css("font-size", tagFontPx);
-			$(e['txt']).css("line-height", w.titleLineHeight);
-			$(e['txt']).css("text-align", "center");
-		});
 
 		// ============================== LAYOUT OTHER TAGS
 
@@ -810,11 +696,6 @@ function showTags(bLayoutOnly=false) {
 
 		// Determine the layouts
 		var layout = [ { 'width' : 0, 'tags' : [] } ];
-		if (w.bShowBracketsOnOtherTags) {
-			// add the first bracket
-			layout[0]['tags'].push(tags['brackets'][0]['txt']);
-			layout[0]['width'] += $(tags['brackets'][0]['txt']).width();
-		}
 		$.each(tags['menu'], function(i, e) {
 
 			if (e['id'] != "tags") {
@@ -835,11 +716,6 @@ function showTags(bLayoutOnly=false) {
 				layout[layout.length-1]['tags'].push(e["txt"]);
 			}
 		});
-		if (w.bShowBracketsOnOtherTags) {
-			// add the last bracket
-			layout[layout.length-1]['tags'].push(tags['brackets'][1]['txt']);
-			layout[layout.length-1]['width'] += $(tags['brackets'][1]['txt']).width();
-		}
 
 		// Set the position and location of tags
 		$.each(layout, function(li, line) {
@@ -850,7 +726,7 @@ function showTags(bLayoutOnly=false) {
 
 				setTxtPosDim( $(tag),
 					w.windowL + w.windowW/2 - line['width']/2 + thisWidth,
-					tagCenter - $(tag).height()/2 * layout.length + ($(tag).height()*1.25)*li - $(tag).height()*0.3
+					(menuBottom+imgTop)/2 - $(tag).height()/2 * layout.length + $(tag).height()*li - $(tag).height()*0.3
 					// menuBottom + $(tag).height() * (li + 1)
 				);
 				thisWidth += $(tag).width();
@@ -858,41 +734,30 @@ function showTags(bLayoutOnly=false) {
 			});
 		});
 
-		// ========================== ANIMATION ON HOVER
-
-		$.each( tags['menu'], function(i, e) {
-
-			var fadeFrac = 0.4;
-			setupAnimateOnHover(  	// will this be duplicated? [BUG] ?
-				[ e["txt"] ], 
-				e, 
-				[ e["txt"] ], 
-				"queue_tags_" + e['id'], 
-				{color: w.menuColorClick}, 
-				w.fadeMs * fadeFrac, 
-				0, 
-				{color: w.menuColor}, 
-				w.fadeMs * fadeFrac, 
-				0);
-		});
-
 		def.resolve();
 	};
 
-	var linkTags = function(def) {
+	var animateTags = function(def) {
 
-		var fadeTimeMs = w.fadeMs * fadeFrac;
+		var fadeTimeMs = w.fadeMs * 0.4;
 
 		// On tapping "tags", reveal all the other tags
 
 		var mainTag = tags['menu'][0];
 		onTapFn(mainTag["txt"], function() {					
 
-			fadeTagsToOthers();
+			$(mainTag["txt"]).fadeOut( fadeTimeMs );
+
+			$.each(tags['menu'], function(i, t) {
+				setTimeout( function() {
+					$(t["txt"]).fadeIn({ queue: false, duration: fadeTimeMs});
+				}, fadeTimeMs);
+			});
 
 			// Select the "all" tag
 			selectTag('all');
 		});
+		$(mainTag["txt"]).fadeIn({queue: false, duration: fadeTimeMs});
 
 		// On tapping a tag, reload the homepage with only those projects
 		$.each(tags['menu'], function(i, e) {
@@ -901,60 +766,39 @@ function showTags(bLayoutOnly=false) {
 
 				onTapFn(e["txt"], function() {
 
-					if (getSelectedTag() == e['id']) return;
+					// var doneFadingOut = fadeOut(true);
+					// $.when(doneFadingOut).done(
+					// 	function() { return showHome(true) }
+					// );
+					exitAndLoad();
 
 					selectTag(e['id']);
-					exitAndLoad( "home" , true );
 				});
 			}
 		});
 
-		tags['menu'][0]["is_linked"] = true;
-
 		def.resolve();
 	};
 
-	var animateTags = function(def) {
-
-		var fadeTimeMs = w.fadeMs * fadeFrac;
-
-		if (tags['menu'][0]['sel'] == true ) {
-			// show only the main tag
-			fadeTagsToMain(true);
-
-		} else {
-			// show all other tags
-			fadeTagsToOthers(true);
-		}
-
-		def.resolve();
-	};
-
-	if (bLayoutOnly) {
-		return consecCall( [layoutTags, animateTags] );
-	} else if (tags['menu'][0]["is_linked"] == true) {
-		return consecCall( [layoutTags, animateTags] );
-	} else {
-		return consecCall( [layoutTags, linkTags, animateTags] );
-	}
+	return consecCall( [layoutTags, animateTags] );
 }
 function showHome(bLayoutOnly=false) {
 
 	// hide and dequeue all elements
-	if (!bLayoutOnly) {
-		$.each(projects, function(index, element) {
+	$.each(projects, function(index, element) {
 
-			$(element["txt"]).stop();
-			$(element["txt"]).clearQueue();
-			$(element["txt"]).hide();
-			$(element["img"]).stop();
-			$(element["img"]).clearQueue();
-			$(element["img"]).hide();
-		})
-	}
+		$(element["txt"]).stop();
+		$(element["txt"]).clearQueue();
+		$(element["txt"]).hide();
+		$(element["img"]).stop();
+		$(element["img"]).clearQueue();
+		$(element["img"]).hide();
+
+	})
 
 	// Get the selected tag
 	selectedTag = getSelectedTag();
+	console.log(selectedTag);
 
 	// pick out the pertinent projects
 	selectProjects = [];
@@ -967,6 +811,7 @@ function showHome(bLayoutOnly=false) {
 			}
 		});
 	}
+	console.log(selectProjects);
 
 	anticipatePageHeightAndScroll();
 
@@ -996,7 +841,7 @@ function showHome(bLayoutOnly=false) {
 			var origRect = layout.getImagePosition($( element["img"] ).width(), $( element["img"] ).height());
 			var thisRect = origRect.getCopy();
 			// transform this rectangle into the screen's coordinate system
-			thisRect.transform(w.windowL + w.marginSidePx, w.homeMarginTopPx);
+			thisRect.transform(w.windowL + w.marginSidePx, w.marginTopPx);
 
 			// Set the image attributes
 			$( element["img"] ).attr("width", thisRect.w);
@@ -1080,18 +925,14 @@ function showHome(bLayoutOnly=false) {
 				showMenuItems(bLayoutOnly);
 			}
 
-			addTO( element["img"], 
-				setTimeout( function() { thisDoneAnimating.resolve(); }, Math.max(w.moveMs, w.fadeMs)*bDelay));
+			setTimeout( function() { thisDoneAnimating.resolve(); }, Math.max(w.moveMs, w.fadeMs)*bDelay);
 		};
 
 		// When this image is done loading and the previous image is done laying out, lay this out
 		$.when( thisDoneLoading, prevDoneLayout ).done( layoutImage ).promise();
 
 		// When this image is done laying out, animate it after a brief pause
-		$.when( thisDoneLayout ).done( function() { 
-			addTO( element["img"],
-				setTimeout( animateImage, w.delayDisplayMs*delayFrac*bDelay ));
-		}).promise();
+		$.when( thisDoneLayout ).done( function() { setTimeout( animateImage, w.delayDisplayMs*delayFrac*bDelay ); }).promise();
 
 		// When the final image is done animating, set the height of the body a little bit higher
 		if (index == selectProjects.length-1) {
@@ -1100,9 +941,7 @@ function showHome(bLayoutOnly=false) {
 
 		// Stagger image loading so everything loads faster
 		var startLoading = function() { $( element["img"] ).attr( 'src', $( element["img"] ).attr( 'src-tmp' ) ); };
-    	
-		addTO( element["img"],
-    		setTimeout( startLoading, index * w.delayLoadingMs * delayFrac * bDelay));
+    	setTimeout( startLoading, index * w.delayLoadingMs * delayFrac * bDelay);
 
     	// Save these promises
 	    prevDoneLayout = thisDoneLayout;
@@ -1553,7 +1392,7 @@ function show(pageID, bLayoutOnly=false) {
 }
 
 // load a specific page within this domain (no fadeout!)
-function loadPage(pageID="", fadeOutDone=null, bLayoutOnly=false) {
+function loadPage(pageID="", fadeOutDone=null) {
 
 	// Get the pageID if not specified
 	if (pageID=="") pageID = getThisPage();
@@ -1563,26 +1402,20 @@ function loadPage(pageID="", fadeOutDone=null, bLayoutOnly=false) {
 	init(pageID, initDone);
 
 	// When all items have been initialized, show all items
-	$.when( initDone, fadeOutDone ).done( function(){ return show(pageID, bLayoutOnly);} ).promise();
+	$.when( initDone, fadeOutDone ).done( function(){ return show(pageID);} ).promise();
 }
 
 // exit current page and load a new one (pageID);
-function exitAndLoad(pageID, bWaitForFade=false, bLayoutOnly=false, fromPageID=null) {
+function exitAndLoad(pageID) {
 
 	// fade out and delete all elements
-	var fadeOutDone = fadeOut(fromPageID);
+	var fadeOutDone = fadeOut();
 
-	if (bWaitForFade) { // [TODO] -- may not need this
-		$.when(fadeOutDone).done( function() { return loadPage(pageID, fadeOutDone, bLayoutOnly); } );
-	} else {
-		// load the new page
-		loadPage(pageID, fadeOutDone, bLayoutOnly);
-	}
+	// load the new page
+	loadPage(pageID, fadeOutDone);
 }
 
 function loadURL(toUrl) {
-
-	var prevPageID = getThisPage();
 
 	if (toUrl.includes(mailKey) ) {
 
@@ -1595,13 +1428,6 @@ function loadURL(toUrl) {
 		// Reset the scrollTop
 		markPageUnvisited(pageID);
 
-		// get tags correct
-		if (prevPageID=='home' && pageID=="home" && tags['menu'][0]['sel']!=true) {
-			selectTag( 'tags' );
-			fadeTagsToMain();
-			exitAndLoad( "home", false, false, prevPageID );
-		}
-
 		// Change the state of the page
 		if (getThisPage() == pageID) return;
 		if (getThisPage() == "home") {
@@ -1612,8 +1438,7 @@ function loadURL(toUrl) {
 			if (pageID == "home") history.pushState( {}, "", "../");
 			else history.pushState( {}, "", "../"+pageID);
 		}
-
-		exitAndLoad( pageID, false, false, prevPageID );
+		exitAndLoad( pageID );
 
 	} else {
 		// fade out
