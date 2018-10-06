@@ -3,10 +3,10 @@
 	"imgExt" : "jpg",
 	"projects" : [
 		{
-			"projectID" : "021",
-			"title" : "Mimus\n\\ On taming our companion species.",
-			"url" : "http://snell.codes/mimus",
-			"tags" : ["code", "robots", "cv", "ux"]
+			"projectID" : "014",
+			"title" : "LIDAR Videography\n\\ On temporalized spaces.",
+			"url" : "http://snell.codes/lidar-",
+			"tags" : ["code", "cv"]
 		},
 		{
 			"projectID" : "016",
@@ -15,10 +15,10 @@
 			"tags" : ["code", "fabrication", "design", "ux"]
 		},
 		{
-			"projectID" : "014",
-			"title" : "LIDAR Videography\n\\ On temporalized spaces.",
-			"url" : "http://snell.codes/lidar-",
-			"tags" : ["code", "cv"]
+			"projectID" : "021",
+			"title" : "Mimus\n\\ On taming our companion species.",
+			"url" : "http://snell.codes/mimus",
+			"tags" : ["code", "robots", "cv", "ux"]
 		},
 		{
 			"projectID" : "026",
@@ -34,10 +34,10 @@
 			"hide" : "false"
 		},
 		{
-			"projectID" : "011",
-			"title" : "Audio Interface Workshop\n\\ On programming with modularity.",
-			"url" : "http://snell.codes/-interface-workshop",
-			"tags" : ["code", "fabrication", "design", "electronics"]
+			"projectID" : "025",
+			"title" : "Haptic Switches\n\\ On connecting distant partners.",
+			"url" : "http://snell.codes/haptic-switches",
+			"tags" : ["ux", "design", "electronics", "fabrication", "code"]
 		},
 		{
 			"projectID" : "023",
@@ -82,10 +82,10 @@
 			"tags" : ["code", "ux"]
 		},
 		{
-			"projectID" : "029",
-			"title" : "At The End of Knowledge\n\\ On visualizing the impossible.",
-			"url" : "http://snell.codes/end-of-knowledge",
-			"tags" : ["fabrication", "code"]
+			"projectID" : "017",
+			"title" : "Robot Prosthetics\n\\ On democratizing emotional touch.",
+			"url" : "http://snell.codes/robot-prosthetics",
+			"tags" : ["robots", "electronics"]
 		},
 		{
 			"projectID" : "013",
@@ -94,10 +94,22 @@
 			"tags" : ["code", "cv"]
 		},
 		{
-			"projectID" : "025",
-			"title" : "Haptic Switches\n\\ On connecting distant partners.",
-			"url" : "http://snell.codes/haptic-switches",
-			"tags" : ["ux", "design", "electronics", "fabrication", "code"]
+			"projectID" : "020",
+			"title" : "Mocap Rig\n\\ On translating human motions to a robot.",
+			"url" : "http://snell.codes/mocap-rig",
+			"tags" : ["code", "fabrication", "cv", "robots"]
+		},
+		{
+			"projectID" : "029",
+			"title" : "At The End of Knowledge\n\\ On visualizing the impossible.",
+			"url" : "http://snell.codes/end-of-knowledge",
+			"tags" : ["fabrication", "code"]
+		},
+		{
+			"projectID" : "011",
+			"title" : "Audio Interface Workshop\n\\ On programming with modularity.",
+			"url" : "http://snell.codes/-interface-workshop",
+			"tags" : ["code", "fabrication", "design", "electronics"]
 		},
 		{
 			"projectID" : "002",
@@ -106,10 +118,10 @@
 			"tags" : ["design", "fabrication"]
 		},
 		{
-			"projectID" : "017",
-			"title" : "Robot Prosthetics\n\\ On democratizing emotional touch.",
-			"url" : "http://snell.codes/robot-prosthetics",
-			"tags" : ["robots", "electronics"]
+			"projectID" : "004",
+			"title" : "Chroma + Proximity\n\\ On rediscovering sight.",
+			"url" : "http://snell.codes/chroma-proximity",
+			"tags" : ["design", "electronics", "code"]
 		},
 		{
 			"projectID" : "009",
@@ -118,22 +130,10 @@
 			"tags" : ["code"]
 		},
 		{
-			"projectID" : "004",
-			"title" : "Chroma + Proximity\n\\ On rediscovering sight.",
-			"url" : "http://snell.codes/chroma-proximity",
-			"tags" : ["design", "electronics", "code"]
-		},
-		{
 			"projectID" : "012",
 			"title" : "Soundscaping\n\\ On weightless sounds.",
 			"url" : "http://snell.codes/soundscaping",
 			"tags" : ["cv", "code"]
-		},
-		{
-			"projectID" : "020",
-			"title" : "Mocap Rig\n\\ On translating human motions to a robot.",
-			"url" : "http://snell.codes/mocap-rig",
-			"tags" : ["code", "fabrication", "cv", "robots"]
 		},
 		{
 			"projectID" : "003",
@@ -160,15 +160,15 @@
 			"tags" : ["design", "fabrication"]
 		},
 		{
-			"projectID" : "036",
-			"title" : "3D Printed Bracelets\n\\ On customizable accessories.",
-			"url" : "http://snell.codes/3d-printed-bracelets",
-			"tags" : ["design", "fabrication"]
-		},
-		{
 			"projectID" : "034",
 			"title" : "Industrial Design Renderings\n\\ On visual storytelling.",
 			"url" : "http://snell.codes/industrial-design-renderings",
+			"tags" : ["design"]
+		},
+		{
+			"projectID" : "007",
+			"title" : "Camp Google\n\\ On summer days and summer magic.",
+			"url" : "http://snell.codes/camp-google",
 			"tags" : ["design"]
 		},
 		{
@@ -178,10 +178,10 @@
 			"tags" : ["code", "design"]
 		},
 		{
-			"projectID" : "007",
-			"title" : "Camp Google\n\\ On summer days and summer magic.",
-			"url" : "http://snell.codes/camp-google",
-			"tags" : ["design"]
+			"projectID" : "036",
+			"title" : "3D Printed Bracelets\n\\ On customizable accessories.",
+			"url" : "http://snell.codes/3d-printed-bracelets",
+			"tags" : ["design", "fabrication"]
 		},
 		{
 			"projectID" : "022",
@@ -202,10 +202,10 @@
 			"tags" : ["fabrication", "code"]
 		},
 		{
-			"projectID" : "019",
-			"title" : "IDEO\n\\ On reimagining an industry.",
-			"url" : "http://snell.codes/ideo",
-			"tags" : ["design"]
+			"projectID" : "035",
+			"title" : "In Memory\n\\ On death & grieving in the digital age.",
+			"url" : "http://snell.codes/in-memory",
+			"tags" : []
 		},
 		{
 			"projectID" : "001",
@@ -214,10 +214,10 @@
 			"tags" : ["design", "fabrication"]
 		},
 		{
-			"projectID" : "035",
-			"title" : "In Memory\n\\ On death & grieving in the digital age.",
-			"url" : "http://snell.codes/in-memory",
-			"tags" : []
+			"projectID" : "019",
+			"title" : "IDEO\n\\ On reimagining an industry.",
+			"url" : "http://snell.codes/ideo",
+			"tags" : ["design"]
 		},
 		{
 			"projectID" : "006",
