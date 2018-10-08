@@ -2,7 +2,7 @@
 	"title" : "Soundscaping",
 	"client" : "none",
 	"role" : "concept, design, software development",
-	"description" : "I collaborated with Kaleb Crawford to develop an interactive spatialized audio system using a Kinect, OpenFrameworks and Max.\n\nAudio snippets captured via microphone are placed in space along a 'track': a 3D line traced out by the right hand during recording and along which the audio is played back after completion. Thus, each small chunk of audio plays at the specific location it was recorded and at every multiple of the recording's duration. The interface allows the left hand to signal recording while the right localizes audio.\n\nThis project explores the sculptural affordances of sound and the relationship of body to space.",
+	"description" : "I collaborated with Kaleb Crawford to develop an interactive spatialized audio system using a Kinect, OpenFrameworks and Max. The system allows users to draw with sounds in space.\n\nAudio snippets captured via microphone are placed in space along a 'track': a 3D line traced out by the right hand during recording and along which the audio is played back after completion. Thus, each small chunk of audio plays at the specific location it was recorded and at every multiple of the recording's duration. The interface allows the left hand to signal recording while the right localizes audio.\n\nThis project explores the sculptural affordances of sound and the relationship of body to space.",
 	"date" : "2016",
 
 	"globalExt" : "jpg",
