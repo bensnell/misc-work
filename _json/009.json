@@ -9,36 +9,36 @@
 	"numDigits" : 3,
 	"images" : [
 		{ 
-			"id" : "155929761",
-			"host" : "vimeo",
+			"id" : "9WmhcFjmOxE",
+			"host" : "youtube",
 			"dims" : [694, 434]
 		},
 		{ 
-			"id" : "144834687",
-			"host" : "vimeo",
+			"id" : "5H85qYwPV7c",
+			"host" : "youtube",
 			"dims" : [694, 521]
 		},
 		{ 
-			"id" : "144834685",
-			"host" : "vimeo",
+			"id" : "LHD3kEVNvKI",
+			"host" : "youtube",
 			"dims" : [694, 521]
 		},
 		{ 
-			"id" : "145599721",
-			"host" : "vimeo",
+			"id" : "mMvv-PRuHkY",
+			"host" : "youtube",
 			"dims" : [693, 390]
 		},
 		{ 
-			"id" : "145702769",
-			"host" : "vimeo",
+			"id" : "kPzxCxCZMt4",
+			"host" : "youtube",
 			"dims" : [693, 390]
 		}
 	],
 	"captions" : {
-		"155929761" : "BZ (Belousov–Zhabotinsky) Reactions are chemical reactions involving multiple oscillating seeds. Here, I applied the same principles to a spherical mesh, offsetting along the gradient of flow to better understand the directionality of movement.",
-		"144834687" : "Reactive agents, similar to Valentino Braitenberg's vehicles or Seymour Papert's turtles, are drawn toward and away from areas, creating habitable valleys and desolate mountains.",
-		"144834685" : "More reactive agents, with different parameters.",
-		"145599721" : "Simulated flocks of boids interact in an infinite 2D environment.",
-		"145702769" : "More boids, with different parameters."
+		"youtube_9WmhcFjmOxE" : "BZ (Belousov–Zhabotinsky) Reactions are chemical reactions involving multiple oscillating seeds. Here, I applied the same principles to a spherical mesh, offsetting along the gradient of flow to better understand the directionality of movement.",
+		"youtube_5H85qYwPV7c" : "Reactive agents, similar to Valentino Braitenberg's vehicles or Seymour Papert's turtles, are drawn toward and away from areas, creating habitable valleys and desolate mountains.",
+		"youtube_LHD3kEVNvKI" : "More reactive agents, with different parameters.",
+		"youtube_mMvv-PRuHkY" : "Simulated flocks of boids interact in an infinite 2D environment.",
+		"youtube_kPzxCxCZMt4" : "More boids, with different parameters."
 	}
 }

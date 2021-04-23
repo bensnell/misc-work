@@ -12,15 +12,15 @@
 		2,
 		5,
 		{ 
-			"id" : "100561247",
-			"host" : "vimeo",
+			"id" : "pIPmqFMHsLU",
+			"host" : "youtube",
 			"dims" : [1920, 1080]
 		},
 		7,	
 		11
 	],
 	"captions" : {
-		"100561247" : "Demo of the headset in use. Notice how a panning motion of the head is adopted to scan the surrounding environment.",
+		"youtube_pIPmqFMHsLU" : "Demo of the headset in use. Notice how a panning motion of the head is adopted to scan the surrounding environment.",
 		"7" : "LEDs resting on the cheeks project color bi-directionally onto the front screen.",
 		"11" : "Initial sketches of the headpiece. A honeycomb pattern was chosen for its structural properties."
 	}

@@ -1,15 +1,21 @@
 {
 	"title" : "Insights Wall",
-	"client" : "Local Projects, L'Oreal",
+	"client" : "<a href='http://localprojects.com/' target='_blank'>Local Projects</a>, L'Oreal",
 	"role" : "designer, lead developer",
-	"description" : "xxx",
+	"description" : "The Insights Wall is an immersive tool that allows users to explore today's visual trends and generate moodboards using the help of predictive AI. It will fill a 40' wide touchscreen in L'Oreal's new Paris headquarters (currently under-construction), where it will welcome guests with a moving river of realtime image assets collected from sources like Instagram. With semantic, color, and category clustering, the 'river' invites visitors and employees to peruse related content, discover unseen patterns, and collect and save inspirations.\n\nTasked with generating a fully-functional, proof-of-concept prototype, I led its software development and aided in ux and graphic design. The backend data pipeline consiststed of three phases: (1) ingestion (scraping) of images from third-party sources, (2) processing images using state of the art machine learning techniques to extract relevant features, and (3) post-processing feature vectors to reduce their dimensionality and make them more operable. The frontend was built in Unity and C# and, using efficient KD-tree filters, traversed and queried a growing latent space of 50k+ images in realtime to deliver a seamless user experience. Every time a user chooses a new image, they are presented with a distribution of suggestions, some similar and some surprising, based on their past choices. Development of final software is on hold until 2022.",
 	"date" : "2020-2021",
 
 	"globalExt" : "jpg",
 	"numDigits" : 3,
 	"images" : [
-		1
+		1,
+		2,
+		[4,5]
 	],
 	"captions" : {
+		"1" : "Rendering of the final exhibit",
+		"2" : "Screenshot of functional software prototype",
+		"3" : "Rendering of software prototype",
+		"4" : "User flow diagrams"
 	}
 }

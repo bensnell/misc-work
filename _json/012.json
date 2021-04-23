@@ -9,15 +9,15 @@
 	"numDigits" : 3,
 	"images" : [
 		{ 
-			"id" : "291990768",
-			"host" : "vimeo",
+			"id" : "OBYA0JPh7DA",
+			"host" : "youtube",
 			"dims" : [1920, 1080]
 		},
 		1,
 		[3, 2, 5]
 	],
 	"captions" : {
-		"291990768" : "Soundscaping Demo.",
+		"youtube_OBYA0JPh7DA" : "Soundscaping Demo.",
 		"1" : "Max MSP Software used for audio recording and playback. In playback, the volume of each track is calculated as the inverse-square of distance to the right hand.",
 		"3" : "Screenshot of the OpenFrameworks application. A thin white skeleton represents the body of the participant. The white circle shows the location of the current sound being recorded. Colored lines indicate tracks and colored circles represent the current location of playback for each track."
 	}

@@ -10,8 +10,8 @@
 	"images" : [
 		2,
 		{ 
-			"id" : "160535472",
-			"host" : "vimeo",
+			"id" : "Pcjzmkp_LYI",
+			"host" : "youtube",
 			"dims" : [485, 273]
 		},
 		10,
@@ -22,7 +22,7 @@
 	],
 	"captions" : {
 		"2" : "Polar Etch-A-Sketch with two knobs for radial and axial movement.",
-		"160535472" : "Demo without the aluminum dust, in order to be able to see the internal mechanism.",
+		"youtube_Pcjzmkp_LYI" : "Demo without the aluminum dust, in order to be able to see the internal mechanism.",
 		"10" : "Detail of the internal mechanism: A series of layered gears and tracks guide the tip around and out from the center.",
 		"3" : "Concept renderings of non-cartesian products: a Linear and a Polar Etch-A-Sketch.",
 		"4" : "Concept rendering of a Cylindrical Etch-A-Sketch.",
