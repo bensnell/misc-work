@@ -379,7 +379,7 @@ function getiFrameElement(id, url, width, height, classes=[], bCursorOnHover=tru
 	vid.setAttribute("webkitallowfullscreen", "");
 	vid.setAttribute("mozallowfullscreen", "");
 	vid.setAttribute("allowfullscreen", "");
-	vid.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"); // for youtube
+	vid.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"); // for youtube
 
 	// Set width/height with style ($( ).css)
 
