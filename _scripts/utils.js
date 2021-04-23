@@ -346,7 +346,7 @@ function getVimeoPath(vidID) {
 }
 
 function getYoutubePath(vidID) {
-	return "https://www.youtube.com/embed/" + vidID + "?rel=0&modestbranding=1&color=white";
+	return "https://www.youtube.com/embed/" + vidID + "?rel=0&modestbranding=1&color=white&fs=0";
 }
 
 function getVideoPath(vidID, vidType) {
