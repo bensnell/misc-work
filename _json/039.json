@@ -2,7 +2,7 @@
 	"title" : "Word Worlds",
 	"client" : "Local Projects, Planet Word",
 	"role" : "designer, lead developer",
-	"description" : "xxx",
+	"description" : "Word Worlds is an interactive exhibit which invites visitors to 'paint' with words, revealing their transformative, multilayered meanings. Using a custom electronic brush, they can dip into buckets of paint describing different semantics like <i>Verdant</i>, <i>Hibernal</i>, <i>Crepuscular</i> and <i>Tempestuous</i>. Then, they can paint with these words on projection-mapped walls and watch their environment and its contents transform before their eyes.\n\nI worked alongside a team of designers to conceptualize this project, then spearheaded its software production. Content-,  graphics-, and hardware-heavy, the application was built entirely in C++ (OpenFrameworks) and utilized embedded HTC Vive hardware to provide realtime sensor data. The content consisted of 36 12k pre-rendered backdrops layered using GLSL and scores of interchangeable animation sequences, responsively rendered using pixel buffer-based state machines.\n\nThis is one of many galleries in <a href='https://planetwordmuseum.org/' target='_blank'>Planet Word</a>, a museum in Washington, D.C. exploring the expressive power of language.",
 	"date" : "2019-2020",
 
 	"globalExt" : "jpg",
