@@ -3,6 +3,42 @@
 	"imgExt" : "jpg",
 	"projects" : [
 		{
+			"projectID":  "044",
+			"title" : "Optical Tracking Systems\n\\ On spatial user tracking.",
+			"url" : "http://snell.codes/optical-tracking-systems",
+			"tags" : ["code", "cv", "ux"]
+		},
+		{
+			"projectID":  "043",
+			"title" : "Disruptors Table\n\\ On industry insights.",
+			"url" : "http://snell.codes/disruptors-table",
+			"tags" : ["code", "design", "ux"]
+		},
+		{
+			"projectID":  "042",
+			"title" : "Commitment Space\n\\ On promises for a better future.",
+			"url" : "http://snell.codes/commitment-space",
+			"tags" : ["code", "design", "ux"]
+		},
+		{
+			"projectID":  "041",
+			"title" : "RTLS Server\n\\ On modular filtering.",
+			"url" : "http://snell.codes/rtls-server",
+			"tags" : ["code", "cv", "ml", "ux"]
+		},
+		{
+			"projectID":  "040",
+			"title" : "Insights Wall\n\\ On visual patternfinding.",
+			"url" : "http://snell.codes/insights-wall",
+			"tags" : ["code", "cv", "ml", "design", "ux"]
+		},
+		{
+			"projectID":  "039",
+			"title" : "Word Worlds\n\\ On painting with words.",
+			"url" : "http://snell.codes/word-worlds",
+			"tags" : ["code", "cv", "design", "ux"]
+		},
+		{
 			"projectID" : "014",
 			"title" : "LIDAR Videography\n\\ On temporalized spaces.",
 			"url" : "http://snell.codes/lidar-videography",

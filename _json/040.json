@@ -1,0 +1,15 @@
+{
+	"title" : "Insights Wall",
+	"client" : "Local Projects, L'Oreal",
+	"role" : "designer, lead developer",
+	"description" : "xxx",
+	"date" : "2020-2021",
+
+	"globalExt" : "jpg",
+	"numDigits" : 3,
+	"images" : [
+		1
+	],
+	"captions" : {
+	}
+}

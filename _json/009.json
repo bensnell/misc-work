@@ -8,11 +8,31 @@
 	"globalExt" : "jpg",
 	"numDigits" : 3,
 	"images" : [
-		"155929761_694_434",
-		"144834687_694_521",
-		"144834685_694_521",
-		"145599721_693_390",
-		"145702769_693_390"
+		{ 
+			"id" : "155929761",
+			"host" : "vimeo",
+			"dims" : [694, 434]
+		},
+		{ 
+			"id" : "144834687",
+			"host" : "vimeo",
+			"dims" : [694, 521]
+		},
+		{ 
+			"id" : "144834685",
+			"host" : "vimeo",
+			"dims" : [694, 521]
+		},
+		{ 
+			"id" : "145599721",
+			"host" : "vimeo",
+			"dims" : [693, 390]
+		},
+		{ 
+			"id" : "145702769",
+			"host" : "vimeo",
+			"dims" : [693, 390]
+		}
 	],
 	"captions" : {
 		"155929761" : "BZ (Belousov–Zhabotinsky) Reactions are chemical reactions involving multiple oscillating seeds. Here, I applied the same principles to a spherical mesh, offsetting along the gradient of flow to better understand the directionality of movement.",

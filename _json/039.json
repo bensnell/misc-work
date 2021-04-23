@@ -1,0 +1,21 @@
+{
+	"title" : "Word Worlds",
+	"client" : "Local Projects, Planet Word",
+	"role" : "designer, lead developer",
+	"description" : "xxx",
+	"date" : "2019-2020",
+
+	"globalExt" : "jpg",
+	"numDigits" : 3,
+	"images" : [
+		6,
+		[3,2,4],
+		{
+			"id" : "DvUJjGQ7n2o",
+			"host" : "youtube",
+			"dims" : [1920, 1080]
+		}
+	],
+	"captions" : {
+	}
+}

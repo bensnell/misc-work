@@ -342,13 +342,23 @@ function getDivElement(id, url, classes = [], cursorType = "") {
 }
 
 function getVimeoPath(vidID) {
-	return "https://player.vimeo.com/video/" + vidID.split("_")[0] + "?color=ffffff&amp;title=0&amp;byline=0&amp;portrait=0";
+	return "https://player.vimeo.com/video/" + vidID + "?color=ffffff&amp;title=0&amp;byline=0&amp;portrait=0";
 }
 
-function getVimeoElement(id, vidID, classes=[], bCursorOnHover=true) {
+function getYoutubePath(vidID) {
+	return "https://www.youtube.com/embed/" + vidID + "?rel=0&modestbranding=1&color=white";
+}
 
-	var url = "https://player.vimeo.com/video/" + vidID.split("_")[0] + "?color=ffffff&amp;title=0&amp;byline=0&amp;portrait=0";
-	return getiFrameElement(id, url, parseInt(vidID.split("_")[1]), parseInt(vidID.split("_")[2]), classes, bCursorOnHover);
+function getVideoPath(vidID, vidType) {
+	if (vidType == "vimeo") return getVimeoPath(vidID);
+	else if (vidType == "youtube") return getYoutubePath(vidID);
+	return "";
+}
+
+function getVideoElement(id, vidID, vidType, dims, classes=[], bCursorOnHover=true) {
+
+	var path = getVideoPath(vidID, vidType);
+	return getiFrameElement(id, path, dims[0], dims[1], classes, bCursorOnHover);
 }
 
 // Video element
@@ -369,6 +379,7 @@ function getiFrameElement(id, url, width, height, classes=[], bCursorOnHover=tru
 	vid.setAttribute("webkitallowfullscreen", "");
 	vid.setAttribute("mozallowfullscreen", "");
 	vid.setAttribute("allowfullscreen", "");
+	vid.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"); // for youtube
 
 	// Set width/height with style ($( ).css)
 

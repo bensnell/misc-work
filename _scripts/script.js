@@ -513,30 +513,42 @@ function initProject(pageID) {
     	var projectJsonPath = pathPrefix() + "_json/" + projectID + ".json";
     	var loadProjectJson = function(data) { 
 
-    		// store all image ids
-    		var padImg = function(element) {
-    			// anything over numDigits will be interpreted as a vimeo id
-    			return isString(element) ? element : pad(element, data["numDigits"], "0");
-    		};
-    		project["images"] = data["images"].map(function(e) { 
-    			if (isArray(e)) return e.map(function(e) { return padImg(e); });
-    			else { return padImg(e); }
-    		});
-
-    		// store all image paths
-    		// [REV to accept gifs and other static image file types]
+    		// Store all visual asset data
     		var attrDict = function(element) {
-    			var bVideo = element.length > data["numDigits"] && !element.includes(".");
-    			var bOtherType = !isNumeric(element);
-    			var filename = bOtherType ? element : (element+"."+data["globalExt"]);
-    			return {
-    				"id" : element,
-    				"bVideo" : bVideo,
-    				"bOtherType" : bOtherType,
-    				"path" : bVideo ? getVimeoPath(element) : (pathPrefix()+"_assets/"+projectID+"/"+filename)
-    			};
+				var obj = {};
+				if (typeof(element) == "number") {
+					
+					// Item of global type (usually jpg)
+					obj["id"] = element.toString(); // ID's must be strings
+					obj["type"] = "image";
+					
+					obj["path"] = pathPrefix() + "_assets/" + projectID + "/" + pad(element, data["numDigits"], "0") + "." + data["globalExt"];
+
+				} else if (typeof(element) == "string") {
+
+					// Item of any other type whose name has been defined (e.g. GIF).
+					obj["id"] = element;
+					obj["type"] = "image";
+					obj["path"] = pathPrefix() + "_assets/" + projectID + "/" + element;
+
+				} else if (typeof(element) == "object") {
+					
+					// Item of type video
+					obj["id"] = element["host"] + "_" + element["id"]; // concat host and id to prevent ID collisions
+					obj["type"] = "video";
+					obj["path"] = getVideoPath(element["id"], element["host"]);
+
+					// Add video-specific metadata to help it be embedded
+					obj["video_id"] = element["id"];
+					obj["video_host"] = element["host"];
+					obj["video_dims"] = element["dims"];
+
+				} else {
+					// Unknown type; skip?
+				}
+				return obj;
     		}
-    		project["images"] = project["images"].map(function(e) { 
+    		project["images"] = data["images"].map(function(e) { 
     			if (isArray(e)) return e.map(function(e) { return attrDict(e); });
     			else return attrDict(e); 
     		}); 
@@ -570,7 +582,18 @@ function initProject(pageID) {
 
 		// create images
 		var getVisualElement = function(el) {
-			return el["bVideo"] ? getVimeoElement(el["id"].split("_")[0], el["id"], ["async"], false) : getImageElement(el["id"], el["path"], "", ["async"], false);
+			switch (el["type"]) {
+				case "image":
+					return getImageElement(el["id"], el["path"], "", ["async"], false);
+					break;
+				case "video":
+					return getVideoElement(el["id"], el["video_id"], el["video_host"], el["video_dims"], ["async"], false);
+					break;
+				default:
+					// TODO: Return empty div?
+					return {};
+					break;
+			}
 		};
 		$.each(project["images"], function(index, element) {
 			if (isArray(element)) {
@@ -586,7 +609,7 @@ function initProject(pageID) {
 		$.each( project["images"], function(index, element) {
 			var tmp = isArray(element) ? element : [element];
 			$.each( tmp, function(i, e) {
-				var captionKey = parseInt(e["id"]).toString();
+				var captionKey = e["id"]; // assumes ID's are strings
 				if (project["captions"][captionKey]) e["caption"] = getTextElement(e["id"]+"_caption", project["captions"][captionKey], "", fonts["body"], w.medium, ["async"]);
 			});
 		});

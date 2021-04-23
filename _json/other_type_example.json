@@ -9,7 +9,16 @@
 	"globalExt" : "jpg",
 	"numDigits" : 3,
 	"images" : [
-		"188222790_421_140",
+		{
+			"id" : "188222790",
+			"host" : "vimeo",
+			"dims": [421, 140]
+		},
+		{
+			"id" : "DvUJjGQ7n2o",
+			"host" : "youtube",
+			"dims": [1920, 1080]
+		},
 		2,
 		1,
 		"004.gif",
@@ -17,7 +26,8 @@
 		"005.png"
 	],
 	"captions" : {
-		"188222790" : "This is a caption for the vimeo video with ID 188222790 and width:height ratio of 421:140",
+		"vimeo_188222790" : "This is a caption for the vimeo video with ID 188222790 and width:height ratio of 421:140",
+		"youtube_DvUJjGQ7n2o" : "This is a caption for the youtube video with ID DvUJjGQ7n2o and width:height ratio of 1920:1080",
 		"1" : "This is a caption for the image '001.jpg'",
 		"2" : "This is a caption for the image '002.jpg'",
 		"3" : "This is a caption for the image '003.jpg'",
