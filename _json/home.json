@@ -4,31 +4,31 @@
 	"projects" : [
 		{
 			"projectID":  "044",
-			"title" : "Optical Tracking Systems\n\\ On spatial user tracking.",
+			"title" : "Optical Tracking Systems\n\\ On new interactive affordances.",
 			"url" : "http://snell.codes/optical-tracking-systems",
 			"tags" : ["code", "cv", "ux"]
 		},
 		{
 			"projectID":  "043",
-			"title" : "Disruptors Table\n\\ On industry insights.",
+			"title" : "Disruptors Table\n\\ On an industry's game changers.",
 			"url" : "http://snell.codes/disruptors-table",
 			"tags" : ["code", "design", "ux"]
 		},
 		{
 			"projectID":  "042",
-			"title" : "Commitment Space\n\\ On promises for a better future.",
+			"title" : "Commitment Space\n\\ On the journey toward reconciliation.",
 			"url" : "http://snell.codes/commitment-space",
 			"tags" : ["code", "design", "ux"]
 		},
 		{
 			"projectID":  "041",
-			"title" : "RTLS Server\n\\ On modular filtering.",
+			"title" : "RTLS Server\n\\ On real-time location systems.",
 			"url" : "http://snell.codes/rtls-server",
 			"tags" : ["code", "cv", "ml", "ux"]
 		},
 		{
 			"projectID":  "040",
-			"title" : "Insights Wall\n\\ On visual patternfinding.",
+			"title" : "Insights Wall\n\\ On visual trends and inspirations.",
 			"url" : "http://snell.codes/insights-wall",
 			"tags" : ["code", "cv", "ml", "design", "ux"]
 		},
