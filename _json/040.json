@@ -10,11 +10,17 @@
 	"images" : [
 		1,
 		2,
+		{
+			"id" : "IovSf8EkOk4",
+			"host" : "youtube",
+			"dims" : [1918, 1086]
+		},
 		[4,5]
 	],
 	"captions" : {
 		"1" : "Rendering of the final exhibit",
 		"2" : "Screenshot of functional software prototype",
+		"youtube_IovSf8EkOk4" : "Demo of software prototype.",
 		"3" : "Rendering of software prototype",
 		"4" : "User flow diagrams"
 	}

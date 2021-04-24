@@ -2,14 +2,23 @@
 	"title" : "RTLS Server",
 	"client" : "<a href='http://localprojects.com/' target='_blank'>Local Projects</a>",
 	"role" : "lead developer",
-	"description" : "xxx",
+	"description" : "As a museum design firm that specializes in interactive, technology-driven experiences, Local Projects often designs experiences that make use of user's positions in 3D space. Whether tracking people as they traverse multi-room environments or tracking user-input to arbitrary projection surfaces, the problem is always the same: efficiently and quickly provide frontend applications a reliable stream of persistent positional data given a realtime stream of noisy input data.\n\nRecognizing this opportunity to streamline their software, I took on the task of developing a single product to address all of these use cases. The result is a modular <u>R</u>eal-<u>T</u>ime <u>L</u>ocation <u>S</u>ystem server that interfaces between tracking hardware like Optitrack motion-tracking cameras and OpenVR-compatible equipment, and frontend graphics applications. Importantly, it performs 3D frame tracking (position, orientation and scale) in parallel with identification at varying levels of fidelity (transient and permanent ID's), fusing related data streams to bolster its reliability. It can reconfigured at runtime to adjust the set, order, and parameters of postprocessing filters, including algorithms like Hungarian, Kalman, Easing, ID-remapping, Continuity-Persistance, and custom LSTM models for sequence identification. Processed data is then sent to frontends over UDP using Google Protobufs. The server has also been designed with license-management tools and can record and playback data to the industry-standard .c3d file format via its GUI.\n\nRTLS Server has been deployed to track soccer balls in Manchester United's interactive game centers, track hundreds of custom electronic lamps in the Faith and Liberty Discovery Center, and track custom electronic brushes in Planet Word's Word Worlds exhibit. The server is built in C++ (OpenFrameworks) and retains Local Project's copyright, but its individual components remain open-source, including <a href='https://github.com/bensnell/ofxRTLS' target='_blank'>ofxRTLS</a> and <a href='https://github.com/bensnell/ofxFilter' target='_blank'>ofxFilter</a>.",
 	"date" : "2019-2021",
 
 	"globalExt" : "jpg",
 	"numDigits" : 3,
 	"images" : [
-		1
+		3,
+		2,
+		{
+			"id" : "y2JeYVvRI60",
+			"host" : "youtube",
+			"dims" : [1616, 1020]
+		}
 	],
 	"captions" : {
+		"3" : "Screenshot of RTLS Server GUI, showing connection, data and playback status above and a list of trackables below with their type, presence and position.",
+		"2" : "A systems diagram of the server, showing its internal components, corollary services and resources.",
+		"youtube_y2JeYVvRI60" : "Demo of the RTLS Server (left) and RTLS Display (right, displaying data output by the server). To start, no algorithms or filters are enabled and as a result, the data is incredibly noisy. Then, at the 10 second mark, Hungarian, Kalman and Continuity filters are enabled. Note how smooth and reliable output data becomes."
 	}
 }
