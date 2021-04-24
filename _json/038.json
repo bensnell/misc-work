@@ -8,6 +8,11 @@
 	"globalExt" : "jpg",
 	"numDigits" : 3,
 	"images" : [
+		{
+			"id" : "NdT1n7f4gfA",
+			"host" : "youtube",
+			"dims" : [2050, 1080]
+		},
 		3, 
 		4, 
 		2,
@@ -15,5 +20,6 @@
 		5
 	],
 	"captions" : {
+		"youtube_NdT1n7f4gfA" : "The making of a robot drawing."
 	}
 }

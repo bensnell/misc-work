@@ -21,7 +21,9 @@
 		[24],
 		[25],
 		[26],
-		[27]
+		[27],
+		"028.gif",
+		"029.gif"
 	],
 	"captions" : {
 		"8" : "Brainstorming visualizations of the drawings.",
@@ -38,12 +40,8 @@
 		"24" : "Complete theory of the algorithm. Three independent systems take part: imagery, algorthm, and substrate. Processing modules are shown as circles where black arrows indicates progression of processes. Resources are listed at the top and bottom, where blue indicates read and green indicates write.",
 		"25" : "Program structure of the algorithm is broken into interfaces, cognitive modules, faculties, resources, representations and the motor system. Ecology describes the environment in which the algorithm resides.",
 		"26" : "Screenshot of the program at the start of its attempt to draw an ear.",
-		"27" : "Algorthm's drawing on the left, and my drawing on the right."
-
-
-
-
-
-
+		"27" : "Algorthm's drawing on the left, and my drawing on the right.",
+		"028.gif" : "Time lapse of the algorithm drawing my ear.",
+		"029.gif" : "Time lapse of the algorithm drawing my face."
 	}
 }

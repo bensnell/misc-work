@@ -9,33 +9,33 @@
 	"numDigits" : 3,
 	"images" : [
 		{ 
-			"id" : "240243710",
-			"host" : "vimeo",
+			"id" : "7DYnxiU__TY",
+			"host" : "youtube",
 			"dims" : [692, 389]
 		},
 		{ 
-			"id" : "152925908",
-			"host" : "vimeo",
+			"id" : "CN5_SDi_u2c",
+			"host" : "youtube",
 			"dims" : [692, 389]
 		},
 		{ 
-			"id" : "153359075",
-			"host" : "vimeo",
+			"id" : "aosPowToI24",
+			"host" : "youtube",
 			"dims" : [692, 433]
 		},
 		{ 
-			"id" : "144993841",
-			"host" : "vimeo",
+			"id" : "2VqTI19mqRM",
+			"host" : "youtube",
 			"dims" : [692, 389]
 		},
 		{ 
-			"id" : "145215259",
-			"host" : "vimeo",
+			"id" : "X8N5sihj_N4",
+			"host" : "youtube",
 			"dims" : [692, 389]
 		},
 		{ 
-			"id" : "151335007",
-			"host" : "vimeo",
+			"id" : "26FiFK5pfkE",
+			"host" : "youtube",
 			"dims" : [692, 389]
 		},
 		1,
@@ -47,12 +47,12 @@
 		14
 	],
 	"captions" : {
-		"240243710" : "<i>Bamboo Forest</i>. A single 360 degree capture is animated in the round with a slight perlin noise added to each dot for airiness and atmosphere. The large black hole in the center represents the 'blind spot' of the sensor. Each capture is comrpised of hundreds of linear scans, stacked together into a spherical scan.",
-		"152925908" : "<i>Sleeping</i>. Here, a single night of sleep is compressed into thirteen seconds. This timelapse is built from five hundred individual spherical frames. During capture, the LIDAR remains stationary, but the camera's movement is set in post-production.",
-		"153359075" : "<i>Cafe</i>. A LIDAR timelapse captures the afternoon happenings in a cafe. Notice how people cast shadows in the same way a single flame would light the walls.",
-		"144993841" : "<i>Southside Alleys</i>. Attaching the LIDAR device to my car and driving through alleys at night produces these ominous slit-scanned time-scapes. Buildings, trees, cars and fire hydrants are visible as series of stacked outlines. Each line represents a single linear scan.",
-		"145215259" : "<i>Carson Street</i>. This slit-scan is produced by hiding the LIDAR in my backpack and walking down a street packed with people in the early morning. Bodies appear elongated at times and compressed at others, depending on whether they were walking with or against me, respectively.",
-		"151335007" : "<i>Temporalized Hallway</i>. This capture was made in collaboration with the Carnegie Museum of Art. These scans were taken in a hallway, with people walking in both directions. However, everyone faces the same direction in the scan. This is because we all walk forwards, not backwards, in time.",
+		"youtube_7DYnxiU__TY" : "<i>Bamboo Forest</i>. A single 360 degree capture is animated in the round with a slight perlin noise added to each dot for airiness and atmosphere. The large black hole in the center represents the 'blind spot' of the sensor. Each capture is comrpised of hundreds of linear scans, stacked together into a spherical scan.",
+		"youtube_CN5_SDi_u2c" : "<i>Sleeping</i>. Here, a single night of sleep is compressed into thirteen seconds. This timelapse is built from five hundred individual spherical frames. During capture, the LIDAR remains stationary, but the camera's movement is set in post-production.",
+		"youtube_aosPowToI24" : "<i>Cafe</i>. A LIDAR timelapse captures the afternoon happenings in a cafe. Notice how people cast shadows in the same way a single flame would light the walls.",
+		"youtube_2VqTI19mqRM" : "<i>Southside Alleys</i>. Attaching the LIDAR device to my car and driving through alleys at night produces these ominous slit-scanned time-scapes. Buildings, trees, cars and fire hydrants are visible as series of stacked outlines. Each line represents a single linear scan.",
+		"youtube_X8N5sihj_N4" : "<i>Carson Street</i>. This slit-scan is produced by hiding the LIDAR in my backpack and walking down a street packed with people in the early morning. Bodies appear elongated at times and compressed at others, depending on whether they were walking with or against me, respectively.",
+		"youtube_26FiFK5pfkE" : "<i>Temporalized Hallway</i>. This capture was made in collaboration with the Carnegie Museum of Art. These scans were taken in a hallway, with people walking in both directions. However, everyone faces the same direction in the scan. This is because we all walk forwards, not backwards, in time.",
 		"1" : "Custom rig I built that turns a two-dimensional LIDAR into a three-dimensional scanner.",
 		"3" : "Components needed for capture: The rig is controlled by an Arduino, while the LIDAR communicates with the computer over USB.",
 		"7" : "Scanning a forest in the Blue Ridge Mountains with my portable scanner.",

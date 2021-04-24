@@ -11,8 +11,8 @@
 		[3, 4],
 		"006.gif",
 		{ 
-			"id" : "289982254",
-			"host" : "vimeo",
+			"id" : "RVIjKmXzr9A",
+			"host" : "youtube",
 			"dims" : [521, 293]
 		},
 		1,
@@ -21,7 +21,7 @@
 	"captions" : {
 		"3" : "Mimus at the London Design Museum.",
 		"6" : "Kids interacting with Mimus. Notice how the nearest girl finally attracts Mimus' attention after making the biggest commotion.",
-		"289982254" : "Project video of the design process.",
+		"youtube_RVIjKmXzr9A" : "Project video of the design process.",
 		"1" : "Still of from the ranking algorithm. People are rated positively or negatively on a variety of factors, including area, velocity, acceleration, amount of time present, height, and proximity.",
 		"2" : "Algorithm running in C++ using the OpenFrameworks library."
 	}
