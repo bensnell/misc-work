@@ -2,7 +2,7 @@
 	"title" : "Optical Tracking Systems",
 	"client" : "<a href='http://localprojects.com/' target='_blank'>Local Projects</a>, Various Clients",
 	"role" : "lead designer & developer",
-	"description" : "xxx",
+	"description" : "Many experiences designed by Local Projects require custom tracking systems. Sometimes, bodies need to be tracked through space and other times, custom electronic devices' positions must be known for a seamless user experience. I've led the design and development of all optical tracking system deployed in recent years, from <a href='http://bensnell.io/word-worlds' target='_blank'>paintbrush tracking in Planet Word</a> to soccer ball tracking in Manchester United's Game Centers to lamp tracking in the Faith and Liberty Discovery Center.\n\nMy roles have included:\n- Overseeing the manufacturing of custom trackable devices\n- Evaluating new systems for their accuracy and reliability\n- Collaborating with designers to converge on a optimal systems considering their cost, longevity, maintenance requirements and interactive affordances\n- Designing sensor arrangements for maximal coverage\n- Developing <a href='http://bensnell.io/rtls-server' target='_blank'>modular servers</a> for interfacing between hardware and frontend applications\n- Creating AV systems diagrams and overseeing their installation\n- Diagnosing and debugging issues with sensor hardware and software\n- Documenting systems and training exhibit staff on proper usage, diagnostics and calibration procedures",
 	"date" : "2019-2021",
 
 	"globalExt" : "jpg",
