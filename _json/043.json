@@ -1,14 +1,19 @@
 {
 	"title" : "Disruptors Table",
-	"client" : "<a href='http://localprojects.com/' target='_blank'>Local Projects</a>, ABB",
-	"role" : "designer, lead developer",
-	"description" : "xxx",
+	"client" : "<a href='http://localprojects.com/' target='_blank'>Local Projects</a>, <a href='https://global.abb/' target='_blank'>ABB</a>",
+	"role" : "designer, developer",
+	"description" : "The Disruptors Table is an interactive exhibit within <a href='https://global.abb/' target='_blank'>ABB</a>'s Customer Experience Centers. It allows visitors to explore a range of industry disruptors and demonstrate ABB's ability to guide businesses through uncertain terrain.\n\nBorrowing from this metaphor, the kinectic table consists of 84 individual acuators and LED panels. News headlines and video scroll across this moving surface in response to user's input as they peruse related topics on four individual iPads mounted at the table's edge.\n\nI collaborated on its concept and UX design, and was responsible for developing the graphics software in C++ (OpenFrameworks) that generated imagery and controlled the motion table.",
 	"date" : "2019",
 
 	"globalExt" : "jpg",
 	"numDigits" : 3,
 	"images" : [
-		1
+		[3, 4, 5, 6],
+		{
+			"id" : "wvd9J7R2uAw",
+			"host" : "youtube",
+			"dims" : [1920, 1080]
+		}
 	],
 	"captions" : {
 	}
