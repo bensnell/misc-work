@@ -51,6 +51,7 @@ function Params() {
 
 	// text color params
 	this.dark = "#000000";
+	this.mediumDark = "#666666"
 	this.medium = "#999999";
 	this.mediumLight = "#AAAAAA";
 	this.light = "#BBBBBB";
@@ -206,10 +207,10 @@ function Params() {
 			t.bodyLineHeight = t.fontSizePx * t.bodyLineHeightFrac;
 
 			// Colors
-			t.menuColor = t.lighter;
+			t.menuColor = t.mediumLight;
 			t.titleColor = t.dark;
 			t.homeCaptionColor = t.light;
-			t.menuColorClick = t.medium;
+			t.menuColorClick = t.mediumDark;
 		}
 	}
 

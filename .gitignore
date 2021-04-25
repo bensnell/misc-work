@@ -2,3 +2,6 @@
 .backup/
 .backup/*
 .tmp/
+
+*.mp4
+*.mov

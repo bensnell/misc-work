@@ -8,7 +8,11 @@
 	"globalExt" : "jpg",
 	"numDigits" : 3,
 	"images" : [
-		"167797144_624_351",
+		{ 
+			"id" : "ooktKqZUoFo",
+			"host" : "youtube",
+			"dims" : [624, 351]
+		},
 		[1, 3],
 		4,
 		[7, 6],
@@ -18,7 +22,7 @@
 		11
 	],
 	"captions" : {
-		"167797144" : "Demo video of the radio in use.",
+		"youtube_ooktKqZUoFo" : "Demo video of the radio in use.",
 		"8" : "Process Documentation: poplar boards from which the form is carved.",
 		"9" : "Process Documentation: two halves of the radio, after being CNC milled, before finishing on the left and after on the right.",
 		"10" : "Process Documentation: Installing electronics within the radio. A large copper spine runs the length of the wood. This serves as a touch interface to control the radio station. An onboard Teensy receives analog signals from these sensors and sends filtered signals to the Raspberry Pi. Using an antenna, radio and upconverter, the RPi tunes into airwaves of a specific frequency and plays them through the amplifier and contact speakers. This allows the whole form to resonate with the sound of the airwaves. After electronics are installed, both halves are glued together.",

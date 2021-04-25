@@ -11,11 +11,15 @@
 		1,
 		2,
 		4,
-		"99312644_1920_1080",
+		{ 
+			"id" : "ruu7TVROSfQ",
+			"host" : "youtube",
+			"dims" : [1920, 1080]
+		},
 		5
 	],
 	"captions" : {
-		"99312644" : "Demo video of the piece.",
+		"youtube_ruu7TVROSfQ" : "Demo video of the piece.",
 		"5" : "Process documentation: soldering the wires to the LEDs"
 	}
 }

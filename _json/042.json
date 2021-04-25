@@ -1,0 +1,22 @@
+{
+	"title" : "Commitment Space",
+	"client" : "<a href='http://localprojects.com/' target='_blank'>Local Projects</a>, <a href='https://www.tulsa2021.org/rising' target='_blank'>Greenwood Rising</a>",
+	"role" : "designer, lead developer",
+	"description" : "The Commitment Space is an exhibit within <a href='https://www.tulsa2021.org/rising' target='_blank'>Greenwood Rising</a>, a museum honoring the legacy of Black Wall Street in Tulsa, Oklahoma, set to open on June 1, 2021: the 100th anniversary of the Tulsa Race Massacre. The installation asks visitors to take action toward racial reconciliation by commiting to a personal change in their own lives.\n\nVisitors can submit a commitment on their phones via SMS or using kiosks within the space. Their commitments show up on LCD screens embedded in a large LED 'brick' wall and trigger animations that visualize the impact of individual contributions and their place within in a larger, growing community.\n\nI participated in its graphic, physical and ux design and led its software development, working with two other developers to realize the experience. It is built using Javascript (React), C++ (OpenFrameworks), and Python across fourteen discrete devices (PC, tablets, Raspberry Pi's) connected using SocketIO. Nearly all software is containerized and fleet-managed using Balena IOT cloud services. An admin web interface is provided to museum staff to approve and track submissions. The LED wall was built by an external vendor and is communicated with over Artnet.",
+	"date" : "2021",
+
+	"globalExt" : "jpg",
+	"numDigits" : 3,
+	"images" : [
+		1,
+		2,
+		7,
+		8
+	],
+	"captions" : {
+		"1" : "Rendering of the Commitment Space.",
+		"2" : "Rendering of Greenwood Rising history center.",
+		"7" : "A small section of the Commitment Space wall, built to prototype animation sequences and finalize graphic treatments.",
+		"8" : "UX diagram of the experience."
+	}
+}

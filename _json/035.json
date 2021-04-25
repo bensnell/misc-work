@@ -8,7 +8,11 @@
 	"globalExt" : "jpg",
 	"numDigits" : 3,
 	"images" : [
-		"120512142_1920_1080"
+		{ 
+			"id" : "4Jx96I_YXF8",
+			"host" : "youtube",
+			"dims" : [1920, 1080]
+		}
 	],
 	"captions" : {
 	}

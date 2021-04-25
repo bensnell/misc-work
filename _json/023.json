@@ -2,7 +2,7 @@
 	"title" : "Boundless & Tetherless VR",
 	"client" : "self",
 	"role" : "all",
-	"description" : "Using affordable and accessible computing components mounted to a Google Cardboard, I developed algorthms to afford entirely boundless and tetherless tracking of planar movement.\n\nNow, VR participants can walk around a virtual environment intuitively (by walking synonymously through their physical environment), and freely (unencumbered by wires and by bounds on walkable sapce).\n\nA Raspberry Pi Zero performs realtime sensor fusion from a gyroscope and downward-mounted camera. It provides both direction and intensity of movement, affording sufficient information for meaningful interaction in virtual reality experiences. The device works indoor or outdoor. It is limited only by the duration of the charge on the battery powering the device.\n\nThough never developed into a commercial device, this prototype proves the potential of effective and affordable tracking with off-the-shelf components and some well-written code. See below for demos and specifics of the algorithm.",
+	"description" : "Using affordable and accessible computing components mounted to a Google Cardboard, I developed algorthms to afford entirely boundless and tetherless tracking of planar movement.\n\nNow, VR participants can walk around a virtual environment intuitively (by walking synonymously through their physical environment), and freely (unencumbered by wires and by bounds on walkable sapce).\n\nA Raspberry Pi Zero performs realtime sensor fusion from a gyroscope and downward-mounted camera. It provides both direction and intensity of movement, affording sufficient information for meaningful interaction in virtual reality experiences. The device works indoor or outdoor. It is limited only by the duration of the charge on the battery powering the device.\n\nThough never developed into a commercial device, this prototype proves the potential of effective and affordable tracking with off-the-shelf components and some well-written code. See below for demos and specifics of the algorithm. (Note: This prototype was developed before SLAM-based techniques became widely accessible.)",
 	"date" : "2017",
 
 	"globalExt" : "jpg",
@@ -11,16 +11,24 @@
 		[5, 4, 6],
 		[2, 1, 3],
 		"015.gif",
-		"202666574_436_245",
+		{ 
+			"id" : "Rgo7i87SWao",
+			"host" : "youtube",
+			"dims" : [436, 245]
+		},
 		7,
-		"202280288_400_245",
+		{ 
+			"id" : "bu4E7KFhBUc",
+			"host" : "youtube",
+			"dims" : [400, 245]
+		},
 		8,
 		[14, 12, 10, 13, 9, 11]
 		
 	],
 	"captions" : {
-		"202666574" : "Real-time demo of tracking with detached computing hardware.",
-		"202280288" : "Real-time demo of data processing. Upper left video shows raw camera output with an overlaid arrow indicating the algorithm's predicted direction and intensity of linear movement. This application was developed in C++ in OpenFrameworks with custom signal extraction sofrware.",
+		"youtube_Rgo7i87SWao" : "Real-time demo of tracking with detached computing hardware.",
+		"youtube_bu4E7KFhBUc" : "Real-time demo of data processing. Upper left video shows raw camera output with an overlaid arrow indicating the algorithm's predicted direction and intensity of linear movement. This application was developed in C++ in OpenFrameworks with custom signal extraction sofrware.",
 		"1" : "Testing the device and algorithm in wide, expansive spaces.",
 		"8" : "High level algorithm design for extracting information about linear movement from a downwards-pointed camera feed.",
 		"12" : "Notes on design of sensor fusion and noise removal algorithms.",

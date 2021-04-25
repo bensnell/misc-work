@@ -9,7 +9,11 @@
 	"numDigits" : 3,
 	"images" : [
 		23,
-		"153049735_1920_1080",
+		{ 
+			"id" : "QJj5HeF5-Qg",
+			"host" : "youtube",
+			"dims" : [1920, 1080]
+		},
 		"004.gif",
 		"021.gif",
 		[10, 11],
@@ -20,7 +24,7 @@
 		29
 	],
 	"captions" : {
-		"153049735" : "Demo of gameplay in the interactive web experience, <i>Lightsaber Escape</i>.",
+		"youtube_QJj5HeF5-Qg" : "Demo of gameplay in the interactive web experience, <i>Lightsaber Escape</i>.",
 		"4" : "Low latency communications between the phone and desktop make it possible to use the phone as a lightsaber, registering every subtlety of movement.",
 		"21" : "Gameplay commences by battling groups of stormtroopers.",
 		"10" : "With success, the user proceeds to a final duel with Captain Phasma. On completion, the user can share snapshots of gameplay with their friends.",

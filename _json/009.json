@@ -8,17 +8,37 @@
 	"globalExt" : "jpg",
 	"numDigits" : 3,
 	"images" : [
-		"155929761_694_434",
-		"144834687_694_521",
-		"144834685_694_521",
-		"145599721_693_390",
-		"145702769_693_390"
+		{ 
+			"id" : "9WmhcFjmOxE",
+			"host" : "youtube",
+			"dims" : [694, 434]
+		},
+		{ 
+			"id" : "5H85qYwPV7c",
+			"host" : "youtube",
+			"dims" : [694, 521]
+		},
+		{ 
+			"id" : "LHD3kEVNvKI",
+			"host" : "youtube",
+			"dims" : [694, 521]
+		},
+		{ 
+			"id" : "mMvv-PRuHkY",
+			"host" : "youtube",
+			"dims" : [693, 390]
+		},
+		{ 
+			"id" : "kPzxCxCZMt4",
+			"host" : "youtube",
+			"dims" : [693, 390]
+		}
 	],
 	"captions" : {
-		"155929761" : "BZ (Belousov–Zhabotinsky) Reactions are chemical reactions involving multiple oscillating seeds. Here, I applied the same principles to a spherical mesh, offsetting along the gradient of flow to better understand the directionality of movement.",
-		"144834687" : "Reactive agents, similar to Valentino Braitenberg's vehicles or Seymour Papert's turtles, are drawn toward and away from areas, creating habitable valleys and desolate mountains.",
-		"144834685" : "More reactive agents, with different parameters.",
-		"145599721" : "Simulated flocks of boids interact in an infinite 2D environment.",
-		"145702769" : "More boids, with different parameters."
+		"youtube_9WmhcFjmOxE" : "BZ (Belousov–Zhabotinsky) Reactions are chemical reactions involving multiple oscillating seeds. Here, I applied the same principles to a spherical mesh, offsetting along the gradient of flow to better understand the directionality of movement.",
+		"youtube_5H85qYwPV7c" : "Reactive agents, similar to Valentino Braitenberg's vehicles or Seymour Papert's turtles, are drawn toward and away from areas, creating habitable valleys and desolate mountains.",
+		"youtube_LHD3kEVNvKI" : "More reactive agents, with different parameters.",
+		"youtube_mMvv-PRuHkY" : "Simulated flocks of boids interact in an infinite 2D environment.",
+		"youtube_kPzxCxCZMt4" : "More boids, with different parameters."
 	}
 }

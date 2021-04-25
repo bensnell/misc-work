@@ -8,14 +8,22 @@
 	"globalExt" : "jpg",
 	"numDigits" : 3,
 	"images" : [
-		"188456392_645_363",
-		"188222790_645_215",
+		{ 
+			"id" : "2Ft5JBWj_Ag",
+			"host" : "youtube",
+			"dims" : [645, 363]
+		},
+		{ 
+			"id" : "g3TLJH7v5kc",
+			"host" : "youtube",
+			"dims" : [645, 215]
+		},
 		1,
 		"002.gif"
 	],
 	"captions" : {
-		"188456392" : "Original broadcast.",
-		"188222790" : "How it's made: Face recognition algorithms pick out his face and subtract the silhouette of hair above it. Then, a 3D model with the same skin color is placed with the correct orientation and finally masked to reveal his real face.",
+		"youtube_2Ft5JBWj_Ag" : "Original broadcast.",
+		"youtube_g3TLJH7v5kc" : "How it's made: Face recognition algorithms pick out his face and subtract the silhouette of hair above it. Then, a 3D model with the same skin color is placed with the correct orientation and finally masked to reveal his real face.",
 		"1" : "Screenshot of the program written in C++ (OpenFrameworks). An extensive GUI provides the controls for fine tuning tracking, segmentation and rendering.",
 		"2" : "Workflow running in realtime. The computer on the right provides the live stream, sent over a blackmagic recorder to the computer on the left, which performs all computer vision, realigns the video and audio streams, and streams the final content to Youtube's servers."
 	}

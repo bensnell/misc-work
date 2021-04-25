@@ -90,7 +90,7 @@ var project = {};
 // arrows for animating image sets
 // var arrows = {};
 var about = {};
-var inquire = {};
+var contact = {};
 
 // Stores the logo at the top of the page
 var menu = {};
@@ -100,7 +100,7 @@ var emailLink = "mailto:ben@snell.codes?subject=Hello!";
 var menuElems = [ 	["logo", 	"Ben Snell", 	""],
 					["about", 	"about", 		"about"],
 					["and", 	"  &  ", 		null],
-					["inquire", "inquire", 		"inquire"]
+					["contact", "contact", 		"contact"]
 				];
 // Stores all tags
 var tags = {};
@@ -484,21 +484,21 @@ function initAbout() {
 
 	return [aboutLoaded, dictLoaded];
 }
-function initInquire() {
+function initContact() {
 
 	// Init the inquire json
-	var loadInquire = function(data) { 
+	var loadContact = function(data) { 
 		// add the description
-		inquire['txt'] = getTextElement('inquire_txt', data["text"], "", fonts['body'], w.dark, ['async']);
+		contact['txt'] = getTextElement('contact_txt', data["text"], "", fonts['body'], w.dark, ['async']);
 	};
-	var inquireLoaded = $.Deferred();
-	var jsonPath = pathPrefix() + "_json/inquire.json";
-	$.get(jsonPath, loadInquire).done( function() { inquireLoaded.resolve(); });
+	var contactLoaded = $.Deferred();
+	var jsonPath = pathPrefix() + "_json/contact.json";
+	$.get(jsonPath, loadContact).done( function() { contactLoaded.resolve(); });
 
 	// make sure the dict is loaded
 	var dictLoaded = loadHomeData();
 
-	return [inquireLoaded, dictLoaded];
+	return [contactLoaded, dictLoaded];
 }
 function initProject(pageID) {
 
@@ -513,30 +513,42 @@ function initProject(pageID) {
     	var projectJsonPath = pathPrefix() + "_json/" + projectID + ".json";
     	var loadProjectJson = function(data) { 
 
-    		// store all image ids
-    		var padImg = function(element) {
-    			// anything over numDigits will be interpreted as a vimeo id
-    			return isString(element) ? element : pad(element, data["numDigits"], "0");
-    		};
-    		project["images"] = data["images"].map(function(e) { 
-    			if (isArray(e)) return e.map(function(e) { return padImg(e); });
-    			else { return padImg(e); }
-    		});
-
-    		// store all image paths
-    		// [REV to accept gifs and other static image file types]
+    		// Store all visual asset data
     		var attrDict = function(element) {
-    			var bVideo = element.length > data["numDigits"] && !element.includes(".");
-    			var bOtherType = !isNumeric(element);
-    			var filename = bOtherType ? element : (element+"."+data["globalExt"]);
-    			return {
-    				"id" : element,
-    				"bVideo" : bVideo,
-    				"bOtherType" : bOtherType,
-    				"path" : bVideo ? getVimeoPath(element) : (pathPrefix()+"_assets/"+projectID+"/"+filename)
-    			};
+				var obj = {};
+				if (typeof(element) == "number") {
+					
+					// Item of global type (usually jpg)
+					obj["id"] = element.toString(); // ID's must be strings
+					obj["type"] = "image";
+					
+					obj["path"] = pathPrefix() + "_assets/" + projectID + "/" + pad(element, data["numDigits"], "0") + "." + data["globalExt"];
+
+				} else if (typeof(element) == "string") {
+
+					// Item of any other type whose name has been defined (e.g. GIF).
+					obj["id"] = element;
+					obj["type"] = "image";
+					obj["path"] = pathPrefix() + "_assets/" + projectID + "/" + element;
+
+				} else if (typeof(element) == "object") {
+					
+					// Item of type video
+					obj["id"] = element["host"] + "_" + element["id"]; // concat host and id to prevent ID collisions
+					obj["type"] = "video";
+					obj["path"] = getVideoPath(element["id"], element["host"]);
+
+					// Add video-specific metadata to help it be embedded
+					obj["video_id"] = element["id"];
+					obj["video_host"] = element["host"];
+					obj["video_dims"] = element["dims"];
+
+				} else {
+					// Unknown type; skip?
+				}
+				return obj;
     		}
-    		project["images"] = project["images"].map(function(e) { 
+    		project["images"] = data["images"].map(function(e) { 
     			if (isArray(e)) return e.map(function(e) { return attrDict(e); });
     			else return attrDict(e); 
     		}); 
@@ -570,7 +582,18 @@ function initProject(pageID) {
 
 		// create images
 		var getVisualElement = function(el) {
-			return el["bVideo"] ? getVimeoElement(el["id"].split("_")[0], el["id"], ["async"], false) : getImageElement(el["id"], el["path"], "", ["async"], false);
+			switch (el["type"]) {
+				case "image":
+					return getImageElement(el["id"], el["path"], "", ["async"], false);
+					break;
+				case "video":
+					return getVideoElement(el["id"], el["video_id"], el["video_host"], el["video_dims"], ["async"], false);
+					break;
+				default:
+					// TODO: Return empty div?
+					return {};
+					break;
+			}
 		};
 		$.each(project["images"], function(index, element) {
 			if (isArray(element)) {
@@ -586,7 +609,7 @@ function initProject(pageID) {
 		$.each( project["images"], function(index, element) {
 			var tmp = isArray(element) ? element : [element];
 			$.each( tmp, function(i, e) {
-				var captionKey = parseInt(e["id"]).toString();
+				var captionKey = e["id"]; // assumes ID's are strings
 				if (project["captions"][captionKey]) e["caption"] = getTextElement(e["id"]+"_caption", project["captions"][captionKey], "", fonts["body"], w.medium, ["async"]);
 			});
 		});
@@ -601,8 +624,8 @@ function initPageSpecificItems(pageID) {
 		return initHome();
 	} else if (pageID == "about") {
 		return initAbout();
-	} else if (pageID == "inquire") {
-		return initInquire();
+	} else if (pageID == "contact") {
+		return initContact();
 	} else {
 		return initProject(pageID);
 	}
@@ -685,8 +708,8 @@ function setPageTitle(pageID) {
 		document.title = "Ben Snell";
 	} else if (pageID == "about") {
 		document.title = "About | Ben Snell";
-	} else if (pageID == "inquire") {
-		document.title = "Inquire | Ben Snell";
+	} else if (pageID == "contact") {
+		document.title = "Contact | Ben Snell";
 	} else {
 		document.title = findElementWithKeyValueInArray(project["text"], "id", "title")["content"] + " | Ben Snell";
 	}
@@ -1244,7 +1267,7 @@ function showAbout(bLayoutOnly=false) {
 
 	return consecCall( [loadAbt, layoutAbt, animateAbt, finishPageLayout] );
 }
-function showInquire(bLayoutOnly=false) {
+function showContact(bLayoutOnly=false) {
 
 	var bDelay = bLayoutOnly ? 0 : 1;
 
@@ -1252,21 +1275,21 @@ function showInquire(bLayoutOnly=false) {
 
 	var layoutInq = function(def) {
 
-		$(inquire["txt"]).css("font-size", w.fontSizePx);
-		$(inquire["txt"]).css("letter-spacing", (w.bodyLetterSpacing*w.fontSizePx*0.8) + "px"); // .1993
-		$(inquire["txt"]).css("line-height", w.bodyLineHeight*1.5 + "px"); // .1993
-		$(inquire["txt"]).css("text-align", "center");
+		$(contact["txt"]).css("font-size", w.fontSizePx);
+		$(contact["txt"]).css("letter-spacing", (w.bodyLetterSpacing*w.fontSizePx*0.8) + "px"); // .1993
+		$(contact["txt"]).css("line-height", w.bodyLineHeight*1.5 + "px"); // .1993
+		$(contact["txt"]).css("text-align", "center");
 
 		setTxtPosDim(
-			$(inquire["txt"]),
+			$(contact["txt"]),
 			0,
 			0,
 			$(window).width());
 
 		setTxtPosDim(
-			$(inquire["txt"]),
+			$(contact["txt"]),
 			0,
-			Math.max($(window).height()/2 - $(inquire["txt"]).height()/2, w.marginTopPx));
+			Math.max($(window).height()/2 - $(contact["txt"]).height()/2, w.marginTopPx));
 
 		def.resolve();
 	};
@@ -1278,7 +1301,7 @@ function showInquire(bLayoutOnly=false) {
 		// show all items
 		setTimeout( function() { return showMenuItems(bLayoutOnly); }, 0 * displayOffsetMs * bDelay);
 		var animateTxt = function() { 
-			if (!bLayoutOnly) $(inquire["txt"]).fadeIn({queue:false, duration: w.fadeMs * fadeFrac}); 
+			if (!bLayoutOnly) $(contact["txt"]).fadeIn({queue:false, duration: w.fadeMs * fadeFrac}); 
 			def.resolve(); 
 		};
 		setTimeout( animateTxt , 1 * displayOffsetMs * bDelay);
@@ -1599,8 +1622,8 @@ function showAllItems(pageID, bLayoutOnly=false) {
 		showHome( bLayoutOnly );
 	} else if (pageID == "about") {
 		showAbout( bLayoutOnly );
-	} else if (pageID == "inquire") {
-		showInquire( bLayoutOnly );
+	} else if (pageID == "contact") {
+		showContact( bLayoutOnly );
 	} else {
 		showProject( bLayoutOnly );
 	}
