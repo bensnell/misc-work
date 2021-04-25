@@ -9,8 +9,18 @@
 	"numDigits" : 3,
 	"images" : [
 		[1, 3],
+		{
+			"id" : "JCd6l7z5VT4",
+			"host" : "youtube",
+			"dims" : [1920, 1080]
+		},
 		[4, 10],
 		[5, 9, 6, 7, 11],
+		{
+			"id" : "YEVIZZxhMSM",
+			"host" : "youtube",
+			"dims" : [1920, 1080]
+		},
 		[101, 102],
 		[103, 105, 106, 104]
 	],
@@ -18,7 +28,9 @@
 		"1" : "The Manchester United DreamCube: an interactive game center where customers can play soccer challenges. I designed the tracking system using Optitrack infrared motion-capture cameras and custom soccer balls.",
 		"4" : "A custom retroreflective soccer ball capable of being tracked in this space with centimeter precision at 240 FPS. Swipe right to see the ball under 850nm infrared illumination.",
 		"5" : "Design of the system with 8 cameras for maximum redundancy. Images of the in-studio prototype and images of camera placements. custom protective equipment was designed to prevent cameras from being hit by soccer balls.",
+		"youtube_JCd6l7z5VT4" : "Demo of soccer ball tracking in the DreamCube experience.",
 		"101" : "Custom electronic 'lamps' that allow visitors to interact with projections and collect content at the Faith and Liberty Discovery Center. They contain both IR receivers and transmitters to communicated with backend tracking hardware.",
-		"103" : "I spearheaded the design of this system to track and identify lamps across 2000 square feet of gallery space with millimeter precision. Lamps can also be communicated with to instruct them to animate their visible lights."
+		"103" : "I spearheaded the design of this system to track and identify lamps across 2000 square feet of gallery space with millimeter precision. Lamps can also be communicated with to instruct them to animate their visible lights.",
+		"youtube_YEVIZZxhMSM" : "Demo of lamp tracking."
 	}
 }
