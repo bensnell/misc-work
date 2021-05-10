@@ -2,7 +2,7 @@
 	"title" : "Polar Etch-A-Sketch",
 	"client" : "self",
 	"role" : "all",
-	"description" : "I set out to reimagine a common childhood toy in a world where a different, non-cartesian, coordinate system reigned supreme: the polar coordinate system.\n\nThis Etch-A-Sketch works differently than others: one knob moves the pointer around the center and the other knob moves the pointer toward and away from the center.\n\nIronically, drawing a circle is a breeze with this one, but nearly impossible with the original Etch-A-Sketch. And just as corner is easy with the original, two perpendicular lines are nearly impossible to draw here.\n\nThe familiar premise yet atypical affordances place this product in a speculative future, parallel to but divergent from our own.",
+	"description" : "I set out to reimagine a common childhood toy in a world where a different, non-cartesian, coordinate system reigned supreme: the polar coordinate system.\n\nThis Etch-A-Sketch works differently than others: one knob moves the pointer around the center and the other knob moves the pointer toward and away from the center.\n\nIronically, drawing a circle is a breeze with this one, but nearly impossible with the original Etch-A-Sketch. And just as a corner is easy with the original, two perpendicular lines are nearly impossible to draw here.\n\nThe familiar premise yet atypical affordances place this product in a speculative future, parallel to but divergent from our own.",
 	"date" : "2016",
 
 	"globalExt" : "jpg",
