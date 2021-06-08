@@ -8,13 +8,13 @@
 	"globalExt" : "jpg",
 	"numDigits" : 3,
 	"images" : [
-		1,
+		9,
 		2,
 		7,
 		8
 	],
 	"captions" : {
-		"1" : "Rendering of the Commitment Space.",
+		"9" : "The Commitment Space.",
 		"2" : "Rendering of Greenwood Rising history center.",
 		"7" : "A small section of the Commitment Space wall, built to prototype animation sequences and finalize graphic treatments.",
 		"8" : "UX diagram of the experience."
