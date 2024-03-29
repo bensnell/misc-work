@@ -139,7 +139,7 @@ function getPage(url) {
 	var pageID = "home";
 	if (elems.length != 0) {
 		var page = elems[elems.length-1];
-		pageID = (page.includes(domainKey) || page.includes("localhost")) ? "home" : page;
+		pageID = (page.includes(domainKey) || page.includes("localhost") || page.includes("127.0.0.1")) ? "home" : page;
 	}
 	return pageID;
 }
