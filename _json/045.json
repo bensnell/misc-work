@@ -1,0 +1,43 @@
+{
+        "title": "Cattleya",
+        "client" : "self",
+        "role" : "all",
+        "date": "2022-2023",
+        "description": "→ <i>View a <a href='https://demos.bensnell.io/cattleya/' target='_blank'>live demo</a></i>\n→ <i>Read about my process on <a href='https://bensnell.medium.com/cattleya-7c943673d54f' target='_blank'>Medium</a></i>\n\n<b><span style='color: rgb(153,153,153); line-height: 32px;'>Description</span></b>\nDarwin's Orchid wasn't discovered by Darwin, but he correctly hypothesized that its long blooms, up to a foot and a half tall, coevolved with a moth with a very long tongue—just long enough to extract its nectar. This flower embodies the great variety of and fascination with the orchid family. Orchids come in all shapes, sizes, colors, textures and scents—perhaps this is why they've entranced cultures dating back well over five millennia, becoming symbols of virility, beauty, peace and prosperity in the process. Named “Cattleya” after my first rare orchid, this work is my Ode to Orchids—a mystical flower that brings me endless delight.\n\n<b><span style='color: rgb(153,153,153); line-height: 32px;'>Background</span></b>\nThis is a \"<a href='https://tylerxhobbs.com/essays/2021/the-rise-of-long-form-generative-art' target='_blank'>long-form</a>\" generative artwork, developed in JavaScript using <a href='https://p5js.org/' target='_blank'>p5.js</a>. In other words, the artwork is an algorithm that generates a new, unique image each time it's run. The images here aren't drawings or paintings; they are imagined and rendered by a complex virtual system I designed after close study of real-life orchids. Shown here is a curated selection of its potentially infinite outputs. The algorithm, totalling about 30kB in size, is stored in perpetuity on the Ethereum blockchain.\n\n<b><span style='color: rgb(153,153,153); line-height: 32px;'>Availability</span></b>\nA \"living instance\" of the algorithm tied to one image (a \"token\") can be collected. 300 tokens originally available on <a href='https://www.artblocks.io/project/308' target='_blank'>Art Blocks</a> are now available in the secondary market on <a href='https://opensea.io/collection/cattleya-by-ben-snell' target='_blank'>OpenSea</a>.\n\n<b><span style='color: rgb(153,153,153); line-height: 32px;'>Notes</span></b>\nBoth the algorithm and its outputs are licensed under <a href='https://creativecommons.org/licenses/by-nc/4.0/' target='_blank'>CC BY-NC 4.0</a>. It is intended to be run on modern devices and browsers (recommended: Chrome, Safari or Firefox).\n\n<b><span style='color: rgb(153,153,153); line-height: 32px;'>Demos</span></b>\nTo illustrate how Cattleya works, I've released a few small demos:\n- <a href='https://demos.bensnell.io/cattleya' target='_blank'>Overall</a>\n- <a href='https://demos.bensnell.io/cattleya/flower-shape' target='_blank'>Flower Shape</a>\n- <a href='https://demos.bensnell.io/cattleya/rendering' target='_blank'>Rendering</a>\n\n∿\n\n<i><span style='color: rgb(153,153,153); font-size: 0.9em; line-height: 10px;'>Many thanks to the Art Blocks and p5.js communities, Matt DesLauriers' <a href='https://github.com/Jam3/glsl-fast-gaussian-blur' target='_blank'>blur shader</a> and mention of signed distance fields, which inspired my rendering approach, and all of the orchid nurseries I've frequented in search of inspiring specimens, including <a href='https://www.appalachiantropicals.com/' target='_blank'>Appalachian Tropicals</a>, <a href='https://www.lookingglassorchids.com/' target='_blank'>Looking Glass Orchids</a>, <a href='https://www.silvaorchids.com/' target='_blank'>Silva Orchids</a> and <a href='https://www.orchidweb.com/' target='_blank'>Orchid Web</a>.</span></i>",
+        "globalExt": "jpg",
+        "numDigits": 3,
+        "images": [
+                0,
+                2,
+                1,
+                3,
+                4,
+                5,
+                12,
+                7,
+                6,
+                8,
+                9,
+                11,
+                10,
+                13,
+                14
+        ],
+        "captions": {
+                "0" : "Cattleya (0x4fd) ∼ <a href='https://demos.bensnell.io/cattleya/?hash=0x4fd813a9d3137ea9170d8f6d821727964b9c25eca917e63ea0dc3cb52a8e18be' target='_blank'>demo</a>",
+                "1" : "Cattleya (0x5b2) ∼ <a href='https://demos.bensnell.io/cattleya/?hash=0x5b2dc190df1abe41376e7ab58b7127ea4ab6675b02c6e7398f138606a1be56ad' target='_blank'>demo</a>",
+                "2" : "Cattleya (0x8e4) ∼ <a href='https://demos.bensnell.io/cattleya/?hash=0x8e46849ae4dd63ff364f7b2a597dcdd8035653c8c1e8345619d800a092b87b0b' target='_blank'>demo</a>",
+                "3" : "Cattleya (0x19e) ∼ <a href='https://demos.bensnell.io/cattleya/?hash=0x19e3e0b32809b2d26a95e00f98396607761f21ebb47614a0c0ba6d7107277f49' target='_blank'>demo</a>",
+                "4" : "Cattleya (0x29a) ∼ <a href='https://demos.bensnell.io/cattleya/?hash=0x29a2888db7c34a6d106cf87f7083768b7738cfde847d2df04c495be0a900be80' target='_blank'>demo</a>",
+                "5" : "Cattleya (0x36c) ∼ <a href='https://demos.bensnell.io/cattleya/?hash=0x36cae204b4ebf8b42f8aac1fd2c426b051a07835acdfc15ab39a5d4e6936bf40' target='_blank'>demo</a>",
+                "6" : "Cattleya (0x39c) ∼ <a href='https://demos.bensnell.io/cattleya/?hash=0x39cc95fd92ccb8b7b89b02b791dcf47c4c8eb3a5772155937f33607524cc54e4' target='_blank'>demo</a>",
+                "7" : "Cattleya (0x49d) ∼ <a href='https://demos.bensnell.io/cattleya/?hash=0x49d1bfff9f249685eaa06caaef61970792b599a3043df8b02fba34b0e8c469f2' target='_blank'>demo</a>",
+                "8" : "Cattleya (0x216) ∼ <a href='https://demos.bensnell.io/cattleya/?hash=0x216dfd53748bc4b59ce93feb5896a9bebd02dccff71e90838b5bbd5907c86ab3' target='_blank'>demo</a>",
+                "9" : "Cattleya (0xa15) ∼ <a href='https://demos.bensnell.io/cattleya/?hash=0xa153e49d9fba479fadec9a1e53e3627375a5e1cd834cec17b0b90103e1f1c6c6' target='_blank'>demo</a>",
+                "10" : "Cattleya (0xb56) ∼ <a href='https://demos.bensnell.io/cattleya/?hash=0xb56fd6d2bf0c2cb61ddc48b407a5c2b91c6c87fe04054584dbc8f3c820904818' target='_blank'>demo</a>",
+                "11" : "Cattleya (0xd02) ∼ <a href='https://demos.bensnell.io/cattleya/?hash=0xd02d2326d99b710c438e575707e833e85162f5f9a6bd90dfbe448732aee7fd9a' target='_blank'>demo</a>",
+                "12" : "Cattleya (0xd5d) ∼ <a href='https://demos.bensnell.io/cattleya/?hash=0xd5d0787f9f8d0406cdca13187f2ae7aa8b31811c99786fa44661db4cacaa8356' target='_blank'>demo</a>",
+                "13" : "Cattleya (0xdeb) ∼ <a href='https://demos.bensnell.io/cattleya/?hash=0xdeb201f39e8e6b96dfcf9e27b5ad73b55c1e6e042a2a548d5052d670c89a1080' target='_blank'>demo</a>",
+                "14" : "Cattleya (0xe9b) ∼ <a href='https://demos.bensnell.io/cattleya/?hash=0xe9b7a8fe6633667fb41c945460bae4705098b96698141a0bf68568f0af5e76b7' target='_blank'>demo</a>"
+        }
+}

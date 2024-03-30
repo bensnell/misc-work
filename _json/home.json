@@ -3,6 +3,12 @@
 	"imgExt" : "jpg",
 	"projects" : [
 		{
+			"projectID":  "045",
+			"title" : "Cattleya\n\\ An ode to orchids.",
+			"url" : "http://snell.codes/cattleya",
+			"tags" : ["software", "algorithms", "art", "graphics", "web", "NFT", "design", "ML"]
+		},
+		{
 			"projectID":  "039",
 			"title" : "Word Worlds\n\\ On painting with words.",
 			"url" : "http://snell.codes/word-worlds",
