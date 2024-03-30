@@ -3,6 +3,12 @@
 	"imgExt" : "jpg",
 	"projects" : [
 		{
+			"projectID":  "046",
+			"title" : "tied up, tied down, let loose, unwound\n\\ On utility and ability.",
+			"url" : "http://snell.codes/tied-up-tied-down-let-loose-unwound",
+			"tags" : ["software", "algorithms", "art", "graphics", "web", "NFT", "design"]
+		},
+		{
 			"projectID":  "045",
 			"title" : "Cattleya\n\\ An ode to orchids.",
 			"url" : "http://snell.codes/cattleya",
