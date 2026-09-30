@@ -70,8 +70,8 @@
 // title serif: Andale, Baskerville, Batang*, Bell MT, Bookman Old Style, CAllisto MT, Cochin*, Consolas, Didot
 // body serif: Cambria, Cochin*, Century, Garamond
 
-var mainURL = "http://snell.codes";
-var domainKey = "snell";	// used to check if we're in my domain
+var mainURL = "https://work.bensnell.io";
+var domainKey = "bensnell";	// substring test against the host; must appear in work.bensnell.io
 var mailKey = "mailto";
 
 // password protection
@@ -95,7 +95,7 @@ var contact = {};
 // Stores the logo at the top of the page
 var menu = {};
 var bKeepMenu = true;
-var emailLink = "mailto:ben@snell.codes?subject=Hello!";
+var emailLink = "mailto:bensnellstudio@gmail.com?subject=Hello!";
 //				     ID 		TEXT 			URL_SUFFIX
 var menuElems = [ 	["logo", 	"Ben Snell", 	""],
 					["about", 	"about", 		"about"],
@@ -134,7 +134,8 @@ stopScrollRestoration();
 
 // Get the specific page given a url (doesn't check if in domain)
 function getPage(url) {
-	var tmpUrl = strip(url, "/");
+	// drop any query string or fragment before parsing the path
+	var tmpUrl = strip(url.split("#")[0].split("?")[0], "/");
 	var elems = tmpUrl.split("/");
 	var pageID = "home";
 	if (elems.length != 0) {
